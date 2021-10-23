@@ -17,7 +17,7 @@
     <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/ui.js"></script>
-    <title>클랜 룰</title>
+    <title>TMI</title>
 </head>
 <body>
     <div id="skip-nav">
@@ -31,7 +31,7 @@
                 <div class="header-contents">
                     <h1 class="logo" title="NT로고">
                         <a href="index.html">
-                            <img src="../html/images/홈페이지용_NT로고.png" alt="메인로고">
+                            <img src="../build/images/홈페이지용_NT로고.png" alt="메인로고">
                         </a>
                     </h1>
                     <div class="nav" role="navigation">
@@ -39,10 +39,10 @@
                             <li><a href="index.html"title="홈" aria-label="nav home">홈</a></li>
                             <li><a href="sub.html"title="클랜 소개" aria-label="nav clanIntro">클랜 소개</a></li>
                             <li><a href="sub2.html"title="클랜원 모집!" aria-label="nav clanJoin">클랜원 모집!</a></li>
-                            <li class="active"><a href="sub3.html"title="클랜 룰" aria-label="nav clanRole">클랜 룰</a></li>
+                            <li><a href="sub3.html"title="클랜 룰" aria-label="clanRole">클랜 룰</a></li>
                             <li><a href="sub4.html"title="클랜 가입문의" aria-label="nav clanInquiry">클랜 가입문의</a></li>
                             <li><a href="sub5.html"title="명예의 전당" aria-label="nav HallofFame">명예의 전당</a></li>
-                            <li><a href="sub6.html"title="TMI" aria-label="nav TMI">TMI</a></li>
+                            <li class="active"><a href="sub6.html"title="TMI" aria-label="nav TMI">TMI</a></li>
                         </ul>
                     </div>
                     <div class="mobile-nav">
@@ -54,6 +54,22 @@
                             </button>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!-- 헤더 서브메뉴 -->
+            <div class="header-sub-contents flex jc">
+                <div class="nav sub">
+                    <ul>
+                        <li>
+                            <a href="sub8.html" title="자료실" aria-label="subNav Archives">자료실</a>
+                        </li>
+                        <li>
+                            <a href="sub7.html" title="Q&A" aria-label="subNav Q&A">Q&A</a>
+                        </li>
+                        <li>
+                            <a href="sub6.html" class="active" title="TMI" aria-label="subNav TMI">TMI</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -84,124 +100,186 @@
                     <li>
                         <a href="sub6.html" aria-label="nav TMI">TMI</a>
                     </li>
+                    <li>
+                        <a href="sub7.html" aria-label="nav Q&A">Q&A</a>
+                    </li>
+                    <li>
+                        <a href="sub8.html" aria-label="nav Archives">자료실</a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div id="dimmed"></div>
-        <seciton class="section" id="section" role="section">
+        <section class="section" id="section" role="section">
             <div class="inner pd">
                 <div class="title-desc-Area">
                     <div class="title pthalf">
-                        <span>클랜 룰</span>
-                        <p>클랜 규칙을 확인해보세요.</p>
+                        <span>TMI</span>
+                        <p>클랜에 대한 많은 정보들...</p>
                     </div>
                 </div>
                 <div class="contArea">
-                    <div class="row">
-                        <div class="sub-title">
-                            <span>✔ Since.2016.05.03 </span>
+                    <div class="cont-box">
+                        <div class="distance">
+                            <div class="sub-title">
+                                <span>NG TISSOT 잡담방</span>
+                            </div>
                         </div>
                         <div class="con-txt">
-                            <pre>클랜 공지방 & 잡담방 닉네임 양식 : (닉네임) / (나이)
-                                * 나이 밝히는게 싫으신 분들은 대충 나이대가 어느정도인지만 이라도 써주세요!
-                                ex) Abcde / 10대
-                            </pre>
+                            <pre>여러가지 이야기를 나눌 수 있는 공간입니다.</pre>
+                        </div>
+                        <div class="con-txt">
+                            <pre>가입코드 : NT0503</pre>
+                        </div>
+                        <div class="theme-box">
+                            <a href="https://open.kakao.com/o/giJXIGCb" aria-label="clan chat" target='_blank'>NT 잡담방</a>
                         </div>
                     </div>
+                    <div class="cont-box">
+                        <div class="distance pt0">
+                            <div class="sub-title">
+                                <span>NG TISSOT 역사</span>
+                            </div>
+                        </div>
+                        <div class="con-txt">
+                            <span>4년간 쌓아왔던 클랜 역사입니다.</span>
+                        </div>
+                        <div class="conditions">
+                            <span>2016.05.03 클랜 설립</span>
+                            <span>2019.05.07 클랜전 트로피 1만 달성!</span>
+                            <span>2019.10.2 클랜전 트로피 15000 달성!</span>
+                            <span>2020.02.10 클랜전 트로피 2만 달성!</span>
+                            <span>2020.05.03 클랜 4주년!</span>
+                            <span>2021.05.03 클랜 5주년!</span>
+                        </div>
+                    </div>
+                    <div class="cont-box">
+                        <div class="distance pt0">
+                            <div class="sub-title">
+                                <span>클랜원 공대/장로 리스트</span>
+                            </div>
+                        </div>
+                        <div class="sub-title">
+                            <div> <!-- 폰트사이즈 20px 상속때문에 div로 한번 더 묶음.-->
+                                <span>대표</span>
+                            </div>
+                        </div>
+                        <div class="table">
+                            <table>
+                                <caption>대표 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 1000px;">
+                                    <col style="width: 1000px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2" class="dodger-blue alabaster">[1대 대표] PlasticMemories (#8CLRRCU0)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="dodger-blue">[2대 대표] P1ush (#808RR889U)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="dodger-blue">[부대표]  랍챱 (#G8CPCGC2) </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="theme-box">
+                            <a href="https://royaleapi.com/" aria-label="player search" target='_blank'>플레이어 태그 검색하기</a>
+                        </div>
+                    </div>
+                    <div class="cont-box">
+                        <div class="distance pt0">
+                            <div class="sub-title">
+                                <div>
+                                    <span>공동대표</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table">
+                            <table>
+                                <caption>공동대표 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 1000px;">
+                                    <col style="width: 1000px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2" class="dodger-blue alabaster">Jun CR (#80QCC98J)</td>
+                                    </tr>
 
-                    <div class="row">
-                        <div class="sub-title">
-                            <span>✔ 지원 관련 룰</span>
+                                    <tr>
+                                        <td colspan="2" class="dodger-blue"> 달님 (#8P28VJVP9)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="con-txt">
-                            <pre>- 지원 100 이하 추방 / 지원 0 추방은 매주 일요일에 진행 </pre>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="sub-title">
-                            <span>✔ 이모티콘 관련 룰</span>
-                        </div>
-                        <div class="con-txt">
-                            <pre>- 이모티콘은 적당히 써주세요!</pre>
+                        <div class="theme-box">
+                            <a href="https://royaleapi.com/" aria-label="player search" target='_blank'>플레이어 태그 검색하기</a>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="sub-title">
-                            <span>✔ 장로 / 공대 경고 룰</span>
+                    <div class="cont-box">
+                        <div class="distance pt0">
+                            <div class="sub-title">
+                                <div>
+                                    <span>장로</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="con-txt">
-                            <pre>
-                                - 아무 이유없는 추방 , 테러 :  추방 + 블랙 - 실수로 인한 추방 OR강등
-                                - 블랙 리스트 / 추방당한 클랜원 재초대 적발 : 경고 1회 (누적 5회 → 강등)
-                                - 장로 또는 공대가 특정조건 (지원 100 이하 , 클랜전 경고 3회 등) 을 만족하지 못할경우 강등 대신 경고 1회 부여 
-                            </pre>
+                        <div class="table">
+                            <table>
+                                <caption>장로 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 1000px;">
+                                    <col style="width: 1000px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">Yunakle(#JJ8J2YCO)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">용용(#8P8JCUCO)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Crossys(#2CVGY89QP)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Meya(#2QVYYPJ8U)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">ink!sans (#90GGJVP2J)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">이스비 (#LRYP9VOP)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">jio777 (#998QJVR80)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">겜블러 (#22L8QJ0CC) </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">제비 (2QULCRGRP)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">옵티머스 p.s (#820RQ8PVJ)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">formula (#8GVCR9Q9R)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">말갈족 수장 (#2CYPCPRLY)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="sub-title">
-                            <span>✔ 클랜전 관련 룰</span>
-                        </div>
-                        <div class="con-txt">
-                            <pre> - 클랜전 참여 : 필수</pre>
-                            <pre>(적어도 200 포인트 이상은 하셔야합니다.)</pre>
-                            <pre>- 클랜전 포인트 200 이상 또는 보트 수리 포인트 200 이상</pre>
-                            <pre>- 클랜전 포인트 200 이하일경우 경고 1회 누적 (3회 누적 시 추방 / 강등)</pre>
-                            <pre> * 1 ~ 5포인트 차이까지는 봐드립니다!</pre>
-                            <pre>  * 경고 리스트는 클랜전 5주차가 전부 끝나면 초기화합니다.</pre>
-                            <pre> * 경고를 받더라도 클랜전 조건 충족 시 리스트에서 삭제됩니다.</pre>
-                        </div>
-                    </div>
-                
-                    <div class="row">
-                        <div class="sub-title">
-                            <span>✔ 외출 관련 룰</span>
-                        </div>
-                        <div class="con-txt">
-                            <pre>- 시즌 말 외출 금지 (시즌 종료 5일전부터)</pre>
-                            <pre>- 잦은 외출 금지 [기준] : 일주일에 최대 2회 (매주 월요일 초기화)</pre>
-                            <pre> - 외출 후 3일 내 복귀 (복귀가 늦어지면 블랙리스트 처리)</pre>
-                            <pre>※ 구단전 외출은 제외입니다.</pre>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="sub-title">
-                            <span>✔ 추방 관련 룰</span>
-                        </div>
-                        <div class="con-txt">
-                            <pre>- 매 시즌마다 시즌 최소 트로피 제도 진행 (자세한 내용은 Q&A 참고)</pre>
-                            <pre>- 비속어 사용 경고 1회 → 누적 3회 시 강등 OR 추방 (초성 , 유사 비속어 포함)</pre>
-                            <pre>- 승급 구걸 / 재촉 → 무조건 추방</pre>
-                            <pre>
-                            - 미접속 3일 이상 추방 OR 강등
-                            (특별한 사유가 있으시면 클랜 채팅이나 공지방에 올려주세요!)
-                            </pre>
-                            <pre>- 추방 당할경우, 일정 기간 뒤 가입 가능 (게임을 접거나 복귀일경우는 제외이며, 재가입 기간은 추방 사유에 따라 달라짐.)</pre>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="sub-title">
-                            <span>✔ 기타 </span>
-                        </div>
-                        <div class="con-txt">
-                            <pre>
-                                - 양학은 시즌초 (시즌 종료 25일전까지)만 허용!
-                                * 로얄 패스 작업 , 퀘스트 때문에 잠깐 패작은 괜찮으나, 끝난 후에는 빠른 시일 내로 트로피 복구 부탁 드립니다!
-                                *양학 기준 : 실버 (리그 2)
-                            </pre>
-                            <pre>
-                                - 토큰스틸 X / 토큰 기재는 1인당 최대 3개만! (그 이상 기재 시 24시간 내에 내리기)
-                                - 클랜원 등급에 상관없이 클랜 가입 조건에 맞는 사람만 초대가능
-                            </pre>
+                        <div class="theme-box">
+                            <a href="https://royaleapi.com/" aria-label="player search" target='_blank'>플레이어 태그 검색하기</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </seciton>
+        </section>
         <footer class="footer" id="footer" role="contentinfo">
             <div class="footer-head">
                 <div class="footer-head-txt">
@@ -314,3 +392,4 @@
     </script>
 </body>
 </html>
+

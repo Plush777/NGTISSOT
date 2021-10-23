@@ -13,36 +13,43 @@
     <link rel="stylesheet" href="../html/js/pace-master/themes/blue/pace-theme-minimal.css">
     <link rel="icon" href="images/홈페이지용_NT로고.png" sizes="16x16">
     <script type="text/javascript" src="../html/js/modernizr-custom.js"></script>
-    <script type="text/javascript" src="../html/js/pace-master/pace.js"></script>
+    <script type="text/javascript" src="../html/js/pace-master/pace.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/ui.js"></script>
-    <title>클랜 가입문의</title>
+    <title>NG TISSOT</title>
 </head>
 <body>
+    <!-- 
+    홈페이지 기획 및 디자인 & 코드작성 : Plush777 
+    최종수정날짜 : 2021-10-23
+    -->
+    <script>
+        AOS.init();
+    </script>
     <div id="skip-nav">
         <a href="#section">메뉴 건너뛰기</a>
         <a href="#footer">콘텐츠 건너뛰기</a>
     </div>
-    <div class="wrap">
+    <div class="wrap main">
         <header role="banner">
             <div id="today"></div>
             <div class="inner">
                 <div class="header-contents">
                     <h1 class="logo" title="NT로고">
                         <a href="index.html">
-                            <img src="../html/images/홈페이지용_NT로고.png" alt="메인로고">
+                            <img src="../build/images/홈페이지용_NT로고.png" alt="메인로고">
                         </a>
                     </h1>
                     <div class="nav" role="navigation">
                         <ul>
-                            <li><a href="index.html"title="홈" aria-label="nav home">홈</a></li>
-                            <li><a href="sub.html"title="클랜 소개" aria-label="nav clanIntro">클랜 소개</a></li>
-                            <li><a href="sub2.html"title="클랜원 모집!" aria-label="nav clanJoin">클랜원 모집!</a></li>
-                            <li><a href="sub3.html"title="클랜 룰" aria-label="nav clanRole">클랜 룰</a></li>
-                            <li class="active"><a href="sub4.html"title="클랜 가입문의" aria-label="nav clanInquiry">클랜 가입문의</a></li>
-                            <li><a href="sub5.html"title="명예의 전당" aria-label="nav HallofFame">명예의 전당</a></li>
-                            <li><a href="sub6.html"title="TMI" aria-label="nav TMI">TMI</a></li>
+                            <li class="active"><a href="index.html" title="홈" aria-label="nav home">홈</a></li>
+                            <li><a href="sub.html" title="클랜 소개" aria-label="nav clanIntro">클랜 소개</a></li>
+                            <li><a href="sub2.html" title="클랜원 모집!" aria-label="nav clanJoin">클랜원 모집!</a></li>
+                            <li><a href="sub3.html" title="클랜 룰" aria-label="nav clanRole">클랜 룰</a></li>
+                            <li><a href="sub4.html" title="클랜 가입문의" aria-label="nav clanInquiry">클랜 가입문의</a></li>
+                            <li><a href="sub5.html" title="명예의 전당" aria-label="nav HallofFame">명예의 전당</a></li>
+                            <li><a href="sub6.html" title="TMI" aria-label="nav TMI">TMI</a></li>
                         </ul>
                     </div>
                     <div class="mobile-nav">
@@ -88,63 +95,144 @@
             </div>
         </div>
         <div id="dimmed"></div>
-        <section class="section" id="section" role="section">
-            <div class="inner pd">
-                <div class="title-desc-Area">
-                    <div class="title pthalf">
-                        <span>클랜 가입문의</span>
-                        <p>클랜 가입에 대한 내용을 확인해보세요.</p>
-                    </div>
-                </div>
-                <div class="sub-title">
-                    <span>✔ 문의 하기 전에!</span>
-                </div>
-                <div class="row">
-                    <div class="conditions">
-                        <span>가입 조건을 충족하는지 먼저 확인하세요!</span>
-                        <span>트로피가 부족하다고 실망하지 마세요! 어느정도는 봐드리니까요.</span>
-                        <span>가입문의 답변이 느릴 수 있습니다. 조금만 기다려주세요!</span>
-                        <span>나이가 안되도 걱정마세요! 기본적인 <strong>개념</strong>과 
-                              <strong>열정</strong>만 있으면 들어올 수 있습니다.
-                        </span>
-                        <span>가입 결과가 나왔거나, <strong>더 이상 문의사항이 없으시면 문의방은 나가주세요!</strong></span>
-                    </div>
-                </div>
-                <div class="sub-title">
-                    <span>✔ 문의 방법</span>
-                </div>
-                <div class="row">
-                    <div class="conditions">
-                        <span>문의방에 들어가시면 플레이어 정보를 캡쳐해서 올려주세요!</span>
-                        <span>문의방에서 클랜에 대한 질문은 환영입니다! 부담가지지 마시고 마음껏 질문해주세요!</span>
-                    </div>
-                </div>
-                <div class="main-img" style="margin-top: 20px;">
-                    <div class="mask">
-                        <div class="main-img-inner">
-                            <div class="main-img-title">
-                                <span>NG TISSOT 가입신청</span>
-                            </div>
+        <section class="section s01 s-default">
+            <div class="sec-inner">
+                <div class="secCont">
+                    <div class="secTxt">
+                        <div class="maintitle" data-aos="fade-down" data-aos-duration="1000">
+                            <h2>어떤 클랜인지 정확히 <br/>감이 안오시나요?</h2>
+                        </div>
+                        <div class="sub-txt" data-aos="fade-down" data-aos-duration="1000">
+                            <p><strong class="blue bgPoint side mr">Royale API</strong>에서 검색해보세요!</p>
+                        </div>
+                        <div class="btnArea" data-aos="fade-right" data-aos-duration="1000">
+                            <a href="https://royaleapi.com/clan/2GVVCGQL" target="_blank" aria-label="royaleapi 바로가기">
+                                <button type="button" class="btn blueBerry">
+                                    <span>바로가기</span>
+                                    <i class="ico ico-arrow-rt rt"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="box-area">
-                    <div class="tb-li">
-                        <ul>
-                            <li>
-                                <a href="https://open.kakao.com/o/g2120M0" aria-label="clan notice" target='_blank'>클랜 공지방</a>
-                            </li>
-                            <li>
-                                <a href="https://open.kakao.com/o/gE8KzQrb" aria-label="clan inquiry" target='_blank'>가입문의 방</a>
-                            </li>
-                            <li>
-                                <a href="https://open.kakao.com/o/sIcZh6zb" aria-label="individual" target='_blank'>개인 톡</a>
-                            </li>
-                        </ul>
+                    <div class="secImg">
+                        <div class="gifArea pos-r" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="../build/images/royaleapi-guide.gif" alt="royaleapi 가이드 이미지">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="section s02 s-default" id="section" role="section">
+            <div class="sec-inner">
+                <div class="secCont">
+                    <div class="secTxt">
+                        <div class="maintitle" data-aos="fade-down" data-aos-duration="1000">
+                            <h2 class="bgPoint orange">클랜소개</h2>
+                        </div>
+                        <div class="sub-txt" data-aos="fade-down" data-aos-duration="1000">
+                            <p>우리 클랜을 소개합니다!</p>
+                        </div>
+                        <div class="sub-txt more flex ac" data-aos="fade-down" data-aos-duration="1000">
+                            <a href="sub4.html" class="fz">클랜원도 모집중이에요.
+                                <span class="arrow-rt">어서 확인해보세요!</span> 
+                            </a>
+                        </div>
+                        <div class="btnArea" data-aos="fade-right" data-aos-duration="1000">
+                            <a href="sub.html" aria-label="클랜 소개 바로가기">
+                                <button type="button" class="btn orange">
+                                    <span>바로가기</span>
+                                    <i class="ico ico-arrow-rt rt"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="secImg">
+                        <div class="gifArea pos-r" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="../build/images/clan-intro.gif" alt="클랜 소개 gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section s03 s-default" id="section" role="section">
+            <div class="sec-inner">
+                <div class="secCont">
+                    <div class="secTxt">
+                        <div class="maintitle" data-aos="fade-down" data-aos-duration="1000">
+                            <h2 class="bgPoint violet">클랜 룰</h2>
+                        </div>
+                        <div class="sub-txt" data-aos="fade-down" data-aos-duration="1000">
+                            <p>클랜 규칙을 알아보세요!</p>
+                        </div>
+                        <div class="sub-txt more flex ac" data-aos="fade-down" data-aos-duration="1000">
+                            <a href="https://open.kakao.com/o/gE8KzQrb" target="_blank" aria-label="클랜 가입문의 링크">
+                                <span class="arrow-rt">클랜 가입을 원하세요?</span>
+                            </a>
+                        </div>
+                        <div class="btnArea" data-aos="fade-right" data-aos-duration="1000">
+                            <a href="sub3.html" aria-label="클랜 규칙 바로가기">
+                                <button type="button" class="btn purple">
+                                    <span>바로가기</span>
+                                    <i class="ico ico-arrow-rt rt"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="secImg">
+                        <div class="gifArea pos-r" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="../build/images/clan-role.gif" alt="클랜 룰 gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section s04 s-default" id="section" role="section">
+            <div class="sec-inner">
+               <div class="secCont">
+                   <div class="secTxt">
+                        <div class="maintitle" data-aos="fade-down" data-aos-duration="1000">
+                            <h2 class="bgPoint green">명예의 전당</h2>
+                        </div>
+                        <div class="sub-txt" data-aos="fade-down" data-aos-duration="1000">
+                            <p>클랜 내 이벤트에서 상위권을 기록<br>닉네임이 기재되는 공간입니다!</p>
+                        </div>
+                        <div class="sub-txt more flex ac" data-aos="fade-down" data-aos-duration="1000">
+                            <a href="sub6.html" aria-label="TMI 메뉴 바로가기">
+                                <span class="arrow-rt">클랜에 대한 더 많은 정보를 얻으세요.</span>
+                            </a>
+                        </div>
+                        <div class="btnArea" data-aos="fade-right" data-aos-duration="1000">
+                            <a href="sub5.html" aria-label="클랜 명예의 전당 바로가기">
+                                <button type="button" class="btn green">
+                                    <span>바로가기</span>
+                                    <i class="ico ico-arrow-rt rt"></i>
+                                </button>
+                            </a>
+                        </div>
+                   </div>
+                   <div class="secImg">
+                        <div class="gifArea pos-r" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="../build/images/halloffame-intro.gif" alt="명예의전당 gif">
+                        </div>
+                   </div>
+               </div>
+            </div>
+        </section>
+
+        <section class="section s05 s-default" id="section" role="section">
+            <div class="loc txt-center">
+                <div class="maintitle" data-aos="fade-down" data-aos-duration="1000">
+                    <p>클래시 로얄을 즐기는 새로운 방법 <span>NG TISSOT</span></p>
+                </div>
+                <div class="sub-txt" data-aos="fade-down" data-aos-duration="1000">
+                    <p>클래시 로얄은 NG TISSOT과 만나면 더 재미있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+
         <footer class="footer" id="footer" role="contentinfo">
             <div class="footer-head">
                 <div class="footer-head-txt">
@@ -174,7 +262,7 @@
                     </div>
                     <div class="footer-txt">
                         <p>Homepage Design By P1ush.</p>
-                        <p>Copyright © 2020 NG TISSOT. ALL RIGHTS RESERVED.</p>
+                        <p>Copyright © 2021 NG TISSOT. ALL RIGHTS RESERVED.</p>
                     </div>
                 </div>
             </div>
