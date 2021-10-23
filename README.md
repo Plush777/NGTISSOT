@@ -1,6 +1,5 @@
 # 📌Clash Royle : NG TISSOT 
 Clash Royle 이라는 게임의 클랜 홈페이지 NG TISSOT 작업물입니다.
-대단한 코드는 없고 단지 취미로 개인 작업물을 만들어보고 싶어서 제작해보았습니다!
 <br><br>
 ## ❤ Credits
 홈페이지 기획 및 디자인 : Plush777 <br>
