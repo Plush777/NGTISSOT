@@ -566,12 +566,12 @@ header .nav.sub li:last-child:after{
 .darkArea{position: fixed; right:140px; bottom: 30px;}
 .darkArea .dark-inner{width: 200px; height: 60px; padding: 9px 0; box-sizing: border-box;
   box-shadow: 0px 8px 20px 0 rgba(0, 0, 0, 15%); border-radius: 50px; background-color: #ffffff;}
-.darkArea .dark-inner #darklight #btn-dark{width: 34px; height: 37px; background: url("../images/ico-dark.png") no-repeat center;}
-.darkArea .dark-inner #darklight{display: flex; justify-content: center; align-items: center; cursor: pointer;}
-.darkArea .dark-inner #darklight span{color: #000; text-indent: 10px;}
+.darkArea .dark-inner .darkToggle #btnDarkToggle{width: 34px; height: 37px; background: url("../images/ico-dark.png") no-repeat center;}
+.darkArea .dark-inner .darkToggle{display: flex; justify-content: center; align-items: center; cursor: pointer;}
+.darkArea .dark-inner .darkToggle span{color: #000; text-indent: 10px;}
 
 
-html {
+html.light {
   --bg-color: #fff;
   --text-color: #000;
   --header: #fff;
@@ -623,7 +623,7 @@ html.dark {
   --accordion-bg:#444;
 }
 
-body {background: var(--bg-color); color: var(--text-color);}
+html{background: var(--bg-color); color: var(--text-color);}
 header{background-color: var(--header);}
 .nav ul li.active{color: var(--nav-active);}
 .nav ul li:hover{color: var(--nav-hover) !important;}
@@ -1030,11 +1030,11 @@ header .nav.sub li:after{border-right-color: var(--header-sub-border);}
   #mobile-quick ul li{padding: 10px; box-sizing: border-box; flex: 1; font-size: 0.8rem; color: var(--mobile-quick-txt);}
   #mobile-quick ul li a{display: block;}
   #mobile-quick ul li a i{display: block; margin: 0 auto;}
-  #mobile-darklight{cursor: pointer;}
-  #mobile-darklight .mobile-darklight-svg{
+  .mobile-darkToggle{cursor: pointer;}
+  .mobile-darkToggle .mobile-darklight-svg{
     display: block; margin: 0 auto; stroke: var(--mobile-quick-svg);
     fill: var(--mobile-quick-svg); color: var(--mobile-quick-svg);
   }
-  #mobile-darklight span{white-space: nowrap; color: var(--mobile-quick-txt);}
+  .mobile-darkToggle span{white-space: nowrap; color: var(--mobile-quick-txt);}
   /* --- */
 }
