@@ -110,4 +110,20 @@ $(document).ready(function(){
 	// 		}, 500);
 	// 	}).scroll();
 	// });
+
+	var N_font = [
+		'font-family: RecipeKorea',
+		'font-size:60px',
+		'color: #4b89dc'
+	].join(';');
+
+	console.log('%cN',N_font);
+
+	var T_font = [
+		'font-family: RecipeKorea',
+		'font-size:60px',
+		'color: #fff'
+	].join(';');
+
+	console.log('%cT',T_font);
 });
