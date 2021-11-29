@@ -671,6 +671,7 @@ header .nav.sub li:after{border-right-color: var(--header-sub-border);}
 .wrap pre{
   font-family: 'Noto sans';
   margin: 0;
+  line-height: 30px;
 }
 #mobile-quick{display: none;}
 
