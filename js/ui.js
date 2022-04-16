@@ -1,6 +1,68 @@
-//TOP버튼 클릭 시 부드럽게 올라감 
-$(document).ready(function(){
-    $(".quick-btn").click(function() {
+$(function(){
+	const darkModeEvent = document.querySelector('.btnDarkMode');
+	let choiceTheme = localStorage.getItem('theme');
+	let prefersTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+	const domBody = document.body;
+	let setMode = prefersTheme ? 'dark' : 'light';
+
+	window.onload = () => {
+		if (choiceTheme === 'dark') {
+			domBody.setAttribute('data-theme', 'dark');
+			localStorage.setItem('theme', 'dark');
+			darkModeEvent.classList.add('active');
+		} else {
+			domBody.setAttribute('data-theme', 'light');
+			localStorage.setItem('theme', 'light');
+			darkModeEvent.classList.remove('active');
+		}
+	};
+
+	const darkActive = () => {
+		darkModeEvent.classList.add('active');
+		domBody.setAttribute('data-theme', 'dark');
+		localStorage.setItem('theme', 'dark');
+	}
+
+	const darkDeactive = () => {
+		darkModeEvent.classList.remove('active');
+		domBody.setAttribute('data-theme', 'light');
+		localStorage.setItem('theme', 'light');
+	}
+
+	darkModeEvent.addEventListener('click', () => {
+
+		choiceTheme = localStorage.getItem('theme');
+		if (choiceTheme === 'light') {
+			darkActive();
+		} else {
+			darkDeactive();
+		}
+	});
+
+	$('.btnDarkMode').each(function(){
+		if(localStorage.getItem('theme') === 'dark'){
+			$(this).attr('aria-pressed', 'true');
+			$(this).find('span').text('라이트모드');
+		} else if($(localStorage.getItem('theme') === 'light')) {
+			$(this).attr('aria-pressed', 'false');
+			$(this).find('span').text('다크모드');
+		}
+	})
+
+	$('.btnDarkMode').on({
+		"click":function(){
+			if(localStorage.getItem('theme') === 'dark'){
+                $(this).attr('aria-pressed', 'true');
+                $(this).find('span').text('라이트모드');
+            } else if($(localStorage.getItem('theme') === 'light')) {
+                $(this).attr('aria-pressed', 'false');
+                $(this).find('span').text('다크모드');
+            }
+		}
+	})
+
+
+    $(".btn-top").click(function() {
         $('html').animate({scrollTop : 0}, 600);
     });
 
@@ -18,60 +80,6 @@ $(document).ready(function(){
 		  $(this).closest('li').children('.dep2').stop().slideToggle(400).closest('li').siblings('li').children('.dep2').slideUp(400);
 		}
 	});	
-
-
-	/* PC 다크모드 */
-	const storedTheme = localStorage.getItem("darkTheme");
-	const storedThemeLight = localStorage.getItem("lightTheme");
-
-	/* dark class 일때 */
-	var darkEvent = document.getElementsByClassName('darkToggle');
-	function localSetDark() {
-		const html = document.documentElement;
-        if (html.classList.contains("dark")) {
-            html.classList.remove("dark");
-            localStorage.setItem("darkTheme", "false");
-        } else {
-            html.classList.add("dark");
-            localStorage.setItem("darkTheme", "true");
-        }
-	}
-	for (var i = 0; i < darkEvent.length; i++) {
-		darkEvent[i].addEventListener('click', localSetDark);
-	}
-
-	if (storedTheme !== null) {
-        if (storedTheme === "true") {
-            document.documentElement.classList.add("dark");
-        }
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        document.documentElement.classList.add("dark");
-    }
-
-
-	/* light 클래스일때 */
-	var lightEvent = document.getElementsByClassName('darkToggle');
-	function localSetLight() {
-		const html = document.documentElement;
-        if (html.classList.contains("light")) {
-            html.classList.remove("light");
-            localStorage.setItem("lightTheme", "false");
-        } else {
-            html.classList.add("light");
-            localStorage.setItem("lightTheme", "true");
-        }
-	}
-	for (var i = 0; i < lightEvent.length; i++) {
-		lightEvent[i].addEventListener('click', localSetLight);
-	}
-
-	if (storedThemeLight !== null) {
-        if (storedThemeLight === "true") {
-            document.documentElement.classList.add("light");
-        }
-    } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
-        document.documentElement.classList.add("light");
-    }
 
 	/*모바일 메뉴 클릭 시 모바일 사이드 메뉴와 dimmed가 보여짐. */
 	$('.mobile-nav').on({

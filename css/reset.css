@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./font/nanumGothic/NanumGothic.eot);
+    src: url(./font/nanumGothic/NanumGothic.eot?#iefix) format("embedded-opentype"), url(./font/nanumGothic/NanumGothic.woff) format("woff"); 
+}
+@font-face {
+    font-family: 'Nanum Gothic Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./font/nanumGothic/NanumGothicBold.eot);
+    src: url(./font/nanumGothic/NanumGothicBold.eot?#iefix) format("embedded-opentype"), url(./font/nanumGothic/NanumGothicBold.woff) format("woff"); 
+}
+@font-face {
+    font-family: 'Noto Sans Light';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./font/notoSans/eot/NotoSansKR-Light-Hestia.eot);
+    src: url(./font/notoSans/eot/NotoSansKR-Light-Hestia.eot?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSansKR-Light-Hestia.woff) format("woff"); 
+}
+@font-face {
+    font-family: 'Noto Sans DemLight';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./font/notoSans/eot/NotoSansKR-DemiLight-Hestia.eot);
+    src: url(./font/notoSans/eot/NotoSansKR-DemiLight-Hestia.eot?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSansKR-DemiLight-Hestia.woff) format("woff"); 
+}
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./font/notoSans/eot/NotoSansKR-Regular-Hestia.eot);
+    src: url(./font/notoSans/eot/NotoSansKR-Regular-Hestia.eot?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSansKR-Regular-Hestia.woff) format("woff"); 
+}
+@font-face {
+    font-family: 'Noto Sans Medium';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./font/notoSans/eot/NotoSansKR-Medium-Hestia.eot);
+    src: url(./font/notoSans/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSansKR-Medium-Hestia.woff) format("woff"); 
+}
+@font-face {
+    font-family: 'Nanum Square B';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./font/nanumSquare/NanumSquareB.eot);
+    src: url(./font/nanumSquare/NanumSquareB.eot?#iefix) format("embedded-opentype"), url(./font/nanumSquare/NanumSquareB.woff) format("woff"); 
+}
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'SangSangShin';
+    src: url(./font/sshin/eot/SangSangShin.eot);
+    src: url(./font/sshin/eot/SangSangShin.eot?#iefix) format("embedded-opentype"), url(./font/sshin/woff/SangSangShin.woff) format("woff");
+}
+    
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, article, aside, footer, header, section, summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit; 
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; 
+}
+
+body, html {
+    width: 100%;
+}
+
+ol, ul {
+    list-style: none; 
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; 
+}
+
+img {
+    border: none; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+address {
+    font-style: normal; 
+}
+
+button {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer; 
+}
+
+input, button, a, select, option {
+    font-family: inherit;
+    font-size: inherit; 
+}
+
+input[type="checkbox"] {
+    border: none !important; 
+}
+
+caption, hr {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+
+pre {
+    word-break: break-all;
+    white-space: pre-line; 
+}
+
+/*클래스 */
+
+.inner {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto; 
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.hidden{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+.pthalf{
+    padding-top: 50px;
+}
+
+.pos-r{
+    position: relative;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex.ac{
+    align-items: center;
+}
+
+.flex.jc{
+    justify-content: center;
+}
+
+.flex.col{
+    flex-direction: column;
+}
