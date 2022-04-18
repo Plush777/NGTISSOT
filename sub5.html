@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html lang="ko" class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="NG TISSOT 클랜 홈페이지입니다.">
-        <meta name="generator" content="Visual Studio Code">
-        <meta name="author" content="P1ush">
-        <meta name="robots" content="index,nofollow">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="css/style.css?ver=1" type="text/css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="../NGTISSOT/js/pace-master/themes/blue/pace-theme-minimal.css">
-        <link rel="icon" href="../NGTISSOT/images/홈페이지용_NT로고.png" sizes="16x16">
-        <script type="text/javascript" src="../NGTISSOT/js/pace-master/pace.min.js"></script>
-        <script type="text/javascript" src="../NGTISSOT/js/jquery-1.12.4.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script type="text/javascript" src="js/ui.js"></script>
-        <title>NG TISSOT</title>
-    </head>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="NG TISSOT 클랜 홈페이지입니다.">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="author" content="P1ush">
+    <meta name="robots" content="index,nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:url" content="https://plush777.github.io/NGTISSOT">
+    <meta property="og:title" content="NG TISSOT">
+    <meta property="og:image" content="images/img-card.png">
+    <meta property="og:description" content="NG TISSOT 클랜 홈페이지입니다.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NG TISSOT">
+    <meta name="twitter:url" content="https://plush777.github.io/NGTISSOT">
+    <meta name="twitter:image" content="images/img-card.png">
+    <meta name="twitter:description" content="NG TISSOT 클랜 홈페이지입니다.">
+    <link rel="stylesheet" href="css/style.css?ver=1" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/pace-master/themes/blue/pace-theme-minimal.css">
+    <link rel="icon" href="images/홈페이지용_NT로고.png" sizes="16x16">
+    <script type="text/javascript" src="js/pace-master/pace.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
+    <title>NG TISSOT</title>
+</head>
 <body>
+    <noscript>
+        <style>
+            .wrap{display: none;}
+        </style>
+        <div style="position: fixed; width: 100%; height: 100%; z-index: 1000000; background-color: #fff;">
+            <p>자바스크립트가 비활성화 되어있는 환경에서는 콘텐츠를 볼 수 없습니다. 활성화로 바꿔주세요.<br/>
+            (Content cannot be viewed in an environment where JavaScript is disabled. Please change it to activation.)
+            </p>
+        </div>
+    </noscript>
     <div id="skip-nav">
         <a href="#section">메뉴 건너뛰기</a>
         <a href="#footer">콘텐츠 건너뛰기</a>
@@ -30,7 +51,7 @@
                 <div class="header-contents">
                     <h1 class="logo" title="NT로고">
                         <a href="index.html">
-                            <img src="../NGTISSOT/images/홈페이지용_NT로고.png" alt="메인로고">
+                            <img src="images/홈페이지용_NT로고.png" alt="메인로고">
                         </a>
                     </h1>
                     <div class="nav" role="navigation">
@@ -99,13 +120,17 @@
                 <div class="tabWrap type01">
                     <div class="tabNav">
                         <ul class="tabList">
-                            <li class="active">명예의 전당</li>
-                            <li>이 달의 명예의 전당</li>
+                            <li class="active">
+                                <a href="javascript:void(0)">명예의 전당</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">이 달의 명예의 전당</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="tabCont active">
                         <div class="img-area mt">
-                            <img src="../NGTISSOT/images/dBHallOfFameLogo.png" alt="명예의전당 대표 이미지">
+                            <img src="images/dBHallOfFameLogo.png" alt="명예의전당 대표 이미지">
                         </div>
                         <div class="sub-title">
                             <strong>클랜 이벤트</strong>
@@ -436,14 +461,90 @@
                             <span>명예의 전당은 수시로 업데이트 됩니다.</span>
                         </div>
                     </div>
-                    <div class="tabCont">
+                    <div class="tabCont yearCont">
                         <div class="img-area mt">
-                            <img src="../NGTISSOT/images/dBHallOfFameLogo.png" alt="명예의전당 대표 이미지">
+                            <img src="images/dBHallOfFameLogo.png" alt="명예의전당 대표 이미지">
                         </div>
-                        <div class="title phalf desc">
-                            <span>2021년 기준</span>
+                        <div class="title phalf desc flex ac">
+                            <p>
+                                <span class="yearTitle">2022</span>
+                                년 기준
+                            </p>
+                            
+                            <div class="yearListContainer">
+                                <div class="yearTxt">
+                                    <span>2022</span>
+                                    <svg width="16" height="16" viewBox="0 0 29.253 15.753">
+                                        <g id="chevron-down" transform="translate(-3.374 -10.123)">
+                                          <path id="패스_19" data-name="패스 19" d="M3.7,10.454a1.125,1.125,0,0,1,1.593,0L18,23.159,30.7,10.453A1.126,1.126,0,1,1,32.3,12.046l-13.5,13.5a1.125,1.125,0,0,1-1.593,0L3.7,12.046a1.125,1.125,0,0,1,0-1.593Z" fill-rule="evenodd"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                
+                                <ul class="yearSelect">
+                                    <li>
+                                        <a href="javascript:void(0)">2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">2022</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 모바일에서 월 선택 -->
+                            <div class="monthListContainer">
+                                <div class="monthTxt">
+                                    <span></span>
+                                    <svg width="16" height="16" viewBox="0 0 29.253 15.753">
+                                        <g id="chevron-down" transform="translate(-3.374 -10.123)">
+                                          <path id="패스_19" data-name="패스 19" d="M3.7,10.454a1.125,1.125,0,0,1,1.593,0L18,23.159,30.7,10.453A1.126,1.126,0,1,1,32.3,12.046l-13.5,13.5a1.125,1.125,0,0,1-1.593,0L3.7,12.046a1.125,1.125,0,0,1,0-1.593Z" fill-rule="evenodd"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                
+                                <ul class="monthSelect">
+                                    <li>
+                                        <a href="javascript:void(0)">1월</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">2월</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">3월</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">4월</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">5월</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">6월</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">7월</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">8월</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">9월</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">10월</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">11월</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">12월</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="tabWrap type02">
+
+                        <!-- 2021 -->
+                        <div class="tabWrap type02 y21">
                             <div class="tabNav">
                                 <ul class="tabList">
                                     <li class="active">1월</li>
@@ -462,47 +563,47 @@
                             </div>
 
                             <!-- 1월-->
-                            <div class="tabCont active">
+                            <div class="tabCont jan active">
                                 <div class="tab-frame flex jc">
                                     <p>1월 데이터가 없습니다.</p>
                                 </div>
                             </div>
 
                             <!-- 2월 -->
-                            <div class="tabCont">
+                            <div class="tabCont feb">
                                 <div class="tab-frame flex jc">
                                     <p>2월 데이터가 없습니다.</p>
                                 </div>
                             </div>
 
                             <!-- 3월-->
-                            <div class="tabCont">
+                            <div class="tabCont mar">
                                 <div class="tab-frame flex jc">
                                     <p>3월 데이터가 없습니다.</p>
                                 </div>
                             </div>
 
                             <!-- 4월 -->
-                            <div class="tabCont">
+                            <div class="tabCont apr">
                                 <div class="tab-frame flex jc">
                                     <p>4월 데이터가 없습니다.</p>
                                 </div>
                             </div>
 
                            <!-- 5월 -->
-                            <div class="tabCont">
+                            <div class="tabCont may">
                                 <div class="tab-frame flex jc">
                                     <p>5월 데이터가 없습니다.</p>
                                 </div>
                             </div>
 
                             <!-- 6월 -->
-                            <div class="tabCont">
+                            <div class="tabCont jun">
                                 <div class="tab-frame">
                                     <div class="table-Area">
                                         <div class="table">
                                             <table>
-                                                <caption>이 달의 명예의 전당 테이블</caption>
+                                                <caption>이 달의 명예의 전당 테이블 6월</caption>
                                                 <colgroup>
                                                     <col style="width:auto"/>
                                                     <col style="width:150px;"/>
@@ -526,33 +627,33 @@
                             </div>
 
                             <!-- 7월 -->
-                            <div class="tabCont">
+                            <div class="tabCont jul">
                                 <div class="tab-frame flex jc">
                                     <p>7월 데이터가 없습니다.</p>
                                 </div>
                             </div>
 
                             <!-- 8월 -->
-                            <div class="tabCont">
+                            <div class="tabCont aug">
                                 <div class="tab-frame flex jc">
                                     <p>8월 데이터가 없습니다.</p>
                                 </div>
                             </div>
 
                             <!-- 9월 -->
-                            <div class="tabCont">
+                            <div class="tabCont sep">
                                 <div class="tab-frame flex jc">
                                     <p>9월 데이터가 없습니다.</p>
                                 </div>
                             </div>
 
                             <!-- 10월 -->
-                            <div class="tabCont">
+                            <div class="tabCont oct">
                                 <div class="tab-frame">
                                     <div class="table-Area">
                                         <div class="table">
                                             <table>
-                                                <caption>이 달의 명예의 전당 테이블</caption>
+                                                <caption>이 달의 명예의 전당 테이블 10월</caption>
                                                 <colgroup>
                                                     <col style="width:auto;"/>
                                                     <col style="width:150px;"/>
@@ -576,12 +677,12 @@
                             </div>
 
                             <!-- 11월 -->
-                            <div class="tabCont">
+                            <div class="tabCont nov">
                                 <div class="tab-frame">
                                     <div class="table-Area">
                                         <div class="table">
                                             <table>
-                                                <caption>이 달의 명예의 전당 테이블</caption>
+                                                <caption>이 달의 명예의 전당 테이블 11월</caption>
                                                 <colgroup>
                                                     <col style="width:auto"/>
                                                     <col style="width:150px;"/>
@@ -605,7 +706,223 @@
                             </div>
 
                             <!-- 12월 -->
-                            <div class="tabCont">
+                            <div class="tabCont dec">
+                                <div class="tab-frame">
+                                    <div class="table-Area">
+                                        <div class="table">
+                                            <table>
+                                                <caption>이 달의 명예의 전당 테이블 12월</caption>
+                                                <colgroup>
+                                                    <col style="width:auto"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>은하 (#2GVCPJ2J)</td>
+                                                        <td>클랜 운영</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2022 -->
+                        <div class="tabWrap type02 y22 active">
+                            <div class="tabNav">
+                                <ul class="tabList">
+                                    <li class="jan">1월</li>
+                                    <li class="feb">2월</li>
+                                    <li class="mar">3월</li>
+                                    <li class="apr">4월</li>
+                                    <li class="may">5월</li>
+                                    <li class="jun">6월</li>
+                                    <li class="jul">7월</li>
+                                    <li class="aug">8월</li>
+                                    <li class="sep">9월</li>
+                                    <li class="oct">10월</li>
+                                    <li class="nov">11월</li>
+                                    <li class="dec">12월</li>
+                                </ul>
+                            </div>
+
+                            <!-- 1월-->
+                            <div class="tabCont jan">
+                                <div class="tab-frame flex jc">
+                                    <p>1월 데이터가 없습니다.</p>
+                                </div>
+                            </div>
+
+                            <!-- 2월 -->
+                            <div class="tabCont feb">
+                                <div class="tab-frame">
+                                    <div class="table-Area">
+                                        <div class="table">
+                                            <table>
+                                                <caption>이 달의 명예의 전당 테이블 : 2022년 2월</caption>
+                                                <colgroup>
+                                                    <col style="width:auto"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>wizkid (#8U928YUJ9J)</td>
+                                                        <td>클랜전 상위권</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Gonzoo (#9VYV99UQJ)</td>
+                                                        <td>클랜전 상위권</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3월-->
+                            <div class="tabCont mar">
+                                <div class="tab-frame">
+                                    <div class="table-Area">
+                                        <div class="table">
+                                            <table>
+                                                <caption>이 달의 명예의 전당 테이블 : 2022년 3월</caption>
+                                                <colgroup>
+                                                    <col style="width:auto"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>마우스는 로지텍 (#LGRRCY88J)</td>
+                                                        <td>클랜전 상위권</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>황제예소건 (#U0R82YGP)</td>
+                                                        <td>클랜전 상위권</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4월 -->
+                            <div class="tabCont apr">
+                                <div class="tab-frame">
+                                    <div class="table-Area">
+                                        <div class="table">
+                                            <table>
+                                                <caption>이 달의 명예의 전당 테이블 : 2022년 4월</caption>
+                                                <colgroup>
+                                                    <col style="width:auto"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>안승헌씨 (#8V2U2PCJJ)</td>
+                                                        <td>클랜전 상위권</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>송언 (#YYCVYUVUG)</td>
+                                                        <td>카드지원 1000 이상</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>F1OW3R (#8808P20YJ)</td>
+                                                        <td>카드지원 1000 이상</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>JDK (#PPLUV0VLJ)</td>
+                                                        <td>카드지원 1000 이상</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>우진왕 (#829JP82JU)</td>
+                                                        <td>카드지원 1000 이상</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           <!-- 5월 -->
+                            <div class="tabCont may">
+                                <div class="tab-frame flex jc">
+                                    <p>5월 데이터가 없습니다.</p>
+                                </div>
+                            </div>
+
+                            <!-- 6월 -->
+                            <div class="tabCont jun">
+                                <div class="tab-frame flex jc">
+                                    <p>6월 데이터가 없습니다.</p>
+                                </div>
+                            </div>
+
+                            <!-- 7월 -->
+                            <div class="tabCont jul">
+                                <div class="tab-frame flex jc">
+                                    <p>7월 데이터가 없습니다.</p>
+                                </div>
+                            </div>
+
+                            <!-- 8월 -->
+                            <div class="tabCont aug">
+                                <div class="tab-frame flex jc">
+                                    <p>8월 데이터가 없습니다.</p>
+                                </div>
+                            </div>
+
+                            <!-- 9월 -->
+                            <div class="tabCont sep">
+                                <div class="tab-frame flex jc">
+                                    <p>9월 데이터가 없습니다.</p>
+                                </div>
+                            </div>
+
+                            <!-- 10월 -->
+                            <div class="tabCont oct">
+                                <div class="tab-frame flex jc">
+                                    <p>10월 데이터가 없습니다.</p>
+                                </div>
+                            </div>
+
+                            <!-- 11월 -->
+                            <div class="tabCont nov">
+                                <div class="tab-frame flex jc">
+                                    <p>11월 데이터가 없습니다.</p>
+                                </div>
+                            </div>
+
+                            <!-- 12월 -->
+                            <div class="tabCont dec">
                                 <div class="tab-frame flex jc">
                                     <p>12월 데이터가 없습니다.</p>
                                 </div>
@@ -673,51 +990,14 @@
                                 <span>Velog</span>
                             </a>
                         </li>
+                        <li class="darkMode">
+                            <button type="button" class="btnDarkMode">
+                                <span></span>
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="darkArea">
-            <div class="dark-inner">
-                <div class="darkToggle">
-                    <button type="button" id="btnDarkToggle"></button>
-                    <span>다크모드로 전환</span>
-                </div>
-            </div>
-        </div>
-        <div id="mobile-quick">
-            <ul>
-                <li>
-                    <a href="https://discord.gg/wGdBFRMWHW" title="Discord" aria-label="quick Discord">
-                        <i class="ico ico-discord"></i>
-                        <span>Discord</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Plush777" title="Github" aria-label="quick Github">
-                        <i class="ico ico-github"></i>
-                        <span>Github</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://velog.io/@sky" title="Velog" aria-label="quick Velog">
-                        <i class="ico ico-velog"></i>
-                        <span>Velog</span>
-                    </a>
-                </li>
-                <li>
-                    <div class="mobile-darkToggle darkToggle">
-                        <svg class="mobile-darklight-svg" width="24px" height="24px" viewBox="0 0 20 20">
-                            <path d="M10.423839,3 C10.1490474,3.80837289 10,4.67486099 10,5.57616098 C10,9.99443898 13.581722,13.576161 
-                            18,13.576161 C18.9013,13.576161 19.7677881,13.4271135 20.576161,13.152322 C19.5038921,16.3066875 16.516978,18.576161 13,18.576161 C8.581722,18.576161 
-                            5,14.994439 5,10.576161 C5,7.05918297 7.26947343,4.07226889 10.423839,3 Z"/>
-                        </svg>
-                        <button type="button">
-                            <span>Dark Mode</span>
-                        </button>
-                    </div>
-                </li>
-            </ul>
         </div>
     </div>
     <script type="text/javascript"> 

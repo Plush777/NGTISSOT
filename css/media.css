@@ -117,6 +117,28 @@ background-color: var(--mobile-nav-right-bg);}
 .mobile-nav-right .mnr-inner .mobile-nav-list li a{display: block; text-indent: 10px;}
 /* --- */
 
+.tabWrap.y21 .tabNav{
+    display: none;
+}
+
+.wrap .monthListContainer{
+    display: block;
+}
+
+.wrap .tabWrap.y21 .tabCont .tab-frame{
+    border: 0;
+    padding: 0;
+}
+
+.tabWrap.y22 .tabNav{
+    display: none;
+}
+
+.wrap .tabWrap.y22 .tabCont .tab-frame{
+    border: 0;
+    padding: 0;
+}
+
 /* section */
 .section.s-default{min-height: 600px;}
 .section.s-default .sec-inner .secCont{flex-direction: column; justify-content: center; align-items: inherit;}

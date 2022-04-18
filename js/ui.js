@@ -49,18 +49,26 @@ $(function(){
 		}
 	})
 
+	let imgArea = $('.img-area img');
+	if(localStorage.getItem('theme') === 'dark'){
+		imgArea.attr('src', 'images/dBHallOfFameLogo-white.png');
+	} else if (localStorage.getItem('theme') === 'light') {
+		imgArea.attr('src', 'images/dBHallOfFameLogo.png');
+	}
+
 	$('.btnDarkMode').on({
 		"click":function(){
 			if(localStorage.getItem('theme') === 'dark'){
                 $(this).attr('aria-pressed', 'true');
                 $(this).find('span').text('라이트모드');
+				imgArea.attr('src', 'images/dBHallOfFameLogo-white.png');
             } else if($(localStorage.getItem('theme') === 'light')) {
                 $(this).attr('aria-pressed', 'false');
                 $(this).find('span').text('다크모드');
+				imgArea.attr('src', 'images/dBHallOfFameLogo.png');
             }
 		}
 	})
-
 
     $(".btn-top").click(function() {
         $('html').animate({scrollTop : 0}, 600);
@@ -119,19 +127,203 @@ $(function(){
 	// 	}).scroll();
 	// });
 
-	var N_font = [
-		'font-family: RecipeKorea',
-		'font-size:60px',
-		'color: #4b89dc'
-	].join(';');
+	$('.yearListContainer .yearTxt').on({
+		"click":function(){
+			$(this).siblings('.yearSelect').toggleClass('active');
+		}
+	});
 
-	console.log('%cN',N_font);
+	$('.yearListContainer .yearSelect li').on({
+		"click":function(){
+			$(this).addClass('active').siblings('li').removeClass('active');
+			$(this).closest('.yearSelect').siblings('.yearTxt').find('span').text($(this).text());
+			$(this).closest('.yearSelect').removeClass('active');
+			if($(this).hasClass('active')){
+				$(this).closest('.yearSelect').parent('.yearListContainer').siblings('p').find('.yearTitle').text($(this).text());
+			}
 
-	var T_font = [
-		'font-family: RecipeKorea',
-		'font-size:60px',
-		'color: #fff'
-	].join(';');
+			//2021년
+			if($(this).index() === 0){
+				$(this).parents('.title.desc').siblings('.y21').addClass('active').siblings('.y22').removeClass('active');
+				if($(this).hasClass('active')){
+					$(this).closest('.yearSelect').parent('.yearListContainer').siblings('.monthListContainer').find('.monthTxt').children('span').text('1월');
+				}
+			} 
+			
+			//2022년
+			else if($(this).index() === 1){
+				$(this).parents('.title.desc').siblings('.y22').addClass('active').siblings('.y21').removeClass('active');
+			}
+		}
+	});
 
-	console.log('%cT',T_font);
+	$('.monthListContainer .monthTxt').on({
+		"click":function(){
+			$(this).siblings('.monthSelect').toggleClass('active');
+		}
+	});
+
+	//모바일 월 선택
+	$('.monthListContainer .monthSelect li').on({
+		"click":function(){
+			$(this).addClass('active').siblings('li').removeClass('active');
+			$(this).closest('.monthSelect').siblings('.monthTxt').find('span').text($(this).text());
+			$(this).closest('.monthSelect').removeClass('active');
+
+			// 2022년 
+			if($('.y22').hasClass('active')){
+				switch($(this).index()){
+					case 0:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.jan').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 1:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.feb').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 2:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.mar').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 3:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.apr').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 4:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.may').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 5:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.jun').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 6:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.jul').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 7:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.aug').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 8:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.sep').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 9:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.oct').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 10:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.nov').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 11:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.dec').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+				}
+			} 
+			
+			// 2021년
+			else if($('.y21').hasClass('active')){
+				switch($(this).index()){
+					case 0:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.jan').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 1:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.feb').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 2:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.mar').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 3:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.apr').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 4:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.may').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 5:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.jun').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 6:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.jul').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 7:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.aug').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 8:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.sep').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 9:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.oct').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 10:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.nov').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+					case 11:
+						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.dec').addClass('active').siblings('.tabCont').removeClass('active');
+						break;
+				}
+			}
+		}
+	});
+
+	//현재 월 비교해서 tabNav 엑티브
+	function dateCompare(date1) {
+		var date1 = new Date();
+		var month1 = date1.getMonth() + 1;
+		
+		switch (month1) {
+			case 1:
+				$('.tabWrap.y22 .tabNav .tabList .jan').addClass('active');
+				$('.tabWrap.y22 .tabCont.jan').addClass('active');
+				$('.monthListContainer .monthTxt span').text('1월');
+				break;
+			case 2:
+				$('.tabWrap.y22 .tabNav .tabList .feb').addClass('active');
+				$('.tabWrap.y22 .tabCont.feb').addClass('active');
+				$('.monthListContainer .monthTxt span').text('2월');
+				break;
+			case 3:
+				$('.tabWrap.y22 .tabNav .tabList .mar').addClass('active');
+				$('.tabWrap.y22 .tabCont.mar').addClass('active');
+				$('.monthListContainer .monthTxt span').text('3월');
+				break;
+			case 4:
+				$('.tabWrap.y22 .tabNav .tabList .apr').addClass('active');
+				$('.tabWrap.y22 .tabCont.apr').addClass('active');
+				$('.monthListContainer .monthTxt span').text('4월');
+				break;
+			case 5:
+				$('.tabWrap.y22 .tabNav .tabList .may').addClass('active');
+				$('.tabWrap.y22 .tabCont.may').addClass('active');
+				$('.monthListContainer .monthTxt span').text('5월');
+				break;
+			case 6:
+				$('.tabWrap.y22 .tabNav .tabList .jun').addClass('active');
+				$('.tabWrap.y22 .tabCont.jun').addClass('active');
+				$('.monthListContainer .monthTxt span').text('6월');
+				break;
+			case 7:
+				$('.tabWrap.y22 .tabNav .tabList .jul').addClass('active');
+				$('.tabWrap.y22 .tabCont.jul').addClass('active');
+				$('.monthListContainer .monthTxt span').text('7월');
+				break;
+			case 8:
+				$('.tabWrap.y22 .tabNav .tabList .aug').addClass('active');
+				$('.tabWrap.y22 .tabCont.aug').addClass('active');
+				$('.monthListContainer .monthTxt span').text('8월');
+				break;
+			case 9:
+				$('.tabWrap.y22 .tabNav .tabList .sep').addClass('active');
+				$('.tabWrap.y22 .tabCont.sep').addClass('active');
+				$('.monthListContainer .monthTxt span').text('9월');
+				break;
+			case 10:
+				$('.tabWrap.y22 .tabNav .tabList .oct').addClass('active');
+				$('.tabWrap.y22 .tabCont.oct').addClass('active');
+				$('.monthListContainer .monthTxt span').text('10월');
+				break;
+			case 11:
+				$('.tabWrap.y22 .tabNav .tabList .nov').addClass('active');
+				$('.tabWrap.y22 .tabCont.nov').addClass('active');
+				$('.monthListContainer .monthTxt span').text('11월');
+				break;
+			case 12:
+				$('.tabWrap.y22 .tabNav .tabList .dec').addClass('active');
+				$('.tabWrap.y22 .tabCont.dec').addClass('active');
+				$('.monthListContainer .monthTxt span').text('12월');
+				break;
+		}
+	}
+
+	dateCompare();
 });

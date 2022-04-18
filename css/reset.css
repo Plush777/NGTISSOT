@@ -124,6 +124,10 @@ pre {
     white-space: pre-line; 
 }
 
+svg {
+    fill: currentColor;
+}
+
 /*클래스 */
 
 .inner {
