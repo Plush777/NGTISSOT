@@ -92,26 +92,28 @@ $(function(){
 	/*모바일 메뉴 클릭 시 모바일 사이드 메뉴와 dimmed가 보여짐. */
 	$('.mobile-nav').on({
 		"click":function(){
-			$('#dimmed').show();
+			$('#dimmed').fadeIn();
 		}
 	});
 	$('.mobile-nav').on({
 		"click":function(){
-			$('.mobile-nav-right').show();
+			$('.mobile-nav-right').css('right', '0');
+			$('.mobile-nav-right').css('visibility', 'visible');
 		}
 	});
 
 	/*사이드 메뉴에서 닫기 버튼을 누르면 사이드 메뉴와 dimmed가 숨겨짐. */
 	$('.mnr-nav-close').on({
 		"click":function(){
-			$('.mobile-nav-right').hide();
-			$('#dimmed').hide();
+			$('.mobile-nav-right').css('right','-280px');
+			$('.mobile-nav-right').css('visibility', 'hidden');
+			$('#dimmed').fadeOut();
 		}
 	});
 
 	/* dimmed를 클릭하면 dimmed 제거 , 사이드 메뉴 숨기기 */
 	$(document).on('click','#dimmed',function(){
-		$(this).remove();
+		$(this).hide();
 		$('.mobile-nav-right').hide();
 	});
 
@@ -174,40 +176,40 @@ $(function(){
 			if($('.y22').hasClass('active')){
 				switch($(this).index()){
 					case 0:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.jan').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.jan').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 1:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.feb').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.feb').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 2:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.mar').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.mar').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 3:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.apr').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.apr').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 4:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.may').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.may').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 5:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.jun').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.jun').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 6:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.jul').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.jul').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 7:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.aug').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.aug').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 8:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.sep').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.sep').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 9:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.oct').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.oct').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 10:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.nov').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.nov').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 11:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y22').find('.tabCont.dec').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y22').find('.tabCont.dec').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 				}
 			} 
@@ -216,40 +218,40 @@ $(function(){
 			else if($('.y21').hasClass('active')){
 				switch($(this).index()){
 					case 0:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.jan').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.jan').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 1:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.feb').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.feb').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 2:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.mar').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.mar').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 3:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.apr').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.apr').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 4:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.may').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.may').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 5:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.jun').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.jun').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 6:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.jul').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.jul').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 7:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.aug').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.aug').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 8:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.sep').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.sep').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 9:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.oct').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.oct').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 10:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.nov').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.nov').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 					case 11:
-						$(this).parents('.monthListContainer').parent('.title.desc').siblings('.tabWrap.y21').find('.tabCont.dec').addClass('active').siblings('.tabCont').removeClass('active');
+						$(this).parents('.monthListContainer').parents('.title.desc').siblings('.tabWrap.y21').find('.tabCont.dec').addClass('active').siblings('.tabCont').removeClass('active');
 						break;
 				}
 			}
@@ -326,4 +328,25 @@ $(function(){
 	}
 
 	dateCompare();
+
+	let lastScrollTop = 0;
+	let decidedScrollTop = 120;
+    $(window).scroll(function () {
+        let st = $(this).scrollTop();
+        if (st > decidedScrollTop) {
+            $('header').addClass('fixed');
+        } else if (st < decidedScrollTop) {
+            $('header').removeClass('fixed');
+        }
+
+		if(window.matchMedia('(max-width: 628px)').matches) {
+			if (st > lastScrollTop) {
+				$('header').removeClass('headDown').addClass('headUp');
+			} else {
+				$('header').removeClass('headUp').addClass('headDown');
+			}
+		}
+
+        lastScrollTop = st;
+    });
 });

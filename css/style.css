@@ -6,7 +6,7 @@
   font-family: 'Noto sans';
 }
 
-.wrap .mobile-nav-right{display: none;}
+.wrap .mobile-nav-right{visibility: hidden; right: -280px; transition: .3s;}
 
 .wrap.main{padding-top: 104px;}
 
@@ -31,14 +31,28 @@
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
   box-sizing: border-box;
   width: 100%;
-  box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 10%)
+  box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 10%);
+  transition: .3s ease-in-out;
 }
+
+header.fixed{
+  position: fixed;
+}
+
+header.headUp{
+  top: -100px;
+}
+
+header.headDown{
+  top: 0;
+}
+
 header #today{
   font-family: 'SangSangShin';
   position: absolute;
@@ -143,7 +157,7 @@ header .nav.sub li:last-child:after{
   min-height: 400px !important;
   background-color: #333333;
 }
-.section.s05 .loc{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.section.s05 .loc{flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0 10px; box-sizing: border-box;}
 
 .section .gifArea{width: 100%; display: inline-block;}
 .section .gifArea img{width: 86%; border-radius: 20px; box-shadow: 20px 17px 5px rgb(0 0 0 / 8%);}
@@ -424,7 +438,8 @@ body{
   --mobile-nav:#000;
   --mobile-nav-right-bg:#292a2d;
   --mobile-nav-right-txt:#fff;
-  --mobile-nav-right-bd:#fff;
+  --mobile-nav-right-bd:#ddd;
+  --mobile-nav-close: #333;
   --quick-bg: #fff;
   --today-txt:#000;
   --accordion-bg:#fafafa;
@@ -448,9 +463,10 @@ body[data-theme="light"] {
   --header-sub-border:#ebebeb;
   --accordion-head-txt:#3535f5;
   --mobile-nav:#000;
-  --mobile-nav-right-bg:#292a2d;
-  --mobile-nav-right-txt:#fff;
-  --mobile-nav-right-bd:#fff;
+  --mobile-nav-right-bg:#fff;
+  --mobile-nav-right-txt:#333;
+  --mobile-nav-right-bd:#ddd;
+  --mobile-nav-close: #333;
   --quick-bg: #fff;
   --today-txt:#000;
   --accordion-bg:#fafafa;
@@ -473,9 +489,10 @@ body[data-theme="dark"] {
   --header-sub-border:#3a3b3d;
   --accordion-head-txt:#0094ff;
   --mobile-nav:#fff;
-  --mobile-nav-right-bg:#fff;
-  --mobile-nav-right-txt:#000;
+  --mobile-nav-right-bg:#292a2d;
+  --mobile-nav-right-txt:#fff;
   --mobile-nav-right-bd:#3a3b3d;
+  --mobile-nav-close: #fff;
   --quick-bg: #292a2d;
   --today-txt:#fff;
   --accordion-bg:#444;
