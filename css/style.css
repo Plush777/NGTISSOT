@@ -6,7 +6,7 @@
   font-family: 'Noto sans';
 }
 
-.wrap .mobile-nav-right{visibility: hidden; right: -280px; transition: .3s;}
+.wrap .mobile-nav-right{display: none; opacity: 0; visibility: hidden; right: -280px; transition: .3s;}
 
 .wrap.main{padding-top: 104px;}
 

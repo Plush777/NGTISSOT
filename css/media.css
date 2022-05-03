@@ -100,6 +100,7 @@
     /* --- */
 
     /* 모바일 사이드 메뉴 */
+    .wrap .mobile-nav-right{display: block;}
     .mobile-nav-right{position: fixed; top: 0; right: 0; z-index: 9998; width: 280px; height: 100%;
     background-color: var(--mobile-nav-right-bg);}
     .mobile-nav-right .mnr-header{position: relative; height: 60px; border-bottom: 1px solid; border-color: var(--mobile-nav-right-bd);}
