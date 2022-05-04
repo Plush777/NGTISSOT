@@ -20,17 +20,12 @@
    .section.s05 p{white-space: nowrap;}
    /* --- */
   
-   /* footer */
-   .footer{width: 100vw;}
-   .footer .footer-bottom .inner{width: auto;}
-   /* --- */
-  
     /* etc */
     .wrap .pd{padding: 0 30px 100px 30px; box-sizing: border-box;}
 }
   
   
-  @media(max-width:1295px){
+@media(max-width:1295px){
     .wrap.main{padding-top: 98px;}
     
     /* header */
@@ -55,7 +50,6 @@
     .tab-frame .table-Area .table table td{font-size: 11px;}
     /* --- */
 }
-  
   
 @media (max-width:768px){
     .wrap.main{padding-top: 93px;}
@@ -163,11 +157,6 @@
     .section .accordion.qna .dep1 li .head .head-txt{width: 80%; font-size: 15px;}
     /* --- */
 
-    /* footer */
-    .footer{padding-bottom: 60px;}
-    .footer .footer-head{padding: 15px;}
-    /* --- */
-
     /* etc */
     #quick-Area{width: 100%; bottom: 0; right: 0;}
     #quick-Area .quick-btn{width: 100%; border-radius: 0; padding: 0;}
@@ -187,6 +176,13 @@
     header #today{display: block;}
     .wrap .pd{padding: 0 30px 70px 30px;}
     .section .title.pthalf{padding-top: 0;}
+
+    /* 220504 */
+    .section .box-area .tb-li ul{flex-direction: column;}
+    .section .box-area .tb-li ul li+li{margin-top: 30px;}
+    .section .box-area .tb-li ul li a{padding: 16.5px;}
+    .section .box-area .tb-li ul li:before{display: none;}
+    .footer{display: none;}
 }
 
 @media (max-width: 410px) {
@@ -194,6 +190,10 @@
     .tabWrap.type01 .tabCont.yearCont .title.desc .listContainerWrapper{ margin-top: 15px;}
     .tabWrap.type01 .tabCont.yearCont .title.desc .listContainerWrapper .yearListContainer{margin-left: 0;}
     .section .title{padding-top: 25px;}
+}
+
+@media (max-width: 350px) {
+    header #today{display: none;}
 }
 
 @media (prefers-color-scheme: light) {

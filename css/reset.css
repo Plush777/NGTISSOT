@@ -54,6 +54,13 @@
     src: url(./font/sshin/eot/SangSangShin.eot);
     src: url(./font/sshin/eot/SangSangShin.eot?#iefix) format("embedded-opentype"), url(./font/sshin/woff/SangSangShin.woff) format("woff");
 }
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
     
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, article, aside, footer, header, section, summary {
     margin: 0;
