@@ -99,6 +99,7 @@ $(function(){
 		"click":function(){
 			$('.mobile-nav-right').css('right', '0');
 			$('.mobile-nav-right').css('visibility', 'visible');
+			$('.mobile-nav-right').css('opacity', '1');
 		}
 	});
 
@@ -107,14 +108,15 @@ $(function(){
 		"click":function(){
 			$('.mobile-nav-right').css('right','-280px');
 			$('.mobile-nav-right').css('visibility', 'hidden');
+			$('.mobile-nav-right').css('opacity', '0');
 			$('#dimmed').fadeOut();
 		}
 	});
 
 	/* dimmed를 클릭하면 dimmed 제거 , 사이드 메뉴 숨기기 */
 	$(document).on('click','#dimmed',function(){
-		$(this).hide();
-		$('.mobile-nav-right').hide();
+		$(this).fadeOut();
+		$('.mobile-nav-right').css('right','-280px');
 	});
 
 	// //퀵메뉴1
