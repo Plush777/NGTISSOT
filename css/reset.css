@@ -67,6 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body, html {
+    scroll-behavior: smooth;
     width: 100%;
 }
 
