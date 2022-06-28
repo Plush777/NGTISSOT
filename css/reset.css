@@ -41,6 +41,12 @@
     src: url(./font/notoSans/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSansKR-Medium-Hestia.woff) format("woff"); 
 }
 @font-face {
+    font-family: 'Noto Sans SemiBold';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./font/notoSans/eot/NotoSans-SemiBold.eot);
+}
+@font-face {
     font-family: 'Nanum Square B';
     font-style: normal;
     font-weight: 400;
@@ -74,7 +80,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body, html {
-    scroll-behavior: smooth;
     width: 100%;
 }
 
@@ -132,6 +137,10 @@ pre {
     white-space: pre-line; 
 }
 
+em{
+    font-style: normal;
+}
+
 svg {
     fill: currentColor;
 }
@@ -180,4 +189,8 @@ svg {
 
 .flex.col{
     flex-direction: column;
+}
+
+.flex.g40{
+    gap: 40px;
 }

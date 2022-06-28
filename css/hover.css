@@ -1,0 +1,5 @@
+@media (hover: hover) {
+    .nav ul li:hover a{
+        color: var(--primary);
+    }
+}
