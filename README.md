@@ -1,12 +1,7 @@
-# 📌Clash Royle : NG TISSOT 
-Clash Royle 이라는 게임의 클랜 홈페이지 NG TISSOT 작업물입니다.
+# NG TISSOT 
+Clash Royle 이라는 게임의 클랜 홈페이지 작업물입니다.
 <br><br>
-## ❤ Credits
-홈페이지 기획 및 디자인 : Plush777 <br>
-코드 작성 : Plush777 <br>
-코드 에디터 : VS Code <br>
-디자인 피드백 : SE7EN
-### 홈페이지 제작할 때 참고한 것들 : <br>
+
 #### 메인 및 메인 반응형 레이아웃 참고
 - 네이버 웨일 (https://whale.naver.com/) 
 - 파리바게뜨 (https://www.paris.co.kr/)
@@ -14,11 +9,16 @@ Clash Royle 이라는 게임의 클랜 홈페이지 NG TISSOT 작업물입니다
 
 <br>
 
-#### 사용한 라이브러리 또는 플러그인
+#### 서브페이지 디자인 참고
+- 네이버 커리어 (https://recruit.navercorp.com/)
+
+<br>
+
+#### 사용한 라이브러리/API
 - Pace.js (https://codebyzach.github.io/pace/)
 - Aos.js (https://michalsnik.github.io/aos/)
-- Modernizr (https://modernizr.com/)
 - jquery (https://jquery.com/)
+- easeScroll.js (https://creativestudio.kr/2113)
 
 <br>
 
