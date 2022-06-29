@@ -2,4 +2,8 @@
     .nav ul li:hover a{
         color: var(--primary);
     }
+
+    .btn.type02:hover{
+        transform: translateY(-5px);
+    }
 }

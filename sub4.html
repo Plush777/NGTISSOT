@@ -18,15 +18,17 @@
     <meta name="twitter:url" content="https://plush777.github.io/NGTISSOT">
     <meta name="twitter:image" content="images/img-card.png">
     <meta name="twitter:description" content="NG TISSOT 클랜 홈페이지입니다.">
-    <link rel="stylesheet" href="css/style.css?ver=1" type="text/css">
-    <link rel="stylesheet" href="css/media.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css?ver=1"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="stylesheet" href="css/hover.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="js/pace-master/themes/blue/pace-theme-minimal.css">
     <link rel="icon" href="images/홈페이지용_NT로고.png" sizes="16x16">
-    <script type="text/javascript" src="js/pace-master/pace.min.js"></script>
-    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="js/ui.js"></script>
+    <script src="js/pace-master/pace.min.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="./js/lib/jquery.easeScroll.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/theme.js" defer></script>
     <title>NG TISSOT</title>
 </head>
 <body>
@@ -40,13 +42,8 @@
             </p>
         </div>
     </noscript>
-    <div id="skip-nav">
-        <a href="#section">메뉴 건너뛰기</a>
-        <a href="#footer">콘텐츠 건너뛰기</a>
-    </div>
     <div class="wrap">
         <header role="banner">
-            <div id="today"></div>
             <div class="inner">
                 <div class="header-contents">
                     <h1 class="logo" title="NT로고">
@@ -110,128 +107,84 @@
         <div id="dimmed"></div>
         <section class="section" id="section" role="section">
             <div class="inner pd">
-                <div class="title-desc-Area">
-                    <div class="title pthalf">
-                        <span>클랜 가입문의</span>
-                        <p>클랜 가입에 대한 내용을 확인해보세요.</p>
-                    </div>
+                <div class="title-area">
+                    <h1><em class="txt blue">E</em>nquiry</h1>
+                    <p class="desc">클랜가입에 대한 내용을 확인해보세요.</p>
                 </div>
-                <div class="sub-title">
-                    <span>✔ 문의 하기 전에!</span>
-                </div>
-                <div class="row">
-                    <div class="conditions">
-                        <span>가입 조건을 충족하는지 먼저 확인하세요!</span>
-                        <span>트로피가 부족하다고 실망하지 마세요! 어느정도는 봐드리니까요.</span>
-                        <span>가입문의 답변이 느릴 수 있습니다. 조금만 기다려주세요!</span>
-                        <span>나이가 안되도 걱정마세요! 기본적인 <strong>개념</strong>과 
-                              <strong>열정</strong>만 있으면 들어올 수 있습니다.
-                        </span>
-                        <span>가입 결과가 나왔거나, <strong>더 이상 문의사항이 없으시면 문의방은 나가주세요!</strong></span>
-                    </div>
-                </div>
-                <div class="sub-title">
-                    <span>✔ 문의 방법</span>
-                </div>
-                <div class="row">
-                    <div class="conditions">
-                        <span>문의방에 들어가시면 플레이어 정보를 캡쳐해서 올려주세요!</span>
-                        <span>문의방에서 클랜에 대한 질문은 환영입니다! 부담가지지 마시고 마음껏 질문해주세요!</span>
-                    </div>
-                </div>
-                <div class="main-img" style="margin-top: 20px;">
-                    <div class="mask">
-                        <div class="main-img-inner">
-                            <div class="main-img-title">
-                                <span>NG TISSOT 가입신청</span>
+                <div class="contents-wrap type02">
+                    <div class="contents-inner">
+                        <div class="cont-group">
+                            <div class="cont-box">
+                                <h3 class="sub-title">문의 하기전에!</h3>
+                                <ul class="list">
+                                    <li>
+                                        <p>닉네임을 플레이어 태그 (#000000) 로 설정해주세요.</p>
+                                    </li>
+                                    <li>
+                                        <p>나이 조건이 맞지않아도 걱정하지 마세요. 기본적인 예의와 열정만 있으면 가입하실 수 있어요.</p>
+                                    </li>
+                                    <li>
+                                        <p>가입문의 답변이 느릴 수 있어요. 조금만 기다려주시면 답변이 올거에요!</p>
+                                    </li>
+                                    <li>
+                                        <p>가입 결과가 나왔거나 더 이상 문의사항이 없으시면 문의방은 나가주세요!</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cont-box">
+                                <h3 class="sub-title">바로가기</h3>
+                                <div class="btnGroup">
+                                    <a href="https://open.kakao.com/o/g2120M0" target="_blank" class="btn type02 blue">
+                                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none">
+                                            <path d="M15.5 7.08329V8.91663H19.1666V7.08329H15.5ZM13.6666 13.1425C14.5466 13.7933 15.6925 14.655 16.6 15.3333C16.9666 14.8475 17.3333 14.3525 17.7 13.8666C16.7925 13.1883 15.6466 12.3266 14.7666 11.6666C14.4 12.1616 14.0333 12.6566 13.6666 13.1425ZM17.7 2.13329C17.3333 1.64746 16.9666 1.15246 16.6 0.666626C15.6925 1.34496 14.5466 2.20663 13.6666 2.86663C14.0333 3.35246 14.4 3.84746 14.7666 4.33329C15.6466 3.67329 16.7925 2.82079 17.7 2.13329ZM2.66665 5.24996C1.65831 5.24996 0.833313 6.07496 0.833313 7.08329V8.91663C0.833313 9.92496 1.65831 10.75 2.66665 10.75H3.58331V14.4166H5.41665V10.75H6.33331L10.9166 13.5V2.49996L6.33331 5.24996H2.66665ZM13.2083 7.99996C13.2083 6.78079 12.6766 5.68079 11.8333 4.92913V11.0616C12.6766 10.3191 13.2083 9.21913 13.2083 7.99996Z" fill="white"/>
+                                        </svg>
+                                        <span>클랜 공지방</span>
+                                    </a>
+                                    <a href="https://open.kakao.com/o/gE8KzQrb" target="_blank" class="btn type02 blue">
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                            <path d="M9.54169 16.25H11.4584V14.3333H9.54169V16.25ZM10.5 0.916626C5.21002 0.916626 0.916687 5.20996 0.916687 10.5C0.916687 15.79 5.21002 20.0833 10.5 20.0833C15.79 20.0833 20.0834 15.79 20.0834 10.5C20.0834 5.20996 15.79 0.916626 10.5 0.916626ZM10.5 18.1666C6.27377 18.1666 2.83335 14.7262 2.83335 10.5C2.83335 6.27371 6.27377 2.83329 10.5 2.83329C14.7263 2.83329 18.1667 6.27371 18.1667 10.5C18.1667 14.7262 14.7263 18.1666 10.5 18.1666ZM10.5 4.74996C8.3821 4.74996 6.66669 6.46538 6.66669 8.58329H8.58335C8.58335 7.52913 9.44585 6.66663 10.5 6.66663C11.5542 6.66663 12.4167 7.52913 12.4167 8.58329C12.4167 10.5 9.54169 10.2604 9.54169 13.375H11.4584C11.4584 11.2187 14.3334 10.9791 14.3334 8.58329C14.3334 6.46538 12.6179 4.74996 10.5 4.74996Z" fill="white"/>
+                                        </svg>
+                                        <span>가입문의 방</span>
+                                    </button>
+                                    <a href="https://open.kakao.com/o/sIcZh6zb" target="_blank" class="btn type02 blue">
+                                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none">
+                                            <path d="M0.842663 17.25L20.0835 9L0.842663 0.75L0.833496 7.16667L14.5835 9L0.833496 10.8333L0.842663 17.25Z" fill="white"/>
+                                        </svg>
+                                        <span>개인 채팅</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-area">
-                    <div class="tb-li">
-                        <ul>
-                            <li>
-                                <a href="https://open.kakao.com/o/g2120M0" aria-label="clan notice" target='_blank'>클랜 공지방</a>
-                            </li>
-                            <li>
-                                <a href="https://open.kakao.com/o/gE8KzQrb" aria-label="clan inquiry" target='_blank'>가입문의 방</a>
-                            </li>
-                            <li>
-                                <a href="https://open.kakao.com/o/sIcZh6zb" aria-label="individual" target='_blank'>개인 톡</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </section>
         <footer class="footer" id="footer" role="contentinfo">
             <div class="inner">
-                <div class="innerContents">
-                    <div class="logoArea">
-                        <ul>
-                            <li>
-                                <a href="https://cafe.naver.com/clashroyale/1330549" title="네이버카페 바로가기" target="_blank">
-                                    <i class="ico cafe-logo"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://open.kakao.com/o/gE8KzQrb" title="오픈채팅 문의방 바로가기" target="_blank">
-                                    <i class="ico kakao-logo"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://pf.kakao.com/_EKcqj" title="카카오톡 플러스친구 바로가기" target="_blank">
-                                    <i class="ico kakao-plus-logo"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-txt">
-                        <p>Homepage Design By P1ush.</p>
-                        <p>Copyright © 2020 NG TISSOT. ALL RIGHTS RESERVED.</p>
-                    </div>
-                </div>
+                <a href="index.html">ⓒ NG TISSOT</a>
+                <ul class="linkList">
+                    <li>
+                        <a href="https://github.com/Plush777/NGTISSOT">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/YnfZW5Ua">Discord</a>
+                    </li>
+                    <li>
+                        <a href="https://cafe.naver.com/clashroyale">Cafe</a>
+                    </li>
+                </ul>
             </div>
         </footer>
-        <div id="quick-Area">
-            <div class="quick-btn">
-                <div class="quick-inner">
-                    <span class="hidden">퀵메뉴 바로가기</span>
-                    <ul>
-                        <li class="btn-top">
-                            <span>TOP</span>
-                            <i class="hidden">위로가기</i>
-                        </li>
-                        <li class="discord">
-                            <a href="https://discord.gg/wGdBFRMWHW" title="Discord">
-                                <span>디스코드</span>
-                            </a>
-                        </li>
-                        <li class="github">
-                            <a href="https://github.com/Plush777" title="Github">
-                                <span>Github</span>
-                            </a>
-                        </li>
-                        <li class="velog">
-                            <a href="https://velog.io/@sky" title="Velog">
-                                <span>Velog</span>
-                            </a>
-                        </li>
-                        <li class="darkMode">
-                            <button type="button" class="btnDarkMode">
-                                <span></span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
+        <div class="btnArea">
+            <button type="button" class="btnDarkMode">
+                <svg class="moon" width="30" height="30" version="1.1" viewBox="0 0 700 550">
+                    <g>
+                        <path d="m348 38.195c-3.0625 0-5.9453 1.6328-7.4883 4.2305-1.7109 2.8125-1.6992 6.3125 0.039062 9.125 21.871 35.387 33.426 76.148 33.426 117.88 0 123.84-100.75 224.58-224.58 224.58-4.4922 0-9.1875-0.16797-14.508-0.51172l-0.94922-0.058594c-2.9883 0-5.8203 1.6289-7.4102 4.2656-1.6758 2.793-1.6562 6.2695 0.0625 9.0938 44.504 72.012 121.53 115 206.05 115 133.48 0 242.08-108.6 242.08-242.08 0.003906-127.18-99.332-233.26-226.72-241.53zm-15.359 466.11c-72.48 0-139.64-34.48-181.85-92.797 132.85-0.75391 240.68-109.05 240.68-242.08 0-39.09-9.4688-77.59-27.48-112.05 109.23 15.375 193.23 110.95 193.23 222.34-0.003906 123.83-100.75 224.58-224.59 224.58z"></path>
+                    </g>
+                </svg>
+            </button>
         </div>
     </div>
-    <script type="text/javascript"> 
-        const d = new Date(); 
-        let currentDate = d.getFullYear() + "년 " + ( d.getMonth() + 1 ) + "월 " + d.getDate() + "일";  
-        const result = document.getElementById("today"); result.innerHTML = "Today : " + currentDate;
-    </script>
 </body>
 </html>

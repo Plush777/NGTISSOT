@@ -43,6 +43,13 @@ $(function(){
 		}
 	})
 
+	$('.tab-list li').on({
+		"click":function(){
+			$(this).addClass('active').siblings('li').removeClass('active');
+			$(this).closest('.tabNav').siblings('.tabCont').eq($(this).index()).addClass('active').siblings('.tabCont').removeClass('active');
+		}
+	})
+
 	$('.accordion .dep1>li>.head').on({
 		'click': function click(e) {
 		  e.preventDefault();
