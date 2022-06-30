@@ -46,7 +46,7 @@ $(function(){
 	$('.tab-list li').on({
 		"click":function(){
 			$(this).addClass('active').siblings('li').removeClass('active');
-			$(this).closest('.tabNav').siblings('.tabCont').eq($(this).index()).addClass('active').siblings('.tabCont').removeClass('active');
+			$(this).closest('.tab-nav').siblings('.tab-cont').eq($(this).index()).addClass('active').siblings('.tab-cont').removeClass('active');
 		}
 	})
 

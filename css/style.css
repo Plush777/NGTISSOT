@@ -506,46 +506,30 @@ header .nav.sub li:last-child:after{content: none;}
 /* table css */
 /* table-area : 전체 테이블에 여백이 있을때만. */
 
+.table{
+  margin-top: 30px;
+  border: 1px solid var(--bg-color9);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
 .table table{width: 100%;}
 
-.section .table-area{
-  margin-bottom: 170px;
-}
-
-.section .table th {
-  color: #266bf7;
-  font-size: 15px;
+.table table th{
   height: 50px;
-  border: 1px solid rgba(203, 203, 203, 0.3);
-  -moz-border-color: rgba(203, 203, 203, 0.3);
-  -ms-border-color: rgba(203, 203, 203, 0.3);
-  border-color: rgba(203, 203, 203, 0.3);
-  background-color: #fafafa; 
-}
-.section .table td {
-  font-size: 13px;
-  height: 50px;
-  text-align: center;
-  border: 1px solid rgba(203, 203, 203, 0.3);
-  -moz-border-color: rgba(203, 203, 203, 0.3);
-  -ms-border-color: rgba(203, 203, 203, 0.3);
-  border-color: rgba(203, 203, 203, 0.3); 
+  border-bottom: 1px solid var(--bg-color9);
   color: var(--text-color);
+  font-size: 14px;
+  background-color: var(--bg-color);
 }
 
-.section .table td.dodger-blue{
-  color: #266bf7;
-}
-
-.section .table td.alabaster{
-  background-color: #fafafa;
-}
-
-.section .table .table tr, .section .table th:first-child, .section .table td{
-  border-left: none; 
-}
-.section .table .table tr, .section .table th, .section .table td:last-child {
-  border-right: none; 
+.table table td{
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-bottom: 1px solid var(--bg-color9);
+  color: var(--text-color);
+  text-align: center;
 }
 
 .theme-btn-Area{
@@ -634,7 +618,7 @@ header .nav.sub li:last-child:after{content: none;}
   margin: 0 auto;
 }
 
-.contents-wrap .contents-inner{
+.contents-wrap .contents-inner.rowType{
   max-width: 1100px;
   flex-direction: row;
   align-items: flex-start;
@@ -720,8 +704,9 @@ header .nav.sub li:last-child:after{content: none;}
 .list.rowType{
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
+
+.list.rowType li+li{margin-top: 0;}
 
 .list.rowType li:before{display: none;}
 
@@ -804,5 +789,29 @@ header .nav.sub li:last-child:after{content: none;}
   font-size: 24px;
   font-family: 'Noto Sans';
   color: var(--bg-color7);
+}
+
+.tab-cont{display: none;}
+
+.tab-cont.active{display: block;}
+
+.opt-wrap{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.opt-year span{
+  font-size: 20px;
+  font-family: 'Noto Sans';
+  color: var(--text-color);
+}
+
+.common-select{
+  width: 90px;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid var(--bg-color10);
+  background-color: var(--bg-color);
 }
 /* --- */

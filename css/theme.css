@@ -7,6 +7,8 @@ body{
     --bg-color6: #d0d0d0;
     --bg-color7: #cacaca;
     --bg-color8: #d0d0d0;
+    --bg-color9: rgba(0,0,0,.12);
+    --bg-color10: #dbdbdb;
     --bg-btn: #fff;
     --bg-svg: #000;
     --text-color: #000;
@@ -29,6 +31,8 @@ body[data-theme="light"] {
     --bg-color6: #d0d0d0;
     --bg-color7: #cacaca;
     --bg-color8: #d0d0d0;
+    --bg-color9: rgba(0,0,0,.12);
+    --bg-color10: #dbdbdb;
     --bg-btn: #fff;
     --bg-svg: #000;
     --text-color: #000;
@@ -50,6 +54,8 @@ body[data-theme="dark"] {
     --bg-color6: #e4e8eb;
     --bg-color7: #777;
     --bg-color8: #e4e8eb;
+    --bg-color9: #3F4042;
+    --bg-color10: #3F4042;
     --bg-btn: #292a2d;
     --bg-svg: #fff;
     --text-color: #d9d9d9;
@@ -71,6 +77,9 @@ body[data-theme="dark"] {
         --bg-color5: #333;
         --bg-color6: #d0d0d0;
         --bg-color7: #cacaca;
+        --bg-color8: #d0d0d0;
+        --bg-color9: rgba(0,0,0,.12);
+        --bg-color10: #dbdbdb;
         --bg-btn: #fff;
         --bg-svg: #000;
         --text-color: #000;
@@ -93,6 +102,9 @@ body[data-theme="dark"] {
         --bg-color5: #d9d9d9;
         --bg-color6: #e4e8eb;
         --bg-color7: #777;
+        --bg-color8: #e4e8eb;
+        --bg-color9: #3F4042;
+        --bg-color10: #3F4042;
         --bg-btn: #292a2d;
         --bg-svg: #fff;
         --text-color: #d9d9d9;
