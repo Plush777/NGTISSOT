@@ -6,4 +6,10 @@
     .btn.type02:hover{
         transform: translateY(-5px);
     }
+
+    .common-select li:hover:not(.disabled){
+        cursor: default;
+        color: var(--bg-selected-text-color);
+        background-color: var(--bg-selected);
+    }
 }

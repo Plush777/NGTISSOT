@@ -28,6 +28,7 @@
     <script src="js/jquery-1.12.4.js"></script>
     <script src="./js/lib/jquery.easeScroll.js"></script>
     <script src="js/ui.js"></script>
+    <script src="js/date.js"></script>
     <script src="js/theme.js" defer></script>
     <title>NG TISSOT</title>
 </head>
@@ -299,22 +300,605 @@
                             <div class="tab-cont">
                                 <div class="opt-wrap">
                                     <div class="opt-year">
-                                        <span id="year">2022년</span>
-                                        <span>기준</span>
+                                        <span id="year"></span>
+                                        <span>년 기준</span>
                                     </div>
-                                    <div class="opt-select">
-                                        <span class="date-txt"></span>
-                                        <ul class="year-select common-select">
-                                            <li class="disabled">
-                                                <span>2023</span>
-                                            </li>
-                                            <li>
-                                                <span>2022</span>
-                                            </li>
-                                            <li>
-                                                <span>2021</span>
-                                            </li>
-                                        </ul>
+                                    <div class="opt-select-cont">
+                                        <div class="opt-select">
+                                            <span class="date-txt" id="year-date">2022</span>
+                                            <svg class="svg-arrow-down" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                                                <path d="M0.833252 0.333313L4.99992 4.49998L9.16658 0.333313H0.833252Z" fill="#9AA0A6"/>
+                                            </svg>
+                                            <ul class="common-select" id="year-select">
+                                                <li class="select-y23 disabled">
+                                                    <span>2023</span>
+                                                </li>
+                                                <li class="select-y22">
+                                                    <span>2022</span>
+                                                </li>
+                                                <li class="select-y21">
+                                                    <span>2021</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="opt-select-cont">
+                                        <div class="opt-select">
+                                            <span class="date-txt" id="month-date">6월</span>
+                                            <svg class="svg-arrow-down" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                                                <path d="M0.833252 0.333313L4.99992 4.49998L9.16658 0.333313H0.833252Z" fill="#9AA0A6"/>
+                                            </svg>
+                                            <ul class="common-select customScroll" id="month-select">
+                                                <li class="select-mo-1">
+                                                    <span>1월</span>
+                                                </li>
+                                                <li class="select-mo-2">
+                                                    <span>2월</span>
+                                                </li>
+                                                <li class="select-mo-3">
+                                                    <span>3월</span>
+                                                </li>
+                                                <li class="select-mo-4">
+                                                    <span>4월</span>
+                                                </li>
+                                                <li class="select-mo-5">
+                                                    <span>5월</span>
+                                                </li>
+                                                <li class="select-mo-6">
+                                                    <span>6월</span>
+                                                </li>
+                                                <li class="select-mo-7">
+                                                    <span>7월</span>
+                                                </li>
+                                                <li class="select-mo-8">
+                                                    <span>8월</span>
+                                                </li>
+                                                <li class="select-mo-9">
+                                                    <span>9월</span>
+                                                </li>
+                                                <li class="select-mo-10">
+                                                    <span>10월</span>
+                                                </li>
+                                                <li class="select-mo-11">
+                                                    <span>11월</span>
+                                                </li>
+                                                <li class="select-mo-12">
+                                                    <span>12월</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="result-area" id="y-21">
+                                    <div class="table hof-table active" id="y-21-mo-1">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 1월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1월 데이터 닉네임</td>
+                                                        <td>1월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-21-mo-2">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 2월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2월 데이터 닉네임</td>
+                                                        <td>2월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-21-mo-3">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 3월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>3월 데이터 닉네임</td>
+                                                        <td>3월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-21-mo-4">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 4월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>4월 데이터 닉네임</td>
+                                                        <td>4월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-21-mo-5">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 5월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>5월 데이터 닉네임</td>
+                                                        <td>5월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-21-mo-6">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 6월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>6월 데이터 닉네임</td>
+                                                        <td>6월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-21-mo-7">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 7월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>7월 데이터 닉네임</td>
+                                                        <td>7월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-21-mo-8">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 8월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>8월 데이터 닉네임</td>
+                                                        <td>8월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-21-mo-9">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 9월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>9월 데이터 닉네임</td>
+                                                        <td>9월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-21-mo-10">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 10월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>10월 데이터 닉네임</td>
+                                                        <td>10월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-21-mo-11">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 11월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>11월 데이터 닉네임</td>
+                                                        <td>11월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-21-mo-12">
+                                        <table>
+                                            <caption>2021년 이 달의 명예의 전당 12월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>12월 데이터 닉네임</td>
+                                                        <td>12월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="result-area" id="y-22">
+                                    <div class="table hof-table" id="y-22-mo-1">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 1월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 1월 데이터 닉네임</td>
+                                                        <td>2022년 1월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-22-mo-2">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 2월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 2월 데이터 닉네임</td>
+                                                        <td>2022년 2월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-22-mo-3">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 3월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 3월 데이터 닉네임</td>
+                                                        <td>2022년 3월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-22-mo-4">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 4월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 4월 데이터 닉네임</td>
+                                                        <td>2022년 4월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-22-mo-5">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 5월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 5월 데이터 닉네임</td>
+                                                        <td>2022년 5월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-22-mo-6">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 6월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 6월 데이터 닉네임</td>
+                                                        <td>2022년 6월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-22-mo-7">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 7월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 7월 데이터 닉네임</td>
+                                                        <td>2022년 7월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-22-mo-8">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 8월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 8월 데이터 닉네임</td>
+                                                        <td>2022년 8월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-22-mo-9">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 9월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 9월 데이터 닉네임</td>
+                                                        <td>2022년 9월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-22-mo-10">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 10월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 10월 데이터 닉네임</td>
+                                                        <td>2022년 10월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-22-mo-11">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 11월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 11월 데이터 닉네임</td>
+                                                        <td>2022년 11월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table hof-table" id="y-22-mo-12">
+                                        <table>
+                                            <caption>2022년 이 달의 명예의 전당 12월 데이터 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:auto;"/>
+                                                    <col style="width:150px;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">닉네임</th>
+                                                        <th scope="col">기여활동</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2022년 12월 데이터 닉네임</td>
+                                                        <td>2022년 12월 데이터 기여활동</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
