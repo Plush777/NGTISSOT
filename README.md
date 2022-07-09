@@ -2,6 +2,11 @@
 Clash Royle 이라는 게임의 클랜 홈페이지 작업물입니다.
 <br><br>
 
+#### 디자인
+https://www.figma.com/file/oGLZS2nYpZv2SQXB8vurmP/NT?node-id=0%3A1
+
+<br>
+
 #### 메인 및 메인 반응형 레이아웃 참고
 - 네이버 웨일 (https://whale.naver.com/) 
 - 파리바게뜨 (https://www.paris.co.kr/)
