@@ -18,15 +18,18 @@
     <meta name="twitter:url" content="https://plush777.github.io/NGTISSOT">
     <meta name="twitter:image" content="images/img-card.png">
     <meta name="twitter:description" content="NG TISSOT 클랜 홈페이지입니다.">
-    <link rel="stylesheet" href="css/style.css?ver=1" type="text/css">
-    <link rel="stylesheet" href="css/media.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css?ver=1"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="stylesheet" href="css/hover.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="js/pace-master/themes/blue/pace-theme-minimal.css">
     <link rel="icon" href="images/홈페이지용_NT로고.png" sizes="16x16">
-    <script type="text/javascript" src="js/pace-master/pace.min.js"></script>
-    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="js/ui.js"></script>
+    <script src="js/pace-master/pace.min.js"></script>
+    <script src="js/lib/jquery-1.12.4.js"></script>
+    <script src="./js/lib/jquery.easeScroll.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/theme.js" defer></script>
     <title>NG TISSOT</title>
 </head>
 <body>
@@ -40,38 +43,35 @@
             </p>
         </div>
     </noscript>
-    <div id="skip-nav">
-        <a href="#section">메뉴 건너뛰기</a>
-        <a href="#footer">콘텐츠 건너뛰기</a>
-    </div>
-    <div class="wrap">
+    <div class="wrap header-up-down">
         <header role="banner">
-            <div id="today"></div>
-            <div class="inner">
-                <div class="header-contents">
-                    <h1 class="logo" title="NT로고">
-                        <a href="index.html">
-                            <img src="images/홈페이지용_NT로고.png" alt="메인로고">
-                        </a>
-                    </h1>
-                    <div class="nav" role="navigation">
-                        <ul>
-                            <li><a href="index.html"title="홈" aria-label="nav home">홈</a></li>
-                            <li><a href="sub.html"title="클랜 소개" aria-label="nav clanIntro">클랜 소개</a></li>
-                            <li><a href="sub2.html"title="클랜원 모집!" aria-label="nav clanJoin">클랜원 모집!</a></li>
-                            <li><a href="sub3.html"title="클랜 룰" aria-label="clanRole">클랜 룰</a></li>
-                            <li><a href="sub4.html"title="클랜 가입문의" aria-label="nav clanInquiry">클랜 가입문의</a></li>
-                            <li><a href="sub5.html"title="명예의 전당" aria-label="nav HallofFame">명예의 전당</a></li>
-                            <li class="active"><a href="sub6.html"title="TMI" aria-label="nav TMI">TMI</a></li>
-                        </ul>
-                    </div>
-                    <div class="mobile-nav">
-                        <div class="mobile-nav-inner">
-                            <button type="button" class="btn-hamburger">
-                                <span class="m-line"></span>
-                                <span class="m-line"></span>
-                                <span class="m-line"></span>
-                            </button>
+            <div class="header-wrap">
+                <div class="inner">
+                    <div class="header-contents">
+                        <h1 class="logo" title="NT로고">
+                            <a href="index.html">
+                                <img src="images/홈페이지용_NT로고.png" alt="메인로고">
+                            </a>
+                        </h1>
+                        <div class="nav" role="navigation">
+                            <ul>
+                                <li><a href="index.html"title="홈" aria-label="nav home">홈</a></li>
+                                <li><a href="sub.html"title="클랜 소개" aria-label="nav clanIntro">클랜 소개</a></li>
+                                <li><a href="sub2.html"title="클랜원 모집!" aria-label="nav clanJoin">클랜원 모집!</a></li>
+                                <li><a href="sub3.html"title="클랜 룰" aria-label="clanRole">클랜 룰</a></li>
+                                <li><a href="sub4.html"title="클랜 가입문의" aria-label="nav clanInquiry">클랜 가입문의</a></li>
+                                <li><a href="sub5.html"title="명예의 전당" aria-label="nav HallofFame">명예의 전당</a></li>
+                                <li class="active"><a href="sub6.html"title="TMI" aria-label="nav TMI">TMI</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile-nav">
+                            <div class="mobile-nav-inner">
+                                <button type="button" class="btn-hamburger">
+                                    <span class="m-line"></span>
+                                    <span class="m-line"></span>
+                                    <span class="m-line"></span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -80,8 +80,8 @@
             <div class="header-sub-contents flex jc">
                 <div class="nav sub">
                     <ul>
-                        <li>
-                            <a href="sub8.html" class="active" title="자료실" aria-label="subNav Archives">자료실</a>
+                        <li class="active">
+                            <a href="sub8.html" title="자료실" aria-label="subNav Archives">자료실</a>
                         </li>
                         <li>
                             <a href="sub7.html" title="Q&A" aria-label="subNav Q&A">Q&A</a>
@@ -132,63 +132,43 @@
         <div id="dimmed"></div>
         <section class="section" id="section" role="main">
             <div class="inner pd">
-                <div class="title-desc-Area">
-                    <div class="title pthalf">
-                        <span>자료실</span>
-                        <p>NG TISSOT 클랜의 자료들을 받을 수 있는 공간입니다.</p>
-                    </div>
+                <div class="title-area">
+                    <h1><em class="txt blue">L</em>ibrary</h1>
+                    <p class="desc">클랜 자료들을 다운로드 할 수 있는 공간이에요.</p>
                 </div>
-                <div class="contArea">
-                    <div class="cont-box">
-                        <div class="distance">
-                            <div class="sub-title">
-                                <span>블랙 리스트</span>
+                <div class="contents-wrap type02">
+                    <div class="contents-inner">
+                        <div class="cont-group">
+                            <div class="cont-box">
+                                <h3 class="sub-title type02">블랙리스트</h3>
+                                <p class="desc">클랜 내에서 문제를 일으켰거나 전과가 있을경우 닉네임이 기재되는 블랙 리스트에요.</p>
+                                <a href="/downLoad/클랜 블랙리스트.xlsx" download class="btn type02 blue full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none">
+                                        <path d="M15.1667 6.5H10.8333V0H4.33333V6.5H0L7.58333 14.0833L15.1667 6.5ZM0 16.25V18.4167H15.1667V16.25H0Z" fill="white"/>
+                                    </svg>
+                                    <span>다운로드</span>
+                                </a>
                             </div>
-                        </div>
-                        <div class="con-txt">
-                            <span>클랜 내에서 문제를 일으켰거나 전과가 있을경우 닉네임이 기재되는 블랙 리스트입니다.</span>
-                        </div>
-                        <div class="theme-box">
-                            <a href="images/downLoad/클랜 블랙리스트.xlsx" download aria-label="blackList DownloadButton">블랙 리스트</a>
-                        </div>
-                    </div>
-                    <div class="cont-box">
-                        <div class="distance pt0">
-                            <div class="sub-title">
-                                <span>클랜 홍보표</span>
+                            <div class="cont-box">
+                                <h3 class="sub-title type02">클랜홍보표</h3>
+                                <p class="desc">클랜 홍보 시에 사용되는 홍보표에요.</p>
+                                <a href="/downLoad/NGTISSOT_v8.png" download="클랜_홍보표" class="btn type02 blue full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none">
+                                        <path d="M15.1667 6.5H10.8333V0H4.33333V6.5H0L7.58333 14.0833L15.1667 6.5ZM0 16.25V18.4167H15.1667V16.25H0Z" fill="white"/>
+                                    </svg>
+                                    <span>다운로드</span>
+                                </a>
                             </div>
-                        </div>
-                        <div class="con-txt">
-                            <span>인원모집 혹은 클랜을 알릴 때 사용되는 클랜 홍보표입니다.</span>
-                        </div>
-                        <div class="theme-box">
-                            <a href="https://drive.google.com/file/d/1aKg_boh9CvHZHjewhdtdYKQ4nBHwZEm1/view?usp=sharing" target='_blank' aria-label="promotion DownloadButton">클랜 홍보표</a>
-                        </div>
-                    </div>
-                    <div class="cont-box">
-                        <div class="distance pt0">
-                            <div class="sub-title">
-                                <span>클랜 로고</span>
+                            <div class="cont-box">
+                                <h3 class="sub-title type02">클랜로고</h3>
+                                <p class="desc">클랜을 대표하는 로고에요.</p>
+                                <a href="/downLoad/logo.png" download="클랜_로고" class="btn type02 blue full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none">
+                                        <path d="M15.1667 6.5H10.8333V0H4.33333V6.5H0L7.58333 14.0833L15.1667 6.5ZM0 16.25V18.4167H15.1667V16.25H0Z" fill="white"/>
+                                    </svg>
+                                    <span>다운로드</span>
+                                </a>
                             </div>
-                        </div>
-                        <div class="con-txt">
-                            <span>클랜을 대표하는 로고입니다.</span>
-                        </div>
-                        <div class="theme-box">
-                            <a href="images/downLoad/logo.png" download aria-label="clanLogo DownloadButton">클랜 로고</a>
-                        </div>
-                    </div>
-                    <div class="cont-box">
-                        <div class="distance pt0">
-                            <div class="sub-title">
-                                <span>클랜 배너</span>
-                            </div>
-                        </div>
-                        <div class="con-txt">
-                            <span>클랜 홍보할 때 사용하는 클랜 배너입니다.</span>
-                        </div>
-                        <div class="theme-box">
-                            <a href="images/downLoad/티솟배너.jpg" download="NT-banner" aria-label="clanBanner DownloadButton">클랜 배너</a>
                         </div>
                     </div>
                 </div>
@@ -196,71 +176,29 @@
         </section>
         <footer class="footer" id="footer" role="contentinfo">
             <div class="inner">
-                <div class="innerContents">
-                    <div class="logoArea">
-                        <ul>
-                            <li>
-                                <a href="https://cafe.naver.com/clashroyale/1330549" title="네이버카페 바로가기" target="_blank">
-                                    <i class="ico cafe-logo"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://open.kakao.com/o/gE8KzQrb" title="오픈채팅 문의방 바로가기" target="_blank">
-                                    <i class="ico kakao-logo"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://pf.kakao.com/_EKcqj" title="카카오톡 플러스친구 바로가기" target="_blank">
-                                    <i class="ico kakao-plus-logo"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-txt">
-                        <p>Homepage Design By P1ush.</p>
-                        <p>Copyright © 2020 NG TISSOT. ALL RIGHTS RESERVED.</p>
-                    </div>
-                </div>
+                <a href="index.html">ⓒ NG TISSOT</a>
+                <ul class="linkList">
+                    <li>
+                        <a href="https://github.com/Plush777/NGTISSOT">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/YnfZW5Ua">Discord</a>
+                    </li>
+                    <li>
+                        <a href="https://cafe.naver.com/clashroyale">Cafe</a>
+                    </li>
+                </ul>
             </div>
         </footer>
-        <div id="quick-Area">
-            <div class="quick-btn">
-                <div class="quick-inner">
-                    <span class="hidden">퀵메뉴 바로가기</span>
-                    <ul>
-                        <li class="btn-top">
-                            <span>TOP</span>
-                            <i class="hidden">위로가기</i>
-                        </li>
-                        <li class="discord">
-                            <a href="https://discord.gg/wGdBFRMWHW" title="Discord">
-                                <span>디스코드</span>
-                            </a>
-                        </li>
-                        <li class="github">
-                            <a href="https://github.com/Plush777" title="Github">
-                                <span>Github</span>
-                            </a>
-                        </li>
-                        <li class="velog">
-                            <a href="https://velog.io/@sky" title="Velog">
-                                <span>Velog</span>
-                            </a>
-                        </li>
-                        <li class="darkMode">
-                            <button type="button" class="btnDarkMode">
-                                <span></span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="btnArea">
+            <button type="button" class="btnDarkMode">
+                <svg class="moon" width="30" height="30" version="1.1" viewBox="0 0 700 550">
+                    <g>
+                        <path d="m348 38.195c-3.0625 0-5.9453 1.6328-7.4883 4.2305-1.7109 2.8125-1.6992 6.3125 0.039062 9.125 21.871 35.387 33.426 76.148 33.426 117.88 0 123.84-100.75 224.58-224.58 224.58-4.4922 0-9.1875-0.16797-14.508-0.51172l-0.94922-0.058594c-2.9883 0-5.8203 1.6289-7.4102 4.2656-1.6758 2.793-1.6562 6.2695 0.0625 9.0938 44.504 72.012 121.53 115 206.05 115 133.48 0 242.08-108.6 242.08-242.08 0.003906-127.18-99.332-233.26-226.72-241.53zm-15.359 466.11c-72.48 0-139.64-34.48-181.85-92.797 132.85-0.75391 240.68-109.05 240.68-242.08 0-39.09-9.4688-77.59-27.48-112.05 109.23 15.375 193.23 110.95 193.23 222.34-0.003906 123.83-100.75 224.58-224.59 224.58z"></path>
+                    </g>
+                </svg>
+            </button>
         </div>
     </div>
-    <script type="text/javascript"> 
-        const d = new Date(); 
-        let currentDate = d.getFullYear() + "년 " + ( d.getMonth() + 1 ) + "월 " + d.getDate() + "일";  
-        const result = document.getElementById("today"); result.innerHTML = "Today : " + currentDate;
-    </script>
 </body>
 </html>

@@ -1,29 +1,4 @@
 $(function(){
-
-    //장로
-    let elderData = [
-        {
-            "player01": "인행아빠 (#88YLO88UV)"
-        }
-    ]
-
-    let elderPrintData = function(elderData){
-		let html = '';
-
-		for(let i=0; i<elderData.length; i++){
-			html += `
-						<tr>
-							<td>${elderData[i].player01}</td>
-						</tr>
-					`;
-		}
-
-		$('.elderTable').html(html);
-	}
-
-	elderPrintData(elderData);
-
-
     //대표
     let readerData = [
         {
@@ -40,16 +15,16 @@ $(function(){
 		for(let i=0; i<readerData.length; i++){
 			html += `
 						<tr>
-							<td class="dodger-blue alabaster">${readerData[i].player01}</td>
+							<td><p>${readerData[i].player01}</p></td>
 						</tr>
 						<tr>
-							<td class="dodger-blue">${readerData[i].player02}</td>
+							<td><p>${readerData[i].player02}</p></td>
 						</tr>
 						<tr>
-							<td class="dodger-blue">${readerData[i].player03}</td>
+							<td><p>${readerData[i].player03}</p></td>
 						</tr>
 						<tr>
-							<td class="dodger-blue">${readerData[i].player04}</td>
+							<td><p>${readerData[i].player04}</p></td>
 						</tr>
 					`;
 		}
@@ -76,19 +51,19 @@ $(function(){
 		for(let i=0; i<coReaderData.length; i++){
 			html += `
 						<tr>
-							<td class="dodger-blue alabaster">${coReaderData[i].player01}</td>
+							<td><p>${coReaderData[i].player01}</p></td>
 						</tr>
 						<tr>
-							<td class="dodger-blue">${coReaderData[i].player02}</td>
+							<td><p>${coReaderData[i].player02}</p></td>
 						</tr>
 						<tr>
-							<td class="dodger-blue">${coReaderData[i].player03}</td>
+							<td><p>${coReaderData[i].player03}</p></td>
 						</tr>
 						<tr>
-							<td class="dodger-blue">${coReaderData[i].player04}</td>
+							<td><p>${coReaderData[i].player04}</p></td>
 						</tr>
 						<tr>
-							<td class="dodger-blue">${coReaderData[i].player05}</td>
+							<td><p>${coReaderData[i].player05}</p></td>
 						</tr>
 					`;
 		}

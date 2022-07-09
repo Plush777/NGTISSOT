@@ -19,6 +19,13 @@ $(function(){
             } else if($('.select-y21').hasClass('active')){
                 $('#y-21').addClass('active').siblings('.result-area').removeClass('active');
             }
+
+            /* 년도 클릭 시 월 강제로 바꿈 */
+            if($('#y-21').hasClass('active')){
+                $('#month-date').text('1월');
+            } else if($('#y-22').hasClass('active')){
+                $('#month-date').text(currentMonth + '월');
+            }
         }
     });
     

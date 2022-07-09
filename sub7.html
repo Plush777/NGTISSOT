@@ -18,15 +18,18 @@
     <meta name="twitter:url" content="https://plush777.github.io/NGTISSOT">
     <meta name="twitter:image" content="images/img-card.png">
     <meta name="twitter:description" content="NG TISSOT 클랜 홈페이지입니다.">
-    <link rel="stylesheet" href="css/style.css?ver=1" type="text/css">
-    <link rel="stylesheet" href="css/media.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css?ver=1"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="stylesheet" href="css/hover.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="js/pace-master/themes/blue/pace-theme-minimal.css">
     <link rel="icon" href="images/홈페이지용_NT로고.png" sizes="16x16">
-    <script type="text/javascript" src="js/pace-master/pace.min.js"></script>
-    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="js/ui.js"></script>
+    <script src="js/pace-master/pace.min.js"></script>
+    <script src="js/lib/jquery-1.12.4.js"></script>
+    <script src="./js/lib/jquery.easeScroll.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/theme.js" defer></script>
     <title>NG TISSOT</title>
 </head>
 <body>
@@ -40,38 +43,35 @@
             </p>
         </div>
     </noscript>
-    <div id="skip-nav">
-        <a href="#section">메뉴 건너뛰기</a>
-        <a href="#footer">콘텐츠 건너뛰기</a>
-    </div>
-    <div class="wrap">
+    <div class="wrap header-up-down">
         <header role="banner">
-            <div id="today"></div>
-            <div class="inner">
-                <div class="header-contents">
-                    <h1 class="logo" title="NT로고">
-                        <a href="index.html">
-                            <img src="images/홈페이지용_NT로고.png" alt="메인로고">
-                        </a>
-                    </h1>
-                    <div class="nav" role="navigation">
-                        <ul>
-                            <li><a href="index.html"title="홈" aria-label="nav home">홈</a></li>
-                            <li><a href="sub.html"title="클랜 소개" aria-label="nav clanIntro">클랜 소개</a></li>
-                            <li><a href="sub2.html"title="클랜원 모집!" aria-label="nav clanJoin">클랜원 모집!</a></li>
-                            <li><a href="sub3.html"title="클랜 룰" aria-label="clanRole">클랜 룰</a></li>
-                            <li><a href="sub4.html"title="클랜 가입문의" aria-label="nav clanInquiry">클랜 가입문의</a></li>
-                            <li><a href="sub5.html"title="명예의 전당" aria-label="nav HallofFame">명예의 전당</a></li>
-                            <li class="active"><a href="sub6.html"title="TMI" aria-label="nav TMI">TMI</a></li>
-                        </ul>
-                    </div>
-                    <div class="mobile-nav">
-                        <div class="mobile-nav-inner">
-                            <button type="button" class="btn-hamburger">
-                                <span class="m-line"></span>
-                                <span class="m-line"></span>
-                                <span class="m-line"></span>
-                            </button>
+            <div class="header-wrap">
+                <div class="inner">
+                    <div class="header-contents">
+                        <h1 class="logo" title="NT로고">
+                            <a href="index.html">
+                                <img src="images/홈페이지용_NT로고.png" alt="메인로고">
+                            </a>
+                        </h1>
+                        <div class="nav" role="navigation">
+                            <ul>
+                                <li><a href="index.html"title="홈" aria-label="nav home">홈</a></li>
+                                <li><a href="sub.html"title="클랜 소개" aria-label="nav clanIntro">클랜 소개</a></li>
+                                <li><a href="sub2.html"title="클랜원 모집!" aria-label="nav clanJoin">클랜원 모집!</a></li>
+                                <li><a href="sub3.html"title="클랜 룰" aria-label="clanRole">클랜 룰</a></li>
+                                <li><a href="sub4.html"title="클랜 가입문의" aria-label="nav clanInquiry">클랜 가입문의</a></li>
+                                <li><a href="sub5.html"title="명예의 전당" aria-label="nav HallofFame">명예의 전당</a></li>
+                                <li class="active"><a href="sub6.html"title="TMI" aria-label="nav TMI">TMI</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile-nav">
+                            <div class="mobile-nav-inner">
+                                <button type="button" class="btn-hamburger">
+                                    <span class="m-line"></span>
+                                    <span class="m-line"></span>
+                                    <span class="m-line"></span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,8 +83,8 @@
                         <li>
                             <a href="sub8.html" title="자료실" aria-label="subNav Archives">자료실</a>
                         </li>
-                        <li>
-                            <a href="sub7.html" class="active" title="Q&A" aria-label="subNav Q&A">Q&A</a>
+                        <li class="active">
+                            <a href="sub7.html" title="Q&A" aria-label="subNav Q&A">Q&A</a>
                         </li>
                         <li>
                             <a href="sub6.html" title="TMI" aria-label="subNav TMI">TMI</a>
@@ -132,277 +132,165 @@
         <div id="dimmed"></div>
         <section class="section" id="section" role="section">
             <div class="inner pd">
-                <div class="title-desc-Area">
-                    <div class="title pthalf">
-                        <span>Q&A</span>
-                        <p>클랜에 대한 궁금증을 해결해드려요!</p>
+                <div class="title-area">
+                    <h1><em class="txt blue">Q</em>&A</h1>
+                    <p class="desc">클랜에 대한 궁금증을 해결해드려요.</p>
+                </div>
+                <div class="contents-wrap">
+                    <div class="contents-inner rowType">
+                        <div class="cont-group">
+                            <div class="accordion qna">
+                                <ul class="dep1">
+                                    <li>
+                                        <div class="head">
+                                            <div class="head-txt">
+                                                <span>클랜 운영방식은 어떻게 되나요?</span>
+                                            </div>
+                                            <svg class="accordion-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                <path d="M1.7925 0.874146L6 5.07248L10.2075 0.874146L11.5 2.16665L6 7.66665L0.5 2.16665L1.7925 0.874146Z" fill="#A7A7A7"/>
+                                            </svg>
+                                        </div>
+                                        <div class="dep2">
+                                            <div class="showCont">
+                                                <div class="innerBox">
+                                                    <div class="con-txt">
+                                                        <div class="txt-group">
+                                                            <pre>1. 피드백 반영</pre>
+                                                            <pre>매너와 소통을 중시하는 클랜으로써, 일정 주기마다 클랜 피드백을 받아요.</pre>
+                                                            <pre>피드백 요청을 받은 것들은 룰 개정 시 한번에 적용돼요.</pre>
+                                                        </div>
+                                                        <div class="txt-group">
+                                                            <pre>2. 클랜 만족도 조사</pre>
+                                                            <pre>클랜 운영에 있어서 부족한 점이나 개선점은 없는지 알기 위해
+                                                            한달 마다 클랜 만족도 조사를 진행하고 있어요.</pre>
+                                                        </div>
+                                                        <div class="txt-group">
+                                                            <pre>3. 과도한 친목금지</pre>
+                                                            <pre>클린하고 화목한 분위기 유지를 위해 과도한 친목행위 (반말,실명언급 등) 은 금지하고 있어요.</pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="head">
+                                            <div class="head-txt">
+                                                <span>클랜 이름의 유래가 뭔가요?</span>
+                                            </div>
+                                            <svg class="accordion-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                <path d="M1.7925 0.874146L6 5.07248L10.2075 0.874146L11.5 2.16665L6 7.66665L0.5 2.16665L1.7925 0.874146Z" fill="#A7A7A7"/>
+                                            </svg>
+                                        </div>
+                                        <div class="dep2">
+                                            <div class="showCont">
+                                                <div class="innerBox">
+                                                    <div class="con-txt">
+                                                        <p>클랜 1대 대표 (Mc queen) 님이 지으신 이름이에요. 유래는 타 게임의 클랜 이름이 NG TISSOT였는데, 그걸 그대로 가져오셨다고해요.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="head">
+                                            <div class="head-txt">
+                                                <span>다른 게임 (브롤스타즈 ,COC 등)에도 NG TISSOT가 있나요?</span>
+                                            </div>
+                                            <svg class="accordion-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                <path d="M1.7925 0.874146L6 5.07248L10.2075 0.874146L11.5 2.16665L6 7.66665L0.5 2.16665L1.7925 0.874146Z" fill="#A7A7A7"/>
+                                            </svg>
+                                        </div>
+                                        <div class="dep2">
+                                            <div class="showCont">
+                                                <div class="innerBox">
+                                                    <div class="distance pt0">
+                                                        <div class="con-txt">
+                                                            <p>COC는 없고, 브롤스타즈의 경우는 초기에 있었으나, 현재는 모르겠네요!</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="head">
+                                            <div class="head-txt">
+                                                <span>NG TISSOT 휴게소는 어떤 곳인가요?</span>
+                                            </div>
+                                            <svg class="accordion-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                <path d="M1.7925 0.874146L6 5.07248L10.2075 0.874146L11.5 2.16665L6 7.66665L0.5 2.16665L1.7925 0.874146Z" fill="#A7A7A7"/>
+                                            </svg>
+                                        </div>
+                                        <div class="dep2">
+                                            <div class="showCont">
+                                                <div class="innerBox">
+                                                    <div class="con-txt">
+                                                        <pre>
+                                                            개인사정으로 인해 클랜을 잠시 나가야 될 상황이거나 자리가 없을 경우 , 가입대기 중일 때 가입할 수 있어요.
+                                                            그 외엔 가입이 허용되지 않으며, 휴게소에 가입하실 땐 꼭 클랜 공지방에 닉네임과 머물 시간을 기재해주시고 가주세요!
+                                                        </pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="head">
+                                            <div class="head-txt">
+                                                <span>홈페이지가 이상하게 나와요</span>
+                                            </div>
+                                            <svg class="accordion-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                <path d="M1.7925 0.874146L6 5.07248L10.2075 0.874146L11.5 2.16665L6 7.66665L0.5 2.16665L1.7925 0.874146Z" fill="#A7A7A7"/>
+                                            </svg>
+                                        </div>
+                                        <div class="dep2">
+                                            <div class="showCont">
+                                                <div class="innerBox">
+                                                    <div class="con-txt">
+                                                        <pre>
+                                                            구버전 브라우저나 인터넷 익스플로러의 경우 홈페이지가
+                                                            제대로 안보일 수 있어요. 최신 버전의 브라우저에서 접속하시는걸 권장드려요.
+                                                            그 외의 문제는 nt0503@naver.com 으로 피드백을 보내주세요!
+                                                        </pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="accordion qna">
-                    <ul class="dep1">
-                        <!-- <li>
-                            <div class="head">
-                                <div class="head-txt">
-                                    <span>Q.장로 / 공대 승급 조건은 어떻게 되나요?</span>
-                                </div>
-                            </div>
-                            <div class="dep2">
-                                <div class="showCont">
-                                    <div class="innerBox">
-                                        <div class="con-txt">
-                                            <span>💛장로 : 다음 조건 중 1개 만족</span>
-                                        </div>
-                                        <div class="advancement">
-                                            <div class="sub-title">
-                                                <span>✔승급</span>
-                                            </div>
-                                            <div class="con-txt">
-                                                <pre>
-                                                    I. 지원 1200 달성
-                                                    II. 클랜에 오래 머물러 있으신분 (3개월 이상)
-                                                    III. 접속률 좋으신분
-                                                    IV. 클랜 활동 참여 (내전 , 설문조사 , 클랜전 등)
-                                                    V. 적극 클랜홍보 또는 도움을 주신분
-                                                    VI. 클랜전 1등인경우 (리버레이스 종료 직후 기준)
-                                                </pre>
-                                            </div>
-                                        </div>
-                                        <div class="relegation">
-                                            <div class="sub-title">
-                                                <span>✔강등</span>
-                                            </div>
-                                            <div class="con-txt">
-                                                <pre>-  지원 미달 또는 클랜전 미참
-                                                - 비속어 사용 , 미접속 3일이상
-                                                </pre>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="innerBox">
-                                        <div class="con-txt">
-                                            <span>💛공동 대표 : 조건 4개 이상 만족 / 공동대표 지원서 </span>
-                                        </div>
-                                        <div class="advancement">
-                                            <div class="sub-title">
-                                                <span>✔승급</span>
-                                            </div>
-                                            <div class="con-txt">
-                                                <pre>I. 클랜에 오래 머물러 있으신분 (3개월 이상)</pre>
-                                                <pre>II. 부적절한 행위 (비매너 , 욕설 등) 를 한 이력이 없으신분</pre>
-                                                <pre>III.접속률이 아주 좋으신분
-                                                    (※ 부르면 언제든지 오실 수 있거나 로얄 접속을 오래 하시는분, + 카톡 필수)
-                                                </pre>
-                                                <pre>IV. 외출을 자주 하시지 않는분 (구단전 외출제외)</pre>
-                                                <pre>V. 적극 클랜 홍보 (주 1회 이상)</pre>
-                                                <pre>VI. 클랜 관리 경험이 있으신분</pre>
-                                                <pre>VII. 클랜 성장활동 (설문지 참여 , 클랜 문의방 운영 도움 등) 적극 참여</pre>
-                                            </div>
-                                        </div>
-                                        <div class="relegation">
-                                            <div class="sub-title">
-                                                <span>✔ 강등 </span>
-                                            </div>
-                                            <div class="con-txt">
-                                                <pre>- 필수 조건 미달
-                                                    (* 클랜 성장 활동을 주로 봅니다!)</pre>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li> -->
-                        <li>
-                            <div class="head">
-                                <div class="head-txt">
-                                    <span>Q.클랜 운영방식은 어떻게 되나요?</span>
-                                </div>
-                            </div>
-                            <div class="dep2">
-                                <div class="showCont">
-                                    <div class="innerBox">
-                                        <div class="con-txt">
-                                            <pre>클랜 운영방식은 다음과 같이 진행됩니다.</pre>
-                                            <pre class="pre-m-distance"> 1. 룰 피드백 반영</pre>
-                                            <pre>매너와 소통을 중시하는 클랜으로써, 일정 주기마다 바뀌는 룰에 대해 피드백을 받습니다.</pre>
-                                            <pre>피드백 받은 룰 적용은 룰 개정할 때 한번에 하거나, 최소 일주일 간격으로 적용합니다.</pre>
-                                            <pre class="pre-m-distance">2. 시즌 트로피 제도</pre>
-                                            <pre>시즌 기간동안 요구하는 트로피를 시즌 종료 전까지 달성해야 하는 제도입니다.</pre>
-                                            <pre>클랜 성장을 목적으로 진행되고 있으며, 클랜 상황에따라 진행하지 않는 경우도 있습니다.</pre>
-                                            <pre class="pre-m-distance">3. 클랜 만족도 조사</pre>
-                                            <pre>한달 주기로 클랜 만족도 조사를 진행하고 있습니다. 클랜에 대한 부족한 점이나 개선점은 없는지,
-                                                NG TISSOT 클랜은 어떤 클랜인지에 대해 더욱 상세하게 알기 위해 시행 중입니다!
-                                            </pre>
-                                            <pre class="pre-m-distance">4. 과도한 친목금지</pre>
-                                            <pre>깨끗하고 화목한 클랜 유지를 위해 과도한 친목행위 (반말 , 실명언급 등)은 절대적으로 금지하고 있습니다.</pre>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="head">
-                                <div class="head-txt">
-                                    <span>Q. 클랜 이름의 유래가 뭔가요?</span>
-                                </div>
-                            </div>
-                            <div class="dep2">
-                                <div class="showCont">
-                                    <div class="innerBox">
-                                        <div class="con-txt">
-                                            <span>1대 대표 (Mc queen) 님이 지으신 이름입니다. 유래는 타 게임의 클랜 이름이 NG TISSOT였는데, 그걸 그대로 가져오셨다 합니다.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="head">
-                                <div class="head-txt">
-                                    <span>Q.다른 게임 (브롤스타즈 ,클오클)에도 NG TISSOT가 있나요?</span>
-                                </div>
-                            </div>
-                            <div class="dep2">
-                                <div class="showCont">
-                                    <div class="innerBox">
-                                        <div class="distance pt0">
-                                            <div class="con-txt">
-                                                <span>클오클은 없고, 브롤스타즈의 경우는 초기에 있었으나, 현재는 모르겠네요!</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="head">
-                                <div class="head-txt">
-                                    <span>Q. 시즌 최소 트로피 제도란? (현재는 중단)</span>
-                                </div>
-                            </div>
-                            <div class="dep2">
-                                <div class="showCont">
-                                    <div class="innerBox">
-                                        <div class="con-txt">
-                                            <span>시즌 트로피 제도는 매 시즌마다 요구하는 최소 트로피를 시즌 종료 전까지 달성해야 하는 제도입니다.<br>
-                                                물론, 요구하는 트로피는 클래시 로얄 메타 또는 밸런스 패치 상태를 보고 조정 예정이고, 피드백을 수용하여 조정 가능합니다.<br>
-                                                요구하는 트로피를 만족 시키지 못하는 경우는 아쉽지만 추방 또는 강등이며, 공동대표나 개인사정 (시험기간,군대 등등) 이 있을경우는 제외됩니다.
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="head">
-                                <div class="head-txt">
-                                    <span>Q. NG TISSOT 휴게소는 어떤 곳인가요?</span>
-                                </div>
-                            </div>
-                            <div class="dep2">
-                                <div class="showCont">
-                                    <div class="innerBox">
-                                        <div class="con-txt">
-                                            <pre>
-                                                휴게소는 대표 (P1ush)와 부대표 (랍챱)이 부계정으로 운영하는 곳입니다.
-                                                개인사정 (시험기간 , 군대문제) 으로 클랜에 잠시 나가야 될 상황이거나 클랜에 자리가 없을 경우 , 가입 대기 중일경우에만 해당됩니다.
-                                                휴게소에 가입하실 땐 꼭 클랜 공지방에 닉네임과 머물 시간을 기재해주신 후 가시면 되겠습니다!
-                                            </pre>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="head">
-                                <div class="head-txt">
-                                    <span>Q. 홈페이지가 이상하게 나와요</span>
-                                </div>
-                            </div>
-                            <div class="dep2">
-                                <div class="showCont">
-                                    <div class="innerBox">
-                                        <div class="con-txt">
-                                            <pre>
-                                                버전이 낮은 일부 브라우저나 인터넷 익스플로러의 경우는 홈페이지가
-                                                제대로 안보일 수 있습니다. 최신 버전의 브라우저로 접속해주세요!
-                                                그 외의 문제는 nt0503@naver.com 으로 피드백을 보내주세요.
-                                            </pre>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                
             </div>
         </section>
         <footer class="footer" id="footer" role="contentinfo">
             <div class="inner">
-                <div class="innerContents">
-                    <div class="logoArea">
-                        <ul>
-                            <li>
-                                <a href="https://cafe.naver.com/clashroyale/1330549" title="네이버카페 바로가기" target="_blank">
-                                    <i class="ico cafe-logo"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://open.kakao.com/o/gE8KzQrb" title="오픈채팅 문의방 바로가기" target="_blank">
-                                    <i class="ico kakao-logo"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://pf.kakao.com/_EKcqj" title="카카오톡 플러스친구 바로가기" target="_blank">
-                                    <i class="ico kakao-plus-logo"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-txt">
-                        <p>Homepage Design By P1ush.</p>
-                        <p>Copyright © 2020 NG TISSOT. ALL RIGHTS RESERVED.</p>
-                    </div>
-                </div>
+                <a href="index.html">ⓒ NG TISSOT</a>
+                <ul class="linkList">
+                    <li>
+                        <a href="https://github.com/Plush777/NGTISSOT">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/YnfZW5Ua">Discord</a>
+                    </li>
+                    <li>
+                        <a href="https://cafe.naver.com/clashroyale">Cafe</a>
+                    </li>
+                </ul>
             </div>
         </footer>
-        <div id="quick-Area">
-            <div class="quick-btn">
-                <div class="quick-inner">
-                    <span class="hidden">퀵메뉴 바로가기</span>
-                    <ul>
-                        <li class="btn-top">
-                            <span>TOP</span>
-                            <i class="hidden">위로가기</i>
-                        </li>
-                        <li class="discord">
-                            <a href="https://discord.gg/wGdBFRMWHW" title="Discord">
-                                <span>디스코드</span>
-                            </a>
-                        </li>
-                        <li class="github">
-                            <a href="https://github.com/Plush777" title="Github">
-                                <span>Github</span>
-                            </a>
-                        </li>
-                        <li class="velog">
-                            <a href="https://velog.io/@sky" title="Velog">
-                                <span>Velog</span>
-                            </a>
-                        </li>
-                        <li class="darkMode">
-                            <button type="button" class="btnDarkMode">
-                                <span></span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="btnArea">
+            <button type="button" class="btnDarkMode">
+                <svg class="moon" width="30" height="30" version="1.1" viewBox="0 0 700 550">
+                    <g>
+                        <path d="m348 38.195c-3.0625 0-5.9453 1.6328-7.4883 4.2305-1.7109 2.8125-1.6992 6.3125 0.039062 9.125 21.871 35.387 33.426 76.148 33.426 117.88 0 123.84-100.75 224.58-224.58 224.58-4.4922 0-9.1875-0.16797-14.508-0.51172l-0.94922-0.058594c-2.9883 0-5.8203 1.6289-7.4102 4.2656-1.6758 2.793-1.6562 6.2695 0.0625 9.0938 44.504 72.012 121.53 115 206.05 115 133.48 0 242.08-108.6 242.08-242.08 0.003906-127.18-99.332-233.26-226.72-241.53zm-15.359 466.11c-72.48 0-139.64-34.48-181.85-92.797 132.85-0.75391 240.68-109.05 240.68-242.08 0-39.09-9.4688-77.59-27.48-112.05 109.23 15.375 193.23 110.95 193.23 222.34-0.003906 123.83-100.75 224.58-224.59 224.58z"></path>
+                    </g>
+                </svg>
+            </button>
         </div>
     </div>
-    <script type="text/javascript"> 
-        const d = new Date(); 
-        let currentDate = d.getFullYear() + "년 " + ( d.getMonth() + 1 ) + "월 " + d.getDate() + "일";  
-        const result = document.getElementById("today"); result.innerHTML = "Today : " + currentDate;
-    </script>
 </body>
 </html>

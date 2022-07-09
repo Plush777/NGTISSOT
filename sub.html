@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="js/pace-master/themes/blue/pace-theme-minimal.css">
     <link rel="icon" href="images/홈페이지용_NT로고.png" sizes="16x16">
     <script src="js/pace-master/pace.min.js"></script>
-    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/lib/jquery-1.12.4.js"></script>
     <script src="./js/lib/jquery.easeScroll.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/theme.js" defer></script>
@@ -111,15 +111,12 @@
                                 있어요.</p>
                             </div>
                             <div class="img-box">
-                                <div class="img-item col65">
-                                    <img src="" alt="">
+                                <div class="img-item col65 img01">
+                                    <span class="hidden">스크린샷 이미지</span>
                                 </div>
                                 <div class="flex col g40">
-                                    <div class="img-item row5">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="img-item row5">
-                                        <img src="" alt="">
+                                    <div class="img-item row5 img02">
+                                        <span class="hidden">스크린샷 이미지</span>
                                     </div>
                                 </div>
                             </div>
@@ -132,14 +129,14 @@
                                 끊임없는 클랜전 연구로 꾸준히 성장하고 있어요.</p>
                             </div>
                             <div class="img-box center between">
-                                <div class="img-item row45">
-                                    <img src="" alt="">
+                                <div class="img-item row45 img03">
+                                    <span class="hidden">스크린샷 이미지</span>
                                 </div>
                                 <div class="txt-box">
-                                    <p>우리 클랜은 꾸준히 성장하고 있어요.<br/>
-                                    재작년 11월에 클랜 지역랭킹 21위를 달성하고<br/>
-                                    올해 3월에 타 클랜과의 연합,5월 초에<br/>
-                                    최고 지역랭킹 5위를 달성하는 등의<br/>
+                                    <p>우리 클랜은 꾸준히 성장하고 있어요.<br class="pc-628">
+                                    재작년 11월에 클랜 지역랭킹 21위를 달성하고<br class="pc-628">
+                                    올해 3월에 타 클랜과의 연합,5월 초에<br class="pc-628">
+                                    최고 지역랭킹 5위를 달성하는 등의<br class="pc-628">
                                     쾌거를 이루었어요.</p>
                                 </div>
                             </div>
@@ -148,6 +145,15 @@
                 </div>
             </div>
         </section>
+        <div class="btnArea">
+            <button type="button" class="btnDarkMode">
+                <svg class="moon" width="30" height="30" version="1.1" viewBox="0 0 700 550">
+                    <g>
+                        <path d="m348 38.195c-3.0625 0-5.9453 1.6328-7.4883 4.2305-1.7109 2.8125-1.6992 6.3125 0.039062 9.125 21.871 35.387 33.426 76.148 33.426 117.88 0 123.84-100.75 224.58-224.58 224.58-4.4922 0-9.1875-0.16797-14.508-0.51172l-0.94922-0.058594c-2.9883 0-5.8203 1.6289-7.4102 4.2656-1.6758 2.793-1.6562 6.2695 0.0625 9.0938 44.504 72.012 121.53 115 206.05 115 133.48 0 242.08-108.6 242.08-242.08 0.003906-127.18-99.332-233.26-226.72-241.53zm-15.359 466.11c-72.48 0-139.64-34.48-181.85-92.797 132.85-0.75391 240.68-109.05 240.68-242.08 0-39.09-9.4688-77.59-27.48-112.05 109.23 15.375 193.23 110.95 193.23 222.34-0.003906 123.83-100.75 224.58-224.59 224.58z"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
         <footer class="footer" id="footer" role="contentinfo">
             <div class="inner">
                 <a href="index.html">ⓒ NG TISSOT</a>
@@ -164,16 +170,6 @@
                 </ul>
             </div>
         </footer>
-
-        <div class="btnArea">
-            <button type="button" class="btnDarkMode">
-                <svg class="moon" width="30" height="30" version="1.1" viewBox="0 0 700 550">
-                    <g>
-                        <path d="m348 38.195c-3.0625 0-5.9453 1.6328-7.4883 4.2305-1.7109 2.8125-1.6992 6.3125 0.039062 9.125 21.871 35.387 33.426 76.148 33.426 117.88 0 123.84-100.75 224.58-224.58 224.58-4.4922 0-9.1875-0.16797-14.508-0.51172l-0.94922-0.058594c-2.9883 0-5.8203 1.6289-7.4102 4.2656-1.6758 2.793-1.6562 6.2695 0.0625 9.0938 44.504 72.012 121.53 115 206.05 115 133.48 0 242.08-108.6 242.08-242.08 0.003906-127.18-99.332-233.26-226.72-241.53zm-15.359 466.11c-72.48 0-139.64-34.48-181.85-92.797 132.85-0.75391 240.68-109.05 240.68-242.08 0-39.09-9.4688-77.59-27.48-112.05 109.23 15.375 193.23 110.95 193.23 222.34-0.003906 123.83-100.75 224.58-224.59 224.58z"></path>
-                    </g>
-                </svg>
-            </button>
-        </div>
     </div>
 </body>
 </html>

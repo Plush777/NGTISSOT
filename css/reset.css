@@ -51,6 +51,7 @@
     font-style: normal;
     font-weight: 400;
     src: url(./font/notoSans/eot/NotoSans-SemiBold.eot);
+    src: url(./font/notoSans/woff/NotoSans-SemiBold.woff?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSans-SemiBold.woff) format("woff");
 }
 
 @font-face {
@@ -70,10 +71,11 @@
 }
 
 @font-face {
-    font-family: 'NEXON Lv1 Gothic OTF Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
-    font-weight: normal;
+    font-family: '레시피코리아';
     font-style: normal;
+    font-weight: normal;
+    src: url(./font/recipe/eot/레코체FONT.eot);
+    src: url(./font/recipe/eot/레코체FONT.eot#iefix) format("embedded-opentype"), url(./font/recipe/woff/레코체FONT.woff) format("woff");
 }
 
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, article, aside, footer, header, section, summary {

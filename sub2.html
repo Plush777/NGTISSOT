@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="js/pace-master/themes/blue/pace-theme-minimal.css">
     <link rel="icon" href="images/홈페이지용_NT로고.png" sizes="16x16">
     <script src="js/pace-master/pace.min.js"></script>
-    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/lib/jquery-1.12.4.js"></script>
     <script src="./js/lib/jquery.easeScroll.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/theme.js" defer></script>
@@ -133,18 +133,18 @@
                                 <ul class="list rowType">
                                     <li>
                                         <h4 class="tit">1. Examine</h4>
-                                        <p class="txt">Royale API 에서 플레이어 태그를 조회하여<br/>
+                                        <p class="txt">Royale API 에서 플레이어 태그를 조회하여<br class="pc-945"/>
                                         클랜전 참여율 , 클랜 이력 등을 검토해요. </p>
                                     </li>
                                     <li>
                                         <h4 class="tit">2. Join</h4>
-                                        <p class="txt">조건 만족 시 클랜 초대링크와 카카오톡<br/>
-                                        오픈채팅방 링크를 같이 보내드려요.<br/>
+                                        <p class="txt">조건 만족 시 클랜 초대링크와 카카오톡<br class="pc-945"/>
+                                        오픈채팅방 링크를 같이 보내드려요.<br class="pc-945"/>
                                         그대로 가입하시면 돼요!</p>
                                     </li>
                                     <li>
                                         <h4 class="tit">3. Dissatisfied</h4>
-                                        <p class="txt">불만족 시 아쉽지만 가입하실 수 없어요.<br/>
+                                        <p class="txt">불만족 시 아쉽지만 가입하실 수 없어요.<br class="pc-945"/>
                                         다음에 다시 신청해주세요.</p>
                                     </li>
                                 </ul>
@@ -154,6 +154,15 @@
                 </div>
             </div>
         </section>
+        <div class="btnArea">
+            <button type="button" class="btnDarkMode">
+                <svg class="moon" width="30" height="30" version="1.1" viewBox="0 0 700 550">
+                    <g>
+                        <path d="m348 38.195c-3.0625 0-5.9453 1.6328-7.4883 4.2305-1.7109 2.8125-1.6992 6.3125 0.039062 9.125 21.871 35.387 33.426 76.148 33.426 117.88 0 123.84-100.75 224.58-224.58 224.58-4.4922 0-9.1875-0.16797-14.508-0.51172l-0.94922-0.058594c-2.9883 0-5.8203 1.6289-7.4102 4.2656-1.6758 2.793-1.6562 6.2695 0.0625 9.0938 44.504 72.012 121.53 115 206.05 115 133.48 0 242.08-108.6 242.08-242.08 0.003906-127.18-99.332-233.26-226.72-241.53zm-15.359 466.11c-72.48 0-139.64-34.48-181.85-92.797 132.85-0.75391 240.68-109.05 240.68-242.08 0-39.09-9.4688-77.59-27.48-112.05 109.23 15.375 193.23 110.95 193.23 222.34-0.003906 123.83-100.75 224.58-224.59 224.58z"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
         <footer class="footer" id="footer" role="contentinfo">
             <div class="inner">
                 <a href="index.html">ⓒ NG TISSOT</a>
@@ -170,16 +179,6 @@
                 </ul>
             </div>
         </footer>
-
-        <div class="btnArea">
-            <button type="button" class="btnDarkMode">
-                <svg class="moon" width="30" height="30" version="1.1" viewBox="0 0 700 550">
-                    <g>
-                        <path d="m348 38.195c-3.0625 0-5.9453 1.6328-7.4883 4.2305-1.7109 2.8125-1.6992 6.3125 0.039062 9.125 21.871 35.387 33.426 76.148 33.426 117.88 0 123.84-100.75 224.58-224.58 224.58-4.4922 0-9.1875-0.16797-14.508-0.51172l-0.94922-0.058594c-2.9883 0-5.8203 1.6289-7.4102 4.2656-1.6758 2.793-1.6562 6.2695 0.0625 9.0938 44.504 72.012 121.53 115 206.05 115 133.48 0 242.08-108.6 242.08-242.08 0.003906-127.18-99.332-233.26-226.72-241.53zm-15.359 466.11c-72.48 0-139.64-34.48-181.85-92.797 132.85-0.75391 240.68-109.05 240.68-242.08 0-39.09-9.4688-77.59-27.48-112.05 109.23 15.375 193.23 110.95 193.23 222.34-0.003906 123.83-100.75 224.58-224.59 224.58z"></path>
-                    </g>
-                </svg>
-            </button>
-        </div>
     </div>
 </body>
 </html>

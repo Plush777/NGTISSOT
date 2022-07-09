@@ -9,6 +9,7 @@ body{
     --bg-color8: #d0d0d0;
     --bg-color9: rgba(0,0,0,.12);
     --bg-color10: #dbdbdb;
+    --bg-accodion: #a7a7a7;
     --bg-selected: #1E90FF;
     --bg-selected-text-color: #fff;
     --bg-btn: #fff;
@@ -21,6 +22,7 @@ body{
     --mobile-nav-right-txt:#fff;
     --mobile-nav-right-bd:#ddd;
     --mobile-nav-close: #333;
+    --icon-search: url('../images/icon/icon-search-b.svg');
 }
   
   
@@ -35,6 +37,7 @@ body[data-theme="light"] {
     --bg-color8: #d0d0d0;
     --bg-color9: rgba(0,0,0,.12);
     --bg-color10: #dbdbdb;
+    --bg-accodion: #a7a7a7;
     --bg-selected: #1E90FF;
     --bg-selected-text-color: #fff;
     --bg-btn: #fff;
@@ -47,6 +50,7 @@ body[data-theme="light"] {
     --mobile-nav-right-txt:#333;
     --mobile-nav-right-bd:#ddd;
     --mobile-nav-close: #333;
+    --icon-search: url('../images/icon/icon-search-b.svg');
 }
   
 body[data-theme="dark"] {
@@ -60,6 +64,7 @@ body[data-theme="dark"] {
     --bg-color8: #e4e8eb;
     --bg-color9: #3F4042;
     --bg-color10: #3F4042;
+    --bg-accodion: #9aa0a6;
     --bg-selected: #99C8FF;
     --bg-selected-text-color: #222;
     --bg-btn: #292a2d;
@@ -72,6 +77,7 @@ body[data-theme="dark"] {
     --mobile-nav-right-txt:#fff;
     --mobile-nav-right-bd:#3a3b3d;
     --mobile-nav-close: #fff;
+    --icon-search: url('../images/icon/icon-search-w.svg');
 }
 
 @media (prefers-color-scheme: light) {
@@ -86,6 +92,7 @@ body[data-theme="dark"] {
         --bg-color8: #d0d0d0;
         --bg-color9: rgba(0,0,0,.12);
         --bg-color10: #dbdbdb;
+        --bg-accodion: #a7a7a7;
         --bg-selected: #1E90FF;
         --bg-selected-text-color: #fff;
         --bg-btn: #fff;
@@ -98,6 +105,7 @@ body[data-theme="dark"] {
         --mobile-nav-right-txt:#fff;
         --mobile-nav-right-bd:#ddd;
         --mobile-nav-close: #333;
+        --icon-search: url('../images/icon/icon-search-b.svg');
     }
 }
 
@@ -113,6 +121,7 @@ body[data-theme="dark"] {
         --bg-color8: #e4e8eb;
         --bg-color9: #3F4042;
         --bg-color10: #3F4042;
+        --bg-accodion: #9aa0a6;
         --bg-selected: #99C8FF;
         --bg-selected-text-color: #222;
         --bg-btn: #292a2d;
@@ -125,5 +134,6 @@ body[data-theme="dark"] {
         --mobile-nav-right-txt:#fff;
         --mobile-nav-right-bd:#3a3b3d;
         --mobile-nav-close: #fff;
+        --icon-search: url('../images/icon/icon-search-w.svg');
     }
 }
