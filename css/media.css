@@ -22,7 +22,7 @@
   
     /* etc */
     .wrap .pd{padding: 0 30px 100px 30px; box-sizing: border-box;}
-    .btnArea{position: sticky; display: flex; justify-content: flex-end; margin: 0 20px 20px 0; bottom: 20px;}
+    .btnArea.sub{position: sticky; display: flex; justify-content: flex-end; margin: 0 20px 20px 0; bottom: 20px;}
     .btnArea .btnDarkMode{position: static;}
 }
   
@@ -261,7 +261,7 @@
     .tab-wrap .tab-nav .tab-list{overflow-y: hidden; overflow-x: auto;}
     .tab-wrap .tab-nav .tab-list::-webkit-scrollbar{width: 3px; height: 3px;}
 
-    .btnArea{position: fixed; right: 20px; bottom: 20px; margin: 0;}
+    .btnArea.sub{position: fixed; right: 20px; bottom: 20px; margin: 0;}
 }
 
 @media (max-width: 410px) {
