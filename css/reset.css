@@ -204,3 +204,7 @@ svg {
 .flex.g40{
     gap: 40px;
 }
+
+.flex.sb{
+    justify-content: space-between;
+}

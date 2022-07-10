@@ -986,4 +986,40 @@ header .nav.sub a{
 }
 
 .txt-group+.txt-group{margin-top: 50px;}
+
+.mobile-search-area{
+  position: relative;
+  margin-left: 10px;
+  display: none;
+}
+
+.btn-mobile-search{
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--icon-search) no-repeat center;
+}
+
+.mobile-search-input{
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--bg-color6);
+  border-radius: 24px;
+  transition: .3s ease-in-out;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-size: 14px;
+  outline: 0;
+  background-color: transparent;
+}
+
+.mobile-search-area.active .mobile-search-input{
+  width: 200px;
+  padding-left: 30px;
+}
+
+.mobile-search-area.active .btn-mobile-search{left: 4px;}
 /* --- */

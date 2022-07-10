@@ -147,6 +147,34 @@ $(function(){
 	if(window.matchMedia('(max-width: 945px)').matches) {
 		$(document).on('mouseenter', '.readerTable td,.coReaderTable td', function() {
 			$('.btn-search').remove();
-		})
+		});
 	}
+
+	$('.btn-mobile-search').on({
+		"click":function(){
+			$(this).closest('.mobile-search-area').addClass('active');
+			$('.mobile-search-input').val('');
+		}
+	});
+
+	$('.mobile-search-input').on({
+		"keyup":function(){
+			if($(this).val() != ''){
+				$('.btn-mobile-search').on({
+					"click":function(){
+						location.href = 'https://royaleapi.com/player/search/results?q=' + $(this).closest('.mobile-search-area').find('.mobile-search-input').val();
+					}
+				});
+			}
+		}
+	});
+
+	$(document).on({
+		"click":function(e){
+			if($(e.target).closest('.mobile-search-area').length == 0){
+				$('.mobile-search-area').removeClass('active');
+				$('.mobile-search-input').val('');
+			}
+		}
+	});
 });
