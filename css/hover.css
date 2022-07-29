@@ -1,13 +1,13 @@
 @media (hover: hover) {
-    .nav ul li:hover a{
+    .nav ul li:hover a {
         color: var(--primary);
     }
 
-    .btn.type02:hover{
+    .btn.type02:hover {
         transform: translateY(-5px);
     }
 
-    .common-select li:hover:not(.disabled){
+    .common-select li:hover:not(.disabled) {
         cursor: default;
         color: var(--bg-selected-text-color);
         background-color: var(--bg-selected);

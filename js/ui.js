@@ -1,5 +1,5 @@
 $(function(){
-	$('html').easeScroll();
+	$('html').easeScroll(); 
 
 	$('.btnDarkMode').each(function(){
 		if(localStorage.getItem('theme') === 'dark'){
@@ -9,7 +9,7 @@ $(function(){
 			$(this).attr('aria-pressed', 'false');
 			$(this).find('span').text('다크모드');
 		}
-	})
+	});
 
 	let imgArea = $('.img-area img');
 	if(localStorage.getItem('theme') === 'dark'){
@@ -19,53 +19,53 @@ $(function(){
 	}
 
 	$('.btnDarkMode').on({
-		"click":function(){
+		'click':function(){
 			if(localStorage.getItem('theme') === 'dark'){
-                $(this).attr('aria-pressed', 'true');
-                $(this).find('span').text('라이트모드');
+				$(this).attr('aria-pressed', 'true');
+				$(this).find('span').text('라이트모드');
 				imgArea.attr('src', 'images/dBHallOfFameLogo-white.png');
-            } else if($(localStorage.getItem('theme') === 'light')) {
-                $(this).attr('aria-pressed', 'false');
-                $(this).find('span').text('다크모드');
+			} else if($(localStorage.getItem('theme') === 'light')) {
+				$(this).attr('aria-pressed', 'false');
+				$(this).find('span').text('다크모드');
 				imgArea.attr('src', 'images/dBHallOfFameLogo.png');
-            }
+			}
 		}
-	})
+	});
 
-    $(".btn-top").click(function() {
-        $('html').animate({scrollTop : 0}, 600);
-    });
+	$('.btn-top').click(function() {
+		$('html').animate({scrollTop : 0}, 600);
+	});
 
 	$('.tabList li').on({
-		"click":function(){
+		'click':function(){
 			$(this).addClass('active').siblings('li').removeClass('active');
 			$(this).closest('.tabNav').siblings('.tabCont').eq($(this).index()).addClass('active').siblings('.tabCont').removeClass('active');
 		}
-	})
+	});
 
 	$('.tab-list li').on({
-		"click":function(){
+		'click':function(){
 			$(this).addClass('active').siblings('li').removeClass('active');
 			$(this).closest('.tab-nav').siblings('.tab-cont').eq($(this).index()).addClass('active').siblings('.tab-cont').removeClass('active');
 		}
-	})
+	});
 
 	$('.accordion .dep1>li>.head').on({
 		'click': function click(e) {
-		  e.preventDefault();
-		  $(this).closest('li').toggleClass('active').siblings().removeClass('active').find('.dep2').hide();
-		  $(this).closest('li').children('.dep2').stop().slideToggle(400).closest('li').siblings('li').children('.dep2').slideUp(400);
+			e.preventDefault();
+			$(this).closest('li').toggleClass('active').siblings().removeClass('active').find('.dep2').hide();
+			$(this).closest('li').children('.dep2').stop().slideToggle(400).closest('li').siblings('li').children('.dep2').slideUp(400);
 		}
 	});	
 
 	/*모바일 메뉴 클릭 시 모바일 사이드 메뉴와 dimmed가 보여짐. */
 	$('.mobile-nav').on({
-		"click":function(){
+		'click':function(){
 			$('#dimmed').fadeIn();
 		}
 	});
 	$('.mobile-nav').on({
-		"click":function(){
+		'click':function(){
 			$('.mobile-nav-right').css('right', '0');
 			$('.mobile-nav-right').css('visibility', 'visible');
 			$('.mobile-nav-right').css('opacity', '1');
@@ -74,7 +74,7 @@ $(function(){
 
 	/*사이드 메뉴에서 닫기 버튼을 누르면 사이드 메뉴와 dimmed가 숨겨짐. */
 	$('.mnr-nav-close').on({
-		"click":function(){
+		'click':function(){
 			$('.mobile-nav-right').css('right','-280px');
 			$('.mobile-nav-right').css('visibility', 'hidden');
 			$('.mobile-nav-right').css('opacity', '0');
@@ -102,19 +102,19 @@ $(function(){
 
 	let lastScrollTop = 0;
 	let decidedScrollTop = 120;
-    $(window).scroll(function () {
-        let st = $(this).scrollTop();
-        if (st > decidedScrollTop) {
-            $('header').addClass('fixed');
-        } else if (st < decidedScrollTop) {
-            $('header').removeClass('fixed');
-        }
+	$(window).scroll(function () {
+		let st = $(this).scrollTop();
+		if (st > decidedScrollTop) {
+			$('header').addClass('fixed');
+		} else if (st < decidedScrollTop) {
+			$('header').removeClass('fixed');
+		}
 
 		if (st > lastScrollTop) {
-            $('header').removeClass('head-sub-down').addClass('head-sub-up');
-        } else {
+			$('header').removeClass('head-sub-down').addClass('head-sub-up');
+		} else {
 			$('header').removeClass('head-sub-up').addClass('head-sub-down');
-        }
+		}
 
 		if(window.matchMedia('(max-width: 628px)').matches) {
 			if (st > lastScrollTop) {
@@ -124,8 +124,8 @@ $(function(){
 			}
 		}
 
-        lastScrollTop = st;
-    });
+		lastScrollTop = st;
+	});
 
 
 
@@ -133,7 +133,7 @@ $(function(){
 	let currentDate = d.getFullYear() + "년 " + ( d.getMonth() + 1 ) + "월 " + d.getDate() + "일";  
 	const result = document.getElementById("today"); result.innerHTML = "Today : " + currentDate;*/
 
-	let btnSearch = '<button type="button" class="btn-search" title="플레이어 태그 검색"></button>'
+	let btnSearch = '<button type="button" class="btn-search" title="플레이어 태그 검색"></button>';
 	$(document).on('mouseenter', '.readerTable td,.coReaderTable td', function() {
 		$(this).find('p').append(btnSearch);
 	}) .on('mouseleave', '.readerTable td,.coReaderTable td', function() {	
@@ -151,17 +151,17 @@ $(function(){
 	}
 
 	$('.btn-mobile-search').on({
-		"click":function(){
+		'click':function(){
 			$(this).closest('.mobile-search-area').addClass('active');
-			$('.mobile-search-input').val('');
+			// $('.mobile-search-input').val('');
 		}
 	});
 
 	$('.mobile-search-input').on({
-		"keyup":function(){
+		'keyup':function(){
 			if($(this).val() != ''){
 				$('.btn-mobile-search').on({
-					"click":function(){
+					'click':function(){
 						location.href = 'https://royaleapi.com/player/search/results?q=' + $(this).closest('.mobile-search-area').find('.mobile-search-input').val();
 					}
 				});
@@ -170,7 +170,7 @@ $(function(){
 	});
 
 	$(document).on({
-		"click":function(e){
+		'click':function(e){
 			if($(e.target).closest('.mobile-search-area').length == 0){
 				$('.mobile-search-area').removeClass('active');
 				$('.mobile-search-input').val('');

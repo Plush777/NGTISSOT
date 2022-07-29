@@ -1,4 +1,4 @@
-body{
+body {
     --bg-color: #fff;
     --bg-color2: #f5f5f5;
     --bg-color3: #fafafa;
@@ -7,26 +7,25 @@ body{
     --bg-color6: #d0d0d0;
     --bg-color7: #cacaca;
     --bg-color8: #d0d0d0;
-    --bg-color9: rgba(0,0,0,.12);
+    --bg-color9: rgba(0, 0, 0, 0.12);
     --bg-color10: #dbdbdb;
     --bg-accodion: #a7a7a7;
-    --bg-selected: #1E90FF;
+    --bg-selected: #1e90ff;
     --bg-selected-text-color: #fff;
     --bg-btn: #fff;
     --bg-svg: #000;
     --text-color: #000;
-    --primary:#266BF7;
-    --bg-skeleton: #DEE2E6;
-    --mobile-nav:#000;
-    --mobile-nav-right-bg:#292a2d;
-    --mobile-nav-right-txt:#fff;
-    --mobile-nav-right-bd:#ddd;
+    --primary: #266bf7;
+    --bg-skeleton: #dee2e6;
+    --mobile-nav: #000;
+    --mobile-nav-right-bg: #292a2d;
+    --mobile-nav-right-txt: #fff;
+    --mobile-nav-right-bd: #ddd;
     --mobile-nav-close: #333;
     --icon-search: url('../images/icon/icon-search-b.svg');
 }
-  
-  
-body[data-theme="light"] {
+
+body[data-theme='light'] {
     --bg-color: #fff;
     --bg-color2: #f5f5f5;
     --bg-color3: #fafafa;
@@ -35,25 +34,25 @@ body[data-theme="light"] {
     --bg-color6: #d0d0d0;
     --bg-color7: #cacaca;
     --bg-color8: #d0d0d0;
-    --bg-color9: rgba(0,0,0,.12);
+    --bg-color9: rgba(0, 0, 0, 0.12);
     --bg-color10: #dbdbdb;
     --bg-accodion: #a7a7a7;
-    --bg-selected: #1E90FF;
+    --bg-selected: #1e90ff;
     --bg-selected-text-color: #fff;
     --bg-btn: #fff;
     --bg-svg: #000;
     --text-color: #000;
-    --primary:#266BF7;
-    --bg-skeleton: #DEE2E6;
-    --mobile-nav:#000;
-    --mobile-nav-right-bg:#fff;
-    --mobile-nav-right-txt:#333;
-    --mobile-nav-right-bd:#ddd;
+    --primary: #266bf7;
+    --bg-skeleton: #dee2e6;
+    --mobile-nav: #000;
+    --mobile-nav-right-bg: #fff;
+    --mobile-nav-right-txt: #333;
+    --mobile-nav-right-bd: #ddd;
     --mobile-nav-close: #333;
     --icon-search: url('../images/icon/icon-search-b.svg');
 }
-  
-body[data-theme="dark"] {
+
+body[data-theme='dark'] {
     --bg-color: #1d1d1f;
     --bg-color2: #292a2d;
     --bg-color3: #252629;
@@ -62,26 +61,26 @@ body[data-theme="dark"] {
     --bg-color6: #e4e8eb;
     --bg-color7: #777;
     --bg-color8: #e4e8eb;
-    --bg-color9: #3F4042;
-    --bg-color10: #3F4042;
+    --bg-color9: #3f4042;
+    --bg-color10: #3f4042;
     --bg-accodion: #9aa0a6;
-    --bg-selected: #99C8FF;
+    --bg-selected: #99c8ff;
     --bg-selected-text-color: #222;
     --bg-btn: #292a2d;
     --bg-svg: #fff;
     --text-color: #d9d9d9;
-    --primary:#0094ff;
+    --primary: #0094ff;
     --bg-skeleton: #343638;
-    --mobile-nav:#fff;
-    --mobile-nav-right-bg:#292a2d;
-    --mobile-nav-right-txt:#fff;
-    --mobile-nav-right-bd:#3a3b3d;
+    --mobile-nav: #fff;
+    --mobile-nav-right-bg: #292a2d;
+    --mobile-nav-right-txt: #fff;
+    --mobile-nav-right-bd: #3a3b3d;
     --mobile-nav-close: #fff;
     --icon-search: url('../images/icon/icon-search-w.svg');
 }
 
 @media (prefers-color-scheme: light) {
-    body{
+    body {
         --bg-color: #fff;
         --bg-color2: #f5f5f5;
         --bg-color3: #fafafa;
@@ -90,27 +89,27 @@ body[data-theme="dark"] {
         --bg-color6: #d0d0d0;
         --bg-color7: #cacaca;
         --bg-color8: #d0d0d0;
-        --bg-color9: rgba(0,0,0,.12);
+        --bg-color9: rgba(0, 0, 0, 0.12);
         --bg-color10: #dbdbdb;
         --bg-accodion: #a7a7a7;
-        --bg-selected: #1E90FF;
+        --bg-selected: #1e90ff;
         --bg-selected-text-color: #fff;
         --bg-btn: #fff;
         --bg-svg: #000;
         --text-color: #000;
-        --primary:#266BF7;
-        --bg-skeleton: #DEE2E6;
-        --mobile-nav:#000;
-        --mobile-nav-right-bg:#292a2d;
-        --mobile-nav-right-txt:#fff;
-        --mobile-nav-right-bd:#ddd;
+        --primary: #266bf7;
+        --bg-skeleton: #dee2e6;
+        --mobile-nav: #000;
+        --mobile-nav-right-bg: #292a2d;
+        --mobile-nav-right-txt: #fff;
+        --mobile-nav-right-bd: #ddd;
         --mobile-nav-close: #333;
         --icon-search: url('../images/icon/icon-search-b.svg');
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    body{
+    body {
         --bg-color: #1d1d1f;
         --bg-color2: #292a2d;
         --bg-color3: #252629;
@@ -119,20 +118,20 @@ body[data-theme="dark"] {
         --bg-color6: #e4e8eb;
         --bg-color7: #777;
         --bg-color8: #e4e8eb;
-        --bg-color9: #3F4042;
-        --bg-color10: #3F4042;
+        --bg-color9: #3f4042;
+        --bg-color10: #3f4042;
         --bg-accodion: #9aa0a6;
-        --bg-selected: #99C8FF;
+        --bg-selected: #99c8ff;
         --bg-selected-text-color: #222;
         --bg-btn: #292a2d;
         --bg-svg: #fff;
         --text-color: #d9d9d9;
-        --primary:#0094ff;
+        --primary: #0094ff;
         --bg-skeleton: #343638;
-        --mobile-nav:#fff;
-        --mobile-nav-right-bg:#292a2d;
-        --mobile-nav-right-txt:#fff;
-        --mobile-nav-right-bd:#3a3b3d;
+        --mobile-nav: #fff;
+        --mobile-nav-right-bg: #292a2d;
+        --mobile-nav-right-txt: #fff;
+        --mobile-nav-right-bd: #3a3b3d;
         --mobile-nav-close: #fff;
         --icon-search: url('../images/icon/icon-search-w.svg');
     }

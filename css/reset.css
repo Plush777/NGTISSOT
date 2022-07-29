@@ -3,7 +3,9 @@
     font-style: normal;
     font-weight: 400;
     src: url(./font/nanumGothic/NanumGothic.eot);
-    src: url(./font/nanumGothic/NanumGothic.eot?#iefix) format("embedded-opentype"), url(./font/nanumGothic/NanumGothic.woff) format("woff"); 
+    src: url(./font/nanumGothic/NanumGothic.eot?#iefix)
+            format('embedded-opentype'),
+        url(./font/nanumGothic/NanumGothic.woff) format('woff');
 }
 
 @font-face {
@@ -11,7 +13,9 @@
     font-style: normal;
     font-weight: 400;
     src: url(./font/nanumGothic/NanumGothicBold.eot);
-    src: url(./font/nanumGothic/NanumGothicBold.eot?#iefix) format("embedded-opentype"), url(./font/nanumGothic/NanumGothicBold.woff) format("woff"); 
+    src: url(./font/nanumGothic/NanumGothicBold.eot?#iefix)
+            format('embedded-opentype'),
+        url(./font/nanumGothic/NanumGothicBold.woff) format('woff');
 }
 
 @font-face {
@@ -19,7 +23,9 @@
     font-style: normal;
     font-weight: 400;
     src: url(./font/notoSans/eot/NotoSansKR-Light-Hestia.eot);
-    src: url(./font/notoSans/eot/NotoSansKR-Light-Hestia.eot?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSansKR-Light-Hestia.woff) format("woff"); 
+    src: url(./font/notoSans/eot/NotoSansKR-Light-Hestia.eot?#iefix)
+            format('embedded-opentype'),
+        url(./font/notoSans/woff/NotoSansKR-Light-Hestia.woff) format('woff');
 }
 
 @font-face {
@@ -27,7 +33,10 @@
     font-style: normal;
     font-weight: 400;
     src: url(./font/notoSans/eot/NotoSansKR-DemiLight-Hestia.eot);
-    src: url(./font/notoSans/eot/NotoSansKR-DemiLight-Hestia.eot?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSansKR-DemiLight-Hestia.woff) format("woff"); 
+    src: url(./font/notoSans/eot/NotoSansKR-DemiLight-Hestia.eot?#iefix)
+            format('embedded-opentype'),
+        url(./font/notoSans/woff/NotoSansKR-DemiLight-Hestia.woff)
+            format('woff');
 }
 
 @font-face {
@@ -35,7 +44,9 @@
     font-style: normal;
     font-weight: 400;
     src: url(./font/notoSans/eot/NotoSansKR-Regular-Hestia.eot);
-    src: url(./font/notoSans/eot/NotoSansKR-Regular-Hestia.eot?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSansKR-Regular-Hestia.woff) format("woff"); 
+    src: url(./font/notoSans/eot/NotoSansKR-Regular-Hestia.eot?#iefix)
+            format('embedded-opentype'),
+        url(./font/notoSans/woff/NotoSansKR-Regular-Hestia.woff) format('woff');
 }
 
 @font-face {
@@ -43,7 +54,9 @@
     font-style: normal;
     font-weight: 400;
     src: url(./font/notoSans/eot/NotoSansKR-Medium-Hestia.eot);
-    src: url(./font/notoSans/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSansKR-Medium-Hestia.woff) format("woff"); 
+    src: url(./font/notoSans/eot/NotoSansKR-Medium-Hestia.eot?#iefix)
+            format('embedded-opentype'),
+        url(./font/notoSans/woff/NotoSansKR-Medium-Hestia.woff) format('woff');
 }
 
 @font-face {
@@ -51,7 +64,9 @@
     font-style: normal;
     font-weight: 400;
     src: url(./font/notoSans/eot/NotoSans-SemiBold.eot);
-    src: url(./font/notoSans/woff/NotoSans-SemiBold.woff?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSans-SemiBold.woff) format("woff");
+    src: url(./font/notoSans/woff/NotoSans-SemiBold.woff?#iefix)
+            format('embedded-opentype'),
+        url(./font/notoSans/woff/NotoSans-SemiBold.woff) format('woff');
 }
 
 @font-face {
@@ -59,7 +74,9 @@
     font-style: normal;
     font-weight: 400;
     src: url(./font/nanumSquare/NanumSquareB.eot);
-    src: url(./font/nanumSquare/NanumSquareB.eot?#iefix) format("embedded-opentype"), url(./font/nanumSquare/NanumSquareB.woff) format("woff"); 
+    src: url(./font/nanumSquare/NanumSquareB.eot?#iefix)
+            format('embedded-opentype'),
+        url(./font/nanumSquare/NanumSquareB.woff) format('woff');
 }
 
 @font-face {
@@ -67,7 +84,9 @@
     font-style: normal;
     font-family: 'SangSangShin';
     src: url(./font/sshin/eot/SangSangShin.eot);
-    src: url(./font/sshin/eot/SangSangShin.eot?#iefix) format("embedded-opentype"), url(./font/sshin/woff/SangSangShin.woff) format("woff");
+    src: url(./font/sshin/eot/SangSangShin.eot?#iefix)
+            format('embedded-opentype'),
+        url(./font/sshin/woff/SangSangShin.woff) format('woff');
 }
 
 @font-face {
@@ -75,63 +94,120 @@
     font-style: normal;
     font-weight: normal;
     src: url(./font/recipe/eot/레코체FONT.eot);
-    src: url(./font/recipe/eot/레코체FONT.eot#iefix) format("embedded-opentype"), url(./font/recipe/woff/레코체FONT.woff) format("woff");
+    src: url(./font/recipe/eot/레코체FONT.eot#iefix) format('embedded-opentype'),
+        url(./font/recipe/woff/레코체FONT.woff) format('woff');
 }
 
-html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, article, aside, footer, header, section, summary {
+html,
+body,
+div,
+span,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+button,
+abbr,
+address,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+article,
+aside,
+footer,
+header,
+section,
+summary {
     margin: 0;
     padding: 0;
     border: 0;
-    font: inherit; 
+    font: inherit;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block; 
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
-body, html {
+body,
+html {
     width: 100%;
 }
 
-ol, ul {
-    list-style: none; 
+ol,
+ul {
+    list-style: none;
 }
 
 table {
     border-collapse: collapse;
-    border-spacing: 0; 
+    border-spacing: 0;
 }
 
 img {
-    border: none; 
+    border: none;
 }
 
 a {
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
 }
 
 address {
-    font-style: normal; 
+    font-style: normal;
 }
 
 button {
     display: inline-block;
     border: none;
     background-color: transparent;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-input, button, a, select, option {
+input,
+button,
+a,
+select,
+option {
     font-family: inherit;
-    font-size: inherit; 
+    font-size: inherit;
 }
 
-input[type="checkbox"] {
-    border: none !important; 
+input[type='checkbox'] {
+    border: none !important;
 }
 
-caption, hr {
+caption,
+hr {
     display: block;
     margin: 0;
     padding: 0;
@@ -144,10 +220,10 @@ caption, hr {
 
 pre {
     word-break: break-all;
-    white-space: pre-line; 
+    white-space: pre-line;
 }
 
-em{
+em {
     font-style: normal;
 }
 
@@ -160,14 +236,14 @@ svg {
 .inner {
     position: relative;
     width: 1280px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.txt-center{
+.txt-center {
     text-align: center;
 }
 
-.hidden{
+.hidden {
     display: block;
     margin: 0;
     padding: 0;
@@ -177,34 +253,34 @@ svg {
     font-size: 0;
     line-height: 0;
 }
-.pthalf{
+.pthalf {
     padding-top: 50px;
 }
 
-.pos-r{
+.pos-r {
     position: relative;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.flex.ac{
+.flex.ac {
     align-items: center;
 }
 
-.flex.jc{
+.flex.jc {
     justify-content: center;
 }
 
-.flex.col{
+.flex.col {
     flex-direction: column;
 }
 
-.flex.g40{
+.flex.g40 {
     gap: 40px;
 }
 
-.flex.sb{
+.flex.sb {
     justify-content: space-between;
 }
