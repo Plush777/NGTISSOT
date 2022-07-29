@@ -12,4 +12,21 @@
         color: var(--bg-selected-text-color);
         background-color: var(--bg-selected);
     }
+
+    .section .sub-txt + .more:hover {
+        text-decoration: underline;
+    }
+
+    .wrap .btn.orange:hover {
+        background-color: #fb6d46;
+    }
+    .wrap .btn:hover:not(.type02) {
+        background-color: #090c50;
+    }
+    .wrap .btn.purple:hover {
+        background-color: #9731fd;
+    }
+    .wrap .btn.green:hover {
+        background-color: #009933;
+    }
 }

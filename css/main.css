@@ -1,0 +1,152 @@
+.section.s-default{
+    min-height: 700px;
+    box-shadow: inset 0px 0px 10px rgb(0 0 0 / 20%);
+}
+  
+.section.s01{
+    background: -moz-linear-gradient(195deg, #06a6fa 25%, #42edd0 100%);
+    background: -webkit-linear-gradient(195deg, #06a6fa 25%, #42edd0 100%);
+    background: linear-gradient(195deg, #06a6fa 30%, #42edd0 100%);
+}
+  
+.section.s02{
+    background: -moz-linear-gradient(-15deg, #f7e600 30%, #ffb229 100%);
+    background: -webkit-linear-gradient(-15deg, #f7e600 30%, #ffb229 100%);
+    background: linear-gradient(-15deg, #f7e600 30%, #ffb229 100%);
+}
+
+.section.s03{
+    background: -moz-linear-gradient(195deg, #7c74fd 30%, #aaa3ff 100%);
+    background: -webkit-linear-gradient(195deg,#7c74fd 30%, #aaa3ff 100%);
+    background: linear-gradient(195deg, #7c74fd 30%, #aaa3ff 100%);
+}
+
+.section.s04{
+    background: -moz-linear-gradient(195deg,  #55E1B0 30%, #399b78 110%);
+    background: -webkit-linear-gradient(195deg, #55E1B0 30%, #399b78 110%);
+    background: linear-gradient(195deg, #55E1B0 30%, #399b78 110%);
+}
+
+.section.s05{
+    min-height: 400px !important;
+    background-color: #333333;
+}
+
+.section.s05 .loc{
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.section .gifArea{
+    width: 100%; 
+    display: inline-block;
+}
+
+.section .gifArea img{
+    width: 86%; 
+    border-radius: 20px; 
+    box-shadow: 20px 17px 5px rgb(0 0 0 / 8%);
+}
+
+.section .maintitle h2{
+    font-family: '레시피코리아'; 
+    font-size: 50px; color: #ffffff;
+}
+
+.section{
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+}
+  
+.section .sec-inner{
+    display: flex; 
+    max-width: 1200px; 
+    width: 100%; 
+    height: 100%; 
+    flex: 1; 
+    padding: 0 10%;
+}
+  
+.section .btnArea{display: inline-block;}
+  
+.section .bgPoint{
+    display: inline-block; 
+    padding: 12px 10px 0 10px; 
+    background-color: #fff;
+}
+  
+.section .bgPoint.side{padding: 0 7px;}
+.section .bgPoint.mr{margin-right: 10px;}
+  
+.section .secCont{
+    width: 100%; 
+    display:flex; 
+    align-items: center;
+}
+  
+.section .secTxt{width: 50%;}
+.section .secImg{width: 50%;}
+  
+.section .sec-inner .secCont .secTxt .sub-txt a span.arrow-rt:after{
+    content: ''; 
+    display: inline-block; 
+    width: 24px; 
+    height: 24px; 
+    vertical-align: bottom; 
+    background: url("../images/ico-arrow-right-white.png") no-repeat; 
+}
+  
+.section .maintitle p{
+    font-size: 40px; 
+    color: #fff;
+    }
+  
+.section .sub-txt p{
+    font-size: 30px; 
+    color: #ffffff;
+}
+  
+.section .sub-txt p.black{color: #000;}
+  
+.section .sub-txt.more{
+    font-size: 18px; 
+    color: #ffffff;
+}
+  
+.section .maintitle + .sub-txt{margin-top: 10px;}
+.section .sub-txt + .more{margin-top: 7px;}
+.section .sub-txt + .btnArea{margin-top: 60px;}
+.section .sub-txt strong.blue{color: #2b73ff;}
+.section .maintitle h2.orange{color: #FF8868;}
+.section .maintitle h2.violet{color: #7f00ff;}
+.section .maintitle h2.blue{color: #058dec;}
+.section .maintitle h2.green{color: #009933;}
+.section .title {padding-top: 100px;}
+.section .title.pthalf{padding-top: 50px;}
+  
+.wrap .btn.blueBerry{background-color: #353990;}
+.wrap .btn.orange{background-color: #ff9375;}
+.wrap .btn.purple{background-color: #c081ff;}
+.wrap .btn.green{background-color: #1ec257;}
+
+.wrap i.ico{
+    display: inline-block; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+  
+.wrap i.ico.ico-arrow-rt{
+    width: 24px; 
+    height: 24px; 
+    background: url("../images/ico-arrow-right-white.png");
+}
+  
+.wrap i.ico.rt{margin-left: 5px; margin-right: 0;}
+.wrap i.ico.lt{margin-right: 5px; margin-left: 0;}
