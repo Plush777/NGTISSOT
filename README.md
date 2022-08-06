@@ -7,6 +7,11 @@ https://www.figma.com/file/oGLZS2nYpZv2SQXB8vurmP/NT?node-id=0%3A1
 
 <br>
 
+#### NG TISSOT.log
+https://lily-periwinkle-8d2.notion.site/NG-TISSOT-Log-a97209e2ca1948b0825fa25ed660b42a
+
+<br>
+
 #### 메인 및 메인 반응형 레이아웃 참고
 - 네이버 웨일 (https://whale.naver.com/) 
 - 파리바게뜨 (https://www.paris.co.kr/)
@@ -24,6 +29,7 @@ https://www.figma.com/file/oGLZS2nYpZv2SQXB8vurmP/NT?node-id=0%3A1
 - Aos.js (https://michalsnik.github.io/aos/)
 - jquery (https://jquery.com/)
 - easeScroll.js (https://creativestudio.kr/2113)
+- typeform (https://www.typeform.com/)
 
 <br>
 
