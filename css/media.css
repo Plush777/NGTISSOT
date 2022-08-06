@@ -93,175 +93,6 @@
     }
 }
 
-@media (max-width: 945px) {
-    .pc-945 {
-        display: none;
-    }
-    .wrap {
-        padding-top: 90px;
-    }
-    .wrap.no-border .title-area {
-        border-bottom: 0;
-    }
-    .wrap.header-up-down .title-area {
-        margin: 90px 0 15px;
-    }
-    .customScroll::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* section */
-    .section .inner {
-        width: 100%;
-    }
-    .section .maintitle h2 {
-        font-size: 31px;
-    }
-    .section .sub-txt p {
-        font-size: 1.3rem;
-    }
-    .tab-frame .table-Area .table table th {
-        font-size: 13px;
-    }
-    .tab-frame .table-Area .table table td {
-        font-size: 11px;
-    }
-    /* --- */
-
-    .title-area {
-        margin: 60px 0 15px;
-        padding-bottom: 60px;
-        border-bottom: 1px solid var(--bg-color6);
-    }
-
-    .title-area h1 {
-        font-size: 36px;
-    }
-    .title-area .desc {
-        font-size: 16px;
-    }
-    .cont-title {
-        font-size: 18px;
-    }
-    .cont-desc {
-        font-size: 14px;
-    }
-    .cont-title + .cont-desc {
-        margin: 10px 0 40px;
-    }
-    .contents-wrap {
-        padding: 0;
-    }
-    .contents-wrap.type02 {
-        margin-top: 30px;
-    }
-    .contents-wrap.type02 .cont-box {
-        padding-bottom: 30px;
-    }
-    .contents-wrap.type02 .cont-box + .cont-box {
-        padding-top: 30px;
-    }
-    .cont-group {
-        width: 100%;
-    }
-    .img-box {
-        flex-direction: column;
-    }
-
-    /* 1번째 이미지 */
-    .img-box .img-item.col65 {
-        display: none;
-    }
-    .img-box .img-item.row5 {
-        width: 100%;
-        height: 500px;
-        background-size: 100%;
-    }
-    .contents-inner .cont-group:last-child .img-box {
-        flex-direction: row;
-    }
-
-    .sub-title,
-    .sub-title.type02 {
-        font-size: 18px;
-    }
-    .sub-title + .list {
-        margin-top: 12px;
-    }
-    .list li + li {
-        margin-top: 10px;
-    }
-
-    .list li p {
-        font-size: 14px;
-        padding-left: 12px;
-    }
-
-    .list li:before {
-        width: 4px;
-        height: 4px;
-        top: 8px;
-    }
-
-    .list.rowType {
-        gap: 30px;
-    }
-
-    .tab-wrap .tab-list li a {
-        font-size: 16px;
-    }
-    .tab-wrap .tab-nav .tab-list li.line {
-        top: 26px;
-        width: 78px;
-    }
-
-    .tab-wrap .tab-list li:nth-child(2).active ~ .line {
-        width: 128px;
-        left: 97px;
-    }
-
-    .tab-wrap .tab-list li:nth-child(3).active ~ .line {
-        width: 110px;
-        left: 246px;
-    }
-
-    .tab-wrap .tab-list li:nth-child(4).active ~ .line {
-        width: 77px;
-        left: 376.5px;
-    }
-
-    .tab-wrap .tab-nav .tab-list {
-        padding-bottom: 5px;
-    }
-    .tab-wrap .tab-list li + li {
-        margin-left: 20px;
-    }
-
-    .contents-wrap.type02 .cont-box .desc {
-        font-size: 14px;
-    }
-    .opt-year span {
-        font-size: 16px;
-    }
-    .opt-select {
-        width: 70px;
-        height: 30px;
-    }
-    .opt-select .date-txt {
-        font-size: 13px;
-    }
-    .opt-select.active .svg-arrow-down {
-        top: 13px;
-    }
-    .common-select {
-        width: 70px;
-        top: 38px;
-    }
-    .common-select li {
-        font-size: 13px;
-    }
-}
-
 @media (max-width: 768px) {
     .wrap.main {
         padding-top: 93px;
@@ -505,12 +336,16 @@
         width: 78px;
     }
     .tab-wrap .tab-list li:nth-child(2).active ~ .line {
-        width: 128px;
+        width: 110px;
         left: 97px;
+        /* width: 128px;
+        left: 97px; */
     }
     .tab-wrap .tab-list li:nth-child(3).active ~ .line {
-        width: 110px;
-        left: 246px;
+        /* width: 110px;
+        left: 246px; */
+        width: 77px;
+        left: 228px;
     }
     .tab-wrap .tab-list li:nth-child(4).active ~ .line {
         width: 77px;
