@@ -165,4 +165,6 @@ $(function(){
 			}
 		}
 	});
+
+	$('#footer .linkList li a').attr('target','_blank');
 });

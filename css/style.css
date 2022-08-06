@@ -816,13 +816,17 @@ header .nav.sub a {
 }
 
 .tab-wrap .tab-list li:nth-child(2).active ~ .line {
-    width: 197px;
-    left: 155px;
+    /* width: 197px;
+    left: 155px; */
+    width: 167px;
+    left: 154px;
 }
 
 .tab-wrap .tab-list li:nth-child(3).active ~ .line {
-    width: 167px;
-    left: 387px;
+    /* width: 167px;
+    left: 387px; */
+    width: 117px;
+    left: 360px;
 }
 
 .tab-wrap .tab-list li:nth-child(4).active ~ .line {
@@ -1026,4 +1030,15 @@ header .nav.sub a {
 
 .txt-group + .txt-group {
     margin-top: 50px;
+}
+
+.log {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 16px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: var(--text-color);
 }

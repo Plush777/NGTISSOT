@@ -1,342 +1,363 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="utf-8">
-    <meta name="color-scheme" content="light" />
-    <meta name="description" content="NG TISSOT 클랜 홈페이지입니다.">
-    <meta name="generator" content="Visual Studio Code">
-    <meta name="author" content="P1ush">
-    <meta name="robots" content="index,nofollow">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta property="og:url" content="https://plush777.github.io/NGTISSOT">
-    <meta property="og:title" content="NG TISSOT">
-    <meta property="og:image" content="images/img-card.png">
-    <meta property="og:description" content="NG TISSOT 클랜 홈페이지입니다.">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="NG TISSOT">
-    <meta name="twitter:url" content="https://plush777.github.io/NGTISSOT">
-    <meta name="twitter:image" content="images/img-card.png">
-    <meta name="twitter:description" content="NG TISSOT 클랜 홈페이지입니다.">
-    <link rel="stylesheet" href="css/style.css?ver=1"/>
-    <link rel="stylesheet" href="css/media.css"/>
-    <link rel="stylesheet" href="css/hover.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="js/pace-master/themes/blue/pace-theme-minimal.css">
-    <link rel="icon" href="images/홈페이지용_NT로고.png" sizes="16x16">
-    <script src="js/pace-master/pace.min.js"></script>
-    <script src="js/lib/jquery-1.12.4.js"></script>
-    <script src="./js/lib/jquery.easeScroll.js"></script>
-    <script src="js/ui.js"></script>
-    <script src="js/theme.js" defer></script>
-    <title>NG TISSOT</title>
-</head>
-<body>
-    <noscript>
-        <style>
-            .wrap{display: none;}
-        </style>
-        <div style="position: fixed; width: 100%; height: 100%; z-index: 1000000; background-color: #fff;">
-            <p>자바스크립트가 비활성화 되어있는 환경에서는 콘텐츠를 볼 수 없습니다. 활성화로 바꿔주세요.<br/>
-            (Content cannot be viewed in an environment where JavaScript is disabled. Please change it to activation.)
-            </p>
-        </div>
-    </noscript>
-    <div class="wrap">
-        <header role="banner">
-            <div class="inner">
-                <div class="header-contents">
-                    <h1 class="logo" title="NT로고">
-                        <a href="index.html">
-                            <img src="images/홈페이지용_NT로고.png" alt="메인로고">
-                        </a>
-                    </h1>
-                    <div class="nav" role="navigation">
-                        <ul>
-                            <li><a href="index.html"title="홈" aria-label="nav home">홈</a></li>
-                            <li><a href="sub.html"title="클랜 소개" aria-label="nav clanIntro">클랜 소개</a></li>
-                            <li><a href="sub2.html"title="클랜원 모집!" aria-label="nav clanJoin">클랜원 모집!</a></li>
-                            <li class="active"><a href="sub3.html"title="클랜 룰" aria-label="nav clanRole">클랜 룰</a></li>
-                            <li><a href="sub4.html"title="클랜 가입문의" aria-label="nav clanInquiry">클랜 가입문의</a></li>
-                            <li><a href="sub5.html"title="명예의 전당" aria-label="nav HallofFame">명예의 전당</a></li>
-                            <li><a href="sub6.html"title="TMI" aria-label="nav TMI">TMI</a></li>
-                        </ul>
-                    </div>
-                    <div class="mobile-nav">
-                        <div class="mobile-nav-inner">
-                            <button type="button" class="btn-hamburger">
-                                <span class="m-line"></span>
-                                <span class="m-line"></span>
-                                <span class="m-line"></span>
-                            </button>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="color-scheme" content="light" />
+        <meta name="description" content="NG TISSOT 클랜 홈페이지입니다." />
+        <meta name="generator" content="Visual Studio Code" />
+        <meta name="author" content="P1ush" />
+        <meta name="robots" content="index,nofollow" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:url" content="https://plush777.github.io/NGTISSOT" />
+        <meta property="og:title" content="NG TISSOT" />
+        <meta property="og:image" content="images/img-card.png" />
+        <meta property="og:description" content="NG TISSOT 클랜 홈페이지입니다." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="NG TISSOT" />
+        <meta name="twitter:url" content="https://plush777.github.io/NGTISSOT" />
+        <meta name="twitter:image" content="images/img-card.png" />
+        <meta name="twitter:description" content="NG TISSOT 클랜 홈페이지입니다." />
+        <link rel="stylesheet" href="css/style.css?ver=1" />
+        <link rel="stylesheet" href="css/media.css" />
+        <link rel="stylesheet" href="css/hover.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="js/pace-master/themes/blue/pace-theme-minimal.css" />
+        <link rel="icon" href="images/홈페이지용_NT로고.png" sizes="16x16" />
+        <script src="js/pace-master/pace.min.js"></script>
+        <script src="js/lib/jquery-1.12.4.js"></script>
+        <script src="./js/lib/jquery.easeScroll.js"></script>
+        <script src="js/ui.js"></script>
+        <script src="js/theme.js" defer></script>
+        <title>NG TISSOT</title>
+    </head>
+    <body>
+        <noscript>
+            <style>
+                .wrap {
+                    display: none;
+                }
+            </style>
+            <div style="position: fixed; width: 100%; height: 100%; z-index: 1000000; background-color: #fff">
+                <p>
+                    자바스크립트가 비활성화 되어있는 환경에서는 콘텐츠를 볼 수 없습니다. 활성화로 바꿔주세요.<br />
+                    (Content cannot be viewed in an environment where JavaScript is disabled. Please change it to activation.)
+                </p>
+            </div>
+        </noscript>
+        <div class="wrap">
+            <header role="banner">
+                <div class="inner">
+                    <div class="header-contents">
+                        <h1 class="logo" title="NT로고">
+                            <a href="index.html">
+                                <img src="images/홈페이지용_NT로고.png" alt="메인로고" />
+                            </a>
+                        </h1>
+                        <div class="nav" role="navigation">
+                            <ul>
+                                <li><a href="index.html" title="홈" aria-label="nav home">홈</a></li>
+                                <li><a href="sub.html" title="클랜 소개" aria-label="nav clanIntro">클랜 소개</a></li>
+                                <li><a href="sub2.html" title="클랜원 모집!" aria-label="nav clanJoin">클랜원 모집!</a></li>
+                                <li class="active"><a href="sub3.html" title="클랜 룰" aria-label="nav clanRole">클랜 룰</a></li>
+                                <li><a href="sub4.html" title="클랜 가입문의" aria-label="nav clanInquiry">클랜 가입문의</a></li>
+                                <li><a href="sub5.html" title="명예의 전당" aria-label="nav HallofFame">명예의 전당</a></li>
+                                <li><a href="sub6.html" title="TMI" aria-label="nav TMI">TMI</a></li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="mobile-nav-right">
-            <div class="mnr-inner">
-                <div class="mnr-header">
-                    <button class="mnr-nav-close">
-                        <span class="nav-close-bd"></span>
-                        <span class="nav-close-bd"></span>
-                    </button>
-                </div>
-                <ul class="mobile-nav-list">
-                    <li>
-                        <a href="sub.html" aria-label="nav clanIntro">클랜소개</a>
-                    </li>
-                    <li>
-                        <a href="sub2.html" aria-label="nav clanJoin">클랜원 모집!</a>
-                    </li>
-                    <li>
-                        <a href="sub3.html" aria-label="nav clanRole">클랜 룰</a>
-                    </li>
-                    <li>
-                        <a href="sub4.html" aria-label="nav clanInquiry">클랜 가입문의</a>
-                    </li>
-                    <li>
-                        <a href="sub5.html" aria-label="nav HallofFame">명예의 전당</a>
-                    </li>
-                    <li>
-                        <a href="sub6.html" aria-label="nav TMI">TMI</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div id="dimmed"></div>
-        <seciton class="section" id="section" role="section">
-            <div class="inner pd">
-                <div class="title-area">
-                    <h1><em class="txt blue">R</em>ule</h1>
-                    <p class="desc">클랜 규칙을 확인해보세요.</p>
-                </div>
-                <div class="contents-wrap type02">
-                    <div class="contents-inner">
-                        <div class="cont-group">
-                            <div class="cont-box">
-                                <h3 class="sub-title">계정 가입</h3>
-                                <ul class="list">
-                                    <li>
-                                        <p>계정 2개 이상 가입은 금지이지만, 아래와 같은 경우에는 가입할 수 있어요.</p>
-                                    </li>
-                                    <li class="indent">
-                                        <p>클랜전 점수 보충용 계정</p>
-                                    </li>
-                                    <li class="indent">
-                                        <p>클랜 내 인원이 40명 이하인경우</p>
-                                    </li>
-                                    <li class="indent">
-                                        <p>카드,토큰 교환<br/>
-                                        (단, 교환이 끝나면 다시 나가셔야해요.)</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="cont-box">
-                                <h3 class="sub-title">이모티콘</h3>
-                                <ul class="list">
-                                    <li>
-                                        <p>클랜 내전 / 친선 / 토너먼트 진행 시 과도한 이모티콘 사용은 자제해주세요.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="cont-box">
-                                <h3 class="sub-title">장로 및 공동대표 클랜 운영</h3>
-                                <ul class="list">
-                                    <li>
-                                        <p>아무 이유없는 추방 혹은 클랜 테러 발각 시 추방 및 블랙리스트 처리돼요.</p>
-                                    </li>
-                                    <li>
-                                        <p>추방당한 클랜원 재초대 적발 / 실수로 인한 추방 OR 강등 시 경고 1회씩 누적되며,
-                                        3회 이상 누적 시 강등될 수 있어요.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="cont-box">
-                                <h3 class="sub-title">장로 및 공동대표 승급조건</h3>
-                                <div class="listWrap">
-                                    <h4 class="h4-tit">장로 : 다음 조건 중 4개이상 만족</h4>
-                                    <ul class="list">
-                                        <li class="indent">
-                                            <p>지원 1000달성</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>클랜에 오래 머물러 있으신분 (6개월 이상)</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>접속률 좋으신분</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>클랜활동 참여 (내전 , 설문조사 , 클랜전 등)</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>적극 클랜홍보 또는 도움을 주신분</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>클랜전 단독 1등인경우 (클랜전 종료 직후 기준)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="listWrap">
-                                    <h4 class="h4-tit">지켜야할 사항 및 혜택</h4>
-                                    <ul class="list">
-                                        <li>
-                                            <p>인게임 클랜 가입방식이 초대한정일경우, 가입신청 수락/거절 권한을 가질 수 있어요.</p>
-                                        </li>
-                                        <li>
-                                            <p>클랜 성장에 대한 아이디어 혹은 건의 시 적극 반영해드려요.</p>
-                                        </li>
-                                        <li>
-                                            <p>클랜원 추방 혹은 강등 시 사유를 명확하게 적어야해요.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="listWrap">
-                                    <h4 class="h4-tit">공동대표 : 다음 조건 중 5개이상 만족</h4>
-                                    <ul class="list">
-                                        <li class="indent">
-                                            <p>클랜에 오래 머물러 있으신 분 (1년 이상)</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>부적절한 행위 (비매너,욕설) 를 한 이력이 없으신분</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>접속률이 아주 좋으신분<br/>
-                                            (호출 시 언제든지 오실 수 있는 분 , 로얄 접속 오래하시는분이시면 더 좋아요.)</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>외출을 자주 하시지 않는 분</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>적극적으로 클랜 홍보 해주시는 분 (주 1회 이상)</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>클랜 관리 경험이 있으신 분</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>클랜 활동 참여 (설문지 참여 , 클랜 문의방 운영 도움 등) 적극 참여 해주시는 분</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="listWrap">
-                                    <h4 class="h4-tit">지켜야할 사항</h4>
-                                    <ul class="list">
-                                        <li class="indent">
-                                            <p>클랜 문의방에서 오는 가입신청들을 관리 해야해요.</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>인게임 클랜 가입방식이 초대한정일경우, 가입신청 수락/거절 권한을 가질 수 있어요.</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>클랜 성장에 대한 아이디어 혹은 건의 시 적극 반영해드려요.</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>클랜원 추방 혹은 강등 시 사유를 명확하게 적어야해요.</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>클랜 운영진 방 및 문의방에 필수로 가입해야해요.</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>전체적인 클랜 관리를 도와야해요. (지원 미달, 클랜전 미달 등)</p>
-                                        </li>
-                                        <li class="indent">
-                                            <p>공동대표로써의 활동이 부족하다고 판단되면 장로로 강등 될수도 있어요.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cont-box">
-                                <h3 class="sub-title">클랜전</h3>
-                                <ul class="list">
-                                    <li>
-                                        <p>클랜전은 특별한 사유 아니면 필수로 참여 해야해요.</p>
-                                    </li>
-                                    <li>
-                                        <p>클랜전 400점 이하는 아쉽지만 추방돼요.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="cont-box">
-                                <h3 class="sub-title">외출</h3>
-                                <ul class="list">
-                                    <li>
-                                        <p>외출 시 클랜 공지방 혹은 클랜 채팅에 외출 사유를 적어주셔야해요.</p>
-                                    </li>
-                                    <li>
-                                        <p>시즌 말 (시즌 종료 5일 전) 외출은 금지에요.</p>
-                                    </li>
-                                    <li>
-                                        <p>외출 자리 스틸은 금지이며, 너무 잦은 외출은 하지말아주세요. (단, 구단전 외출은 제외에요.)</p>
-                                    </li>
-                                    <li>
-                                        <p>외출 시 복귀는 2 ~ 3일 내로 해주세요. 지켜지지 않을경우 경고를 드릴 수 있어요.</p>
-                                    </li>
-                                    <li>
-                                        <p>외출 관련 경고가 3회 이상 누적 될경우 추방 및 블랙리스트 처리가 돼요.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="cont-box">
-                                <h3 class="sub-title">기타</h3>
-                                <ul class="list">
-                                    <li>
-                                        <p>비속어 사용이 잦을경우 추방될 수 있어요. (초성 욕 포함)</p>
-                                    </li>
-                                    <li>
-                                        <p>승급 구걸 및 재촉 시 통보 없이 추방될 수 있어요.</p>
-                                    </li>
-                                    <li>
-                                        <p>미접속 상태가 3일 이상 지속되면 추방 혹은 강등 될 수 있어요.<br/>
-                                        (특별한 사유가 있을경우 클랜 채팅이나 공지방에 남겨주세요!)</p>
-                                    </li>
-                                    <li>
-                                        <p>트로피 패작은 시즌 초 (시즌 종료 20일 전) 에만 허용돼요.</p>
-                                    </li>
-                                    <li>
-                                        <p>토큰 교환 시 신중하게 해주세요!</p>
-                                    </li>
-                                    <li>
-                                        <p>토큰 등록은 1인 당 최대 3개까지만 허용돼요. 그 이상 등록 시 경고가 주어지며 
-                                        경고 후에도 지켜지지 않을경우 추방 될 수 있어요.</p>
-                                    </li>
-                                    <li>
-                                        <p>클랜원 초대는 반드시 공동대표나 클랜 대표에게 허락을 받아야해요.</p>
-                                    </li>
-                                    <li>
-                                        <p>클랜 탈퇴 시 탈퇴 사유를 클랜 공지방 혹은 클랜 채팅에 적어주세요!</p>
-                                    </li>
-                                </ul>
+                        <div class="mobile-nav">
+                            <div class="mobile-nav-inner">
+                                <button type="button" class="btn-hamburger">
+                                    <span class="m-line"></span>
+                                    <span class="m-line"></span>
+                                    <span class="m-line"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </header>
+            <div class="mobile-nav-right">
+                <div class="mnr-inner">
+                    <div class="mnr-header">
+                        <button class="mnr-nav-close">
+                            <span class="nav-close-bd"></span>
+                            <span class="nav-close-bd"></span>
+                        </button>
+                    </div>
+                    <ul class="mobile-nav-list">
+                        <li>
+                            <a href="sub.html" aria-label="nav clanIntro">클랜소개</a>
+                        </li>
+                        <li>
+                            <a href="sub2.html" aria-label="nav clanJoin">클랜원 모집!</a>
+                        </li>
+                        <li>
+                            <a href="sub3.html" aria-label="nav clanRole">클랜 룰</a>
+                        </li>
+                        <li>
+                            <a href="sub4.html" aria-label="nav clanInquiry">클랜 가입문의</a>
+                        </li>
+                        <li>
+                            <a href="sub5.html" aria-label="nav HallofFame">명예의 전당</a>
+                        </li>
+                        <li>
+                            <a href="sub6.html" aria-label="nav TMI">TMI</a>
+                        </li>
+                        <li>
+                            <a href="https://map64wlb3a2.typeform.com/to/r93ACTwS" target="_blank">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </seciton>
-        <div class="btnArea sub">
-            <button type="button" class="btnDarkMode">
-                <svg class="moon" width="30" height="30" version="1.1" viewBox="0 0 700 550">
-                    <g>
-                        <path d="m348 38.195c-3.0625 0-5.9453 1.6328-7.4883 4.2305-1.7109 2.8125-1.6992 6.3125 0.039062 9.125 21.871 35.387 33.426 76.148 33.426 117.88 0 123.84-100.75 224.58-224.58 224.58-4.4922 0-9.1875-0.16797-14.508-0.51172l-0.94922-0.058594c-2.9883 0-5.8203 1.6289-7.4102 4.2656-1.6758 2.793-1.6562 6.2695 0.0625 9.0938 44.504 72.012 121.53 115 206.05 115 133.48 0 242.08-108.6 242.08-242.08 0.003906-127.18-99.332-233.26-226.72-241.53zm-15.359 466.11c-72.48 0-139.64-34.48-181.85-92.797 132.85-0.75391 240.68-109.05 240.68-242.08 0-39.09-9.4688-77.59-27.48-112.05 109.23 15.375 193.23 110.95 193.23 222.34-0.003906 123.83-100.75 224.58-224.59 224.58z"></path>
-                    </g>
-                </svg>
-            </button>
+            <div id="dimmed"></div>
+            <seciton class="section" id="section" role="section">
+                <div class="inner pd">
+                    <div class="title-area">
+                        <h1><em class="txt blue">R</em>ule</h1>
+                        <p class="desc">클랜 규칙을 확인해보세요.</p>
+                    </div>
+                    <div class="contents-wrap type02">
+                        <div class="contents-inner">
+                            <div class="cont-group">
+                                <div class="cont-box">
+                                    <h3 class="sub-title">계정 가입</h3>
+                                    <ul class="list">
+                                        <li>
+                                            <p>계정 2개 이상 가입은 금지이지만, 아래와 같은 경우에는 가입할 수 있어요.</p>
+                                        </li>
+                                        <li class="indent">
+                                            <p>클랜전 점수 보충용 계정</p>
+                                        </li>
+                                        <li class="indent">
+                                            <p>클랜 내 인원이 40명 이하인경우</p>
+                                        </li>
+                                        <li class="indent">
+                                            <p>
+                                                카드,토큰 교환<br />
+                                                (단, 교환이 끝나면 다시 나가셔야해요.)
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cont-box">
+                                    <h3 class="sub-title">이모티콘</h3>
+                                    <ul class="list">
+                                        <li>
+                                            <p>클랜 내전 / 친선 / 토너먼트 진행 시 과도한 이모티콘 사용은 자제해주세요.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cont-box">
+                                    <h3 class="sub-title">장로 및 공동대표 클랜 운영</h3>
+                                    <ul class="list">
+                                        <li>
+                                            <p>아무 이유없는 추방 혹은 클랜 테러 발각 시 추방 및 블랙리스트 처리돼요.</p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                추방당한 클랜원 재초대 적발 / 실수로 인한 추방 OR 강등 시 경고 1회씩 누적되며, 3회 이상 누적 시 강등될 수
+                                                있어요.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cont-box">
+                                    <h3 class="sub-title">장로 및 공동대표 승급조건</h3>
+                                    <div class="listWrap">
+                                        <h4 class="h4-tit">장로 : 다음 조건 중 4개이상 만족</h4>
+                                        <ul class="list">
+                                            <li class="indent">
+                                                <p>지원 1000달성</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>클랜에 오래 머물러 있으신분 (6개월 이상)</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>접속률 좋으신분</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>클랜활동 참여 (내전 , 설문조사 , 클랜전 등)</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>적극 클랜홍보 또는 도움을 주신분</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>클랜전 단독 1등인경우 (클랜전 종료 직후 기준)</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listWrap">
+                                        <h4 class="h4-tit">지켜야할 사항 및 혜택</h4>
+                                        <ul class="list">
+                                            <li>
+                                                <p>인게임 클랜 가입방식이 초대한정일경우, 가입신청 수락/거절 권한을 가질 수 있어요.</p>
+                                            </li>
+                                            <li>
+                                                <p>클랜 성장에 대한 아이디어 혹은 건의 시 적극 반영해드려요.</p>
+                                            </li>
+                                            <li>
+                                                <p>클랜원 추방 혹은 강등 시 사유를 명확하게 적어야해요.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listWrap">
+                                        <h4 class="h4-tit">공동대표 : 다음 조건 중 5개이상 만족</h4>
+                                        <ul class="list">
+                                            <li class="indent">
+                                                <p>클랜에 오래 머물러 있으신 분 (1년 이상)</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>부적절한 행위 (비매너,욕설) 를 한 이력이 없으신분</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>
+                                                    접속률이 아주 좋으신분<br />
+                                                    (호출 시 언제든지 오실 수 있는 분 , 로얄 접속 오래하시는분이시면 더 좋아요.)
+                                                </p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>외출을 자주 하시지 않는 분</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>적극적으로 클랜 홍보 해주시는 분 (주 1회 이상)</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>클랜 관리 경험이 있으신 분</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>클랜 활동 참여 (설문지 참여 , 클랜 문의방 운영 도움 등) 적극 참여 해주시는 분</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listWrap">
+                                        <h4 class="h4-tit">지켜야할 사항</h4>
+                                        <ul class="list">
+                                            <li class="indent">
+                                                <p>클랜 문의방에서 오는 가입신청들을 관리 해야해요.</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>인게임 클랜 가입방식이 초대한정일경우, 가입신청 수락/거절 권한을 가질 수 있어요.</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>클랜 성장에 대한 아이디어 혹은 건의 시 적극 반영해드려요.</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>클랜원 추방 혹은 강등 시 사유를 명확하게 적어야해요.</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>클랜 운영진 방 및 문의방에 필수로 가입해야해요.</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>전체적인 클랜 관리를 도와야해요. (지원 미달, 클랜전 미달 등)</p>
+                                            </li>
+                                            <li class="indent">
+                                                <p>공동대표로써의 활동이 부족하다고 판단되면 장로로 강등 될수도 있어요.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cont-box">
+                                    <h3 class="sub-title">클랜전</h3>
+                                    <ul class="list">
+                                        <li>
+                                            <p>클랜전은 특별한 사유 아니면 필수로 참여 해야해요.</p>
+                                        </li>
+                                        <li>
+                                            <p>클랜전 400점 이하는 아쉽지만 추방돼요.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cont-box">
+                                    <h3 class="sub-title">외출</h3>
+                                    <ul class="list">
+                                        <li>
+                                            <p>외출 시 클랜 공지방 혹은 클랜 채팅에 외출 사유를 적어주셔야해요.</p>
+                                        </li>
+                                        <li>
+                                            <p>시즌 말 (시즌 종료 5일 전) 외출은 금지에요.</p>
+                                        </li>
+                                        <li>
+                                            <p>외출 자리 스틸은 금지이며, 너무 잦은 외출은 하지말아주세요. (단, 구단전 외출은 제외에요.)</p>
+                                        </li>
+                                        <li>
+                                            <p>외출 시 복귀는 2 ~ 3일 내로 해주세요. 지켜지지 않을경우 경고를 드릴 수 있어요.</p>
+                                        </li>
+                                        <li>
+                                            <p>외출 관련 경고가 3회 이상 누적 될경우 추방 및 블랙리스트 처리가 돼요.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cont-box">
+                                    <h3 class="sub-title">기타</h3>
+                                    <ul class="list">
+                                        <li>
+                                            <p>비속어 사용이 잦을경우 추방될 수 있어요. (초성 욕 포함)</p>
+                                        </li>
+                                        <li>
+                                            <p>승급 구걸 및 재촉 시 통보 없이 추방될 수 있어요.</p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                미접속 상태가 3일 이상 지속되면 추방 혹은 강등 될 수 있어요.<br />
+                                                (특별한 사유가 있을경우 클랜 채팅이나 공지방에 남겨주세요!)
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>트로피 패작은 시즌 초 (시즌 종료 20일 전) 에만 허용돼요.</p>
+                                        </li>
+                                        <li>
+                                            <p>토큰 교환 시 신중하게 해주세요!</p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                토큰 등록은 1인 당 최대 3개까지만 허용돼요. 그 이상 등록 시 경고가 주어지며 경고 후에도 지켜지지 않을경우 추방
+                                                될 수 있어요.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>클랜원 초대는 반드시 공동대표나 클랜 대표에게 허락을 받아야해요.</p>
+                                        </li>
+                                        <li>
+                                            <p>클랜 탈퇴 시 탈퇴 사유를 클랜 공지방 혹은 클랜 채팅에 적어주세요!</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </seciton>
+            <div class="btnArea sub">
+                <button type="button" class="btnDarkMode">
+                    <svg class="moon" width="30" height="30" version="1.1" viewBox="0 0 700 550">
+                        <g>
+                            <path
+                                d="m348 38.195c-3.0625 0-5.9453 1.6328-7.4883 4.2305-1.7109 2.8125-1.6992 6.3125 0.039062 9.125 21.871 35.387 33.426 76.148 33.426 117.88 0 123.84-100.75 224.58-224.58 224.58-4.4922 0-9.1875-0.16797-14.508-0.51172l-0.94922-0.058594c-2.9883 0-5.8203 1.6289-7.4102 4.2656-1.6758 2.793-1.6562 6.2695 0.0625 9.0938 44.504 72.012 121.53 115 206.05 115 133.48 0 242.08-108.6 242.08-242.08 0.003906-127.18-99.332-233.26-226.72-241.53zm-15.359 466.11c-72.48 0-139.64-34.48-181.85-92.797 132.85-0.75391 240.68-109.05 240.68-242.08 0-39.09-9.4688-77.59-27.48-112.05 109.23 15.375 193.23 110.95 193.23 222.34-0.003906 123.83-100.75 224.58-224.59 224.58z"
+                            ></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <footer class="footer" id="footer" role="contentinfo">
+                <div class="inner">
+                    <a href="index.html">ⓒ NG TISSOT</a>
+                    <ul class="linkList">
+                        <li>
+                            <a href="https://github.com/Plush777/NGTISSOT">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/YnfZW5Ua">Discord</a>
+                        </li>
+                        <li>
+                            <a href="https://cafe.naver.com/clashroyale">Cafe</a>
+                        </li>
+                        <li>
+                            <a href="https://map64wlb3a2.typeform.com/to/r93ACTwS">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </div>
-        <footer class="footer" id="footer" role="contentinfo">
-            <div class="inner">
-                <a href="index.html">ⓒ NG TISSOT</a>
-                <ul class="linkList">
-                    <li>
-                        <a href="https://github.com/Plush777/NGTISSOT">Github</a>
-                    </li>
-                    <li>
-                        <a href="https://discord.gg/YnfZW5Ua">Discord</a>
-                    </li>
-                    <li>
-                        <a href="https://cafe.naver.com/clashroyale">Cafe</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-</body>
+    </body>
 </html>
